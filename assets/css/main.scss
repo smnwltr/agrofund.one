@@ -1,0 +1,137 @@
+---
+---
+
+$primary-color: {{site.data.general.colors.primary}};
+$secondary-color: {{site.data.general.colors.secondary}};
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  font-family: 'Roboto', Helvetica, sans-serif
+}
+
+h1,h2,h3,h4 {
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+.main {
+  margin-top: 80px;
+  min-height: 80vh;
+}
+
+#header {
+  padding: 8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+  background-image: url({{"/assets/img/header/header.jpg" | relative_url}});
+}
+
+.jumbo-home {
+  height: 100%;
+  padding: 1rem;
+  color: white;
+
+  h1 {
+    font-family: Lobster
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+}
+
+
+/* Start navbar styles */
+.submit-btn {
+  padding: 15px;
+  border: none !important;
+  margin-top: 13px;
+}
+.submit-btn a{
+  background: $secondary-color;
+  color: white !important;
+  border-radius: 12px;
+  padding: 2px 20px!important;
+  transition: 0.4s;
+  font-weight: bolder;
+}
+.submit-btn a:hover {
+  background: lighten($secondary-color, 15%)
+}
+
+.navbar {
+  border-bottom:1px solid lighten($primary-color, 20%);
+  background-color: white;
+}
+
+.navbar li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 5px;
+  position: relative;
+  font-size: 120%;
+}
+.navbar li[class~="underline"] { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+
+.navbar li[class~="underline"] a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar li[class~="underline"] a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+.navbar .dropdown-menu {
+border: none;
+border-radius: 0;
+}
+
+.navbar .dropdown-item {
+background-color: #fff;
+}
+.my-navbar-img {
+  width: 80px;
+  height: 80px;
+ }
+
+ /* End navbar styles */
+
+ /* Start footer styles */
+
+ .footer-container {
+   background-color: lightgrey;
+   font-weight: bold;
+ }
+
+ .footer-container a {
+   color: black;
+ }
+ /* End footer styles */
