@@ -6,6 +6,7 @@ $secondary-color: {{site.data.general.colors.secondary}};
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+
 * {
   font-family: 'Roboto', Helvetica, sans-serif
 }
@@ -21,9 +22,18 @@ h2 {
 
 
 .main {
-  margin-top: 80px;
+  margin-top: 107px;
   min-height: 80vh;
 }
+
+.section {
+  margin: 8rem auto; 
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+
 
 #header {
   padding: 8rem;
@@ -118,8 +128,8 @@ border-radius: 0;
 background-color: #fff;
 }
 .my-navbar-img {
-  width: 80px;
   height: 80px;
+  width: auto;
  }
 
  /* End navbar styles */

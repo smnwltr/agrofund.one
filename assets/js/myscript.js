@@ -2,6 +2,8 @@
 // Insert year for copyright
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
+
+
 // Hamburger menu toggling
 window.onload = function () {
     // Look for .hamburger
