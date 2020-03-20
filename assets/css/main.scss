@@ -27,12 +27,17 @@ h2 {
 }
 
 .section {
-  margin: 8rem auto; 
+  margin: 8rem auto;
+
   h2 {
-    text-transform: uppercase;
-  }
+    text-transform: capitalize;
+  } 
 }
 
+#bp-video {
+  width: 100%;
+  height: auto;
+}
 
 
 #header {
