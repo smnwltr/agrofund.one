@@ -21,19 +21,36 @@ h2 {
 }
 
 
+.bp-video {
+  width: 100%;
+  max-height: 1080px;
+  background: top center url({{'/assets/img/farm_bg.jpg'|relative_url}})
+}
+
 .main {
   margin-top: 107px;
   min-height: 80vh;
 }
 
 .section {
-  margin: 8rem auto; 
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   h2 {
     text-transform: uppercase;
   }
 }
 
-
+.bg-red {background-color: $primary-color;}
+.bg-green {background-color: $secondary-color;}
+.bg-farm {
+  background: no-repeat top center url({{'/assets/img/farm_bg.jpg'|relative_url}});
+  background-attachment: fixed;
+ }
+ @media only screen and (max-device-width: 1366px) {
+   .bg-farm {
+     background-attachment: scroll;
+   }
+ }
 
 #header {
   padding: 8rem;
@@ -63,6 +80,22 @@ h2 {
   }
 }
 
+.st-btn {
+  background-color: $secondary-color;
+  border-radius: 5px;
+  box-shadow: 2px 5px 3px #dcdcdc;
+  transition: 0.4s box-shadow;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  min-width: 120px;
+  font-size: 120%;
+  &:hover {
+    box-shadow: 5px 8px 5px #dcdcdc;
+    text-decoration: none;
+    color: white;
+  }
+}
 
 /* Start navbar styles */
 .submit-btn {
@@ -83,7 +116,7 @@ h2 {
 }
 
 .navbar {
-  border-bottom:1px solid lighten($primary-color, 20%);
+  box-shadow: 0px 1px 10px 1px rgba(150,114,116,.7);
   background-color: white;
 }
 
@@ -94,7 +127,6 @@ h2 {
   display: inline-block;
   padding: 15px 5px;
   position: relative;
-  font-size: 120%;
 }
 .navbar li[class~="underline"] { 
   display: table-cell; 
@@ -136,12 +168,4 @@ background-color: #fff;
 
  /* Start footer styles */
 
- .footer-container {
-   background-color: lightgrey;
-   font-weight: bold;
- }
-
- .footer-container a {
-   color: black;
- }
  /* End footer styles */

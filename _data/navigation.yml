@@ -1,14 +1,20 @@
 items:
   -
-    name: Home
+    name: Introduction
     url: "#"
   -
-    name: Investments
-    url: "#"
+    name: Team
+    url: "#team"
   -
-    name: Approach
-    url: "#"
+    name: Portfolio
+    url: "#portfolio"
+  -
+    name: Timeline
+    url: "#timeline"
+  -
+      name: Experience
+      url: "#experience"
   -
     name: Contact
-    url: "#"
+    url: "#contact"
 
