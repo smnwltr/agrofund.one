@@ -20,6 +20,9 @@ h2 {
   margin-bottom: auto;
 }
 
+.video-container {
+  max-height: 100vh;
+}
 
 .bp-video {
   width: 100%;
@@ -42,6 +45,7 @@ h2 {
 
 .bg-red {background-color: $primary-color;}
 .bg-green {background-color: $secondary-color;}
+.bg-light {background-color: lighten(#dcdcdc,25%)}
 .bg-farm {
   background: no-repeat top center url({{'/assets/img/farm_bg.jpg'|relative_url}});
   background-attachment: fixed;
@@ -169,3 +173,49 @@ background-color: #fff;
  /* Start footer styles */
 
  /* End footer styles */
+
+
+ /* timeline styles */
+ ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  background-color: $secondary-color;
+  border-radius: 50%;
+  border: 20px $secondary-color;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+/* experience styles */
+
+.img-portrait {
+  border: 5px solid $secondary-color;
+}
+
+.hex {
+  font-size: 100px;
+  &.red {color: $primary-color}
+  &.green {color: $secondary-color}
+}
