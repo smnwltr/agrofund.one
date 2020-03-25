@@ -2,7 +2,7 @@
 {% assign cache_buster = site.time | date: '%s%N' %}
 
 <nav class="navbar navbar-expand-md fixed-top">
-    <a class="navbar-brand" href="{{'/' | relative_url'}}">
+    <a class="navbar-brand smooth-scroll" href="#top">
         <img class="my-navbar-img" src="{{'/assets/img/logo-full.png' | relative_url }}?{{cache_buster}}"
             alt="{{site.title}}">
     </a>
@@ -20,13 +20,13 @@
             {% for i in site.data.navigation.items %}
             {% unless forloop.last %}
             <li class="nav-item underline ml-2">
-                <a class="nav-link text-white;" href="{{i.url|relative_url}}">{{i.name}}</a>
+                <a class="nav-link smooth-scroll" href="{{i.url}}">{{i.name}}</a>
             </li>
             {% endunless %}
             {% endfor %}
 
             <li class="nav-item submit-btn ml-2">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link smooth-scroll" href="#contact">Contact</a>
             </li>
         </ul>
     </div>
