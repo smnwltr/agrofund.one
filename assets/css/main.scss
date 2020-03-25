@@ -31,7 +31,6 @@ h2 {
 }
 
 .main {
-  margin-top: 107px;
   min-height: 80vh;
 }
 
@@ -102,6 +101,12 @@ h2 {
 }
 
 /* Start navbar styles */
+
+.navbar {
+  transition: 1.2s background-color;
+  text-shadow: 2px 2px 4px black;
+}
+
 .submit-btn {
   padding: 15px;
   border: none !important;
@@ -114,19 +119,16 @@ h2 {
   padding: 2px 20px!important;
   transition: 0.4s;
   font-weight: bolder;
+  text-shadow: none;
 }
 .submit-btn a:hover {
   background: lighten($secondary-color, 15%)
 }
 
-.navbar {
-  box-shadow: 0px 1px 10px 1px rgba(150,114,116,.7);
-  background-color: white;
-}
-
 .navbar li a {
-  color: #000;
+  color: white;
   font-weight: bold;
+  font-size: 125%;
   text-decoration: none;
   display: inline-block;
   padding: 15px 5px;
@@ -167,6 +169,22 @@ background-color: #fff;
   height: 80px;
   width: auto;
  }
+
+ .navbar-scroll {
+  box-shadow: 0px 1px 10px 1px rgba(150,114,116,.7);
+  background-color: white;
+  text-shadow: none;
+  color: black !important;
+ 
+  li a {
+    color: black;
+  }
+
+  li a .submit-btn {
+    color: white;
+  }
+
+}
 
  /* End navbar styles */
 
