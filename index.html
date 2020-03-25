@@ -113,34 +113,39 @@ title:
                 years of practical field research, I now travel the world exploring opportunities and working to
                 construct a quality portfolio of investments on behalf of Agro Fund One that add value to agricultural
                 businesses.</p>
-            <p>My unique skills to observe, interpre, and make decisions on many matters in the agribusiness industry
-                have empowered me to launch this initiative to participate in farming in diverse countries, climactic
+            <p>My unique skills to observe, interpret, and make decisions on many matters in the agribusiness industry
+                have empowered me to launch this initiative to participate in farming in diverse countries, climatic
                 regions, commodity types and targeted "end user" markets.</p>
         </div>
 
     </div>
 
-    <h5 class="text-upper text-center mt-5">My core competencies in the agricultural industry</h5>
+    <h4 class="text-upper text-center mt-5">My core competencies in the agricultural industry</h4>
     <div class="row justify-content-center">
-        <div class="col-md-6 mt-5">
+        <div class="col-md-10 mt-3">
             <div class="row">
                 {% for i in site.data.competencies.items %}
-                <div class="col-3 comp-xs">
+                <div class="col-md-2 col-xs-6 d-none d-md-block">
                     <div class="text-center">
-                        <span class=" hex {{i.color}}">&#x2B22;</span>
+                        <span class="hex {{i.color}}">&#x2B22;</span>
                         <p class="">{{i.name}}</p>
                     </div>
                 </div>
                 {% endfor %}
             </div>
-
         </div>
-
     </div>
-</div>
+
+    <ul class="d-block d-md-none">
+        {% for i in site.data.competencies.items %}
+        <li>{{i.name}}</li>
+        {% endfor %}
+    </ul>
+
+
 </div>
 
-<div class="container-flex bg-light">
+<div class=" container-flex bg-light">
     <div id="contact" class="container section">
         <h2 class="text-center">Contact Us</h2>
 
