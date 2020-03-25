@@ -20,18 +20,6 @@ h2 {
   margin-bottom: auto;
 }
 
-.video-container {
-  max-height: 100vh;
-  overflow: hidden;
-  bottom: 0;
-}
-
-.bp-video {
-  width: 100%;
-  max-height: 1080px;
-  background: top center url({{'/assets/img/farm_bg.jpg'|relative_url}})
-}
-
 .main {
   min-height: 80vh;
   @media (max-width: 768px) {
@@ -207,12 +195,64 @@ background-color: #fff;
 
 }
 
- /* End navbar styles */
 
- /* Start footer styles */
+ /* Start video styles */
 
- /* End footer styles */
+ .video-container {
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  &:hover .buttons {
+    transform: translateY(0);
+  }
+}
 
+.bp-video {
+  width: 100%;
+  max-height: 1080px;
+  background: top center url({{'/assets/img/farm_bg.jpg'|relative_url}})
+}
+
+
+.buttons {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  flex-wrap: wrap;
+  background: rgba(0,0,0,0.7);
+  transition: all .2s;
+}
+
+.buttons button {
+  background: none;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.buttons button::before{
+  font-family: 'Font Awesome 5 Free';
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  width: 60px;
+  height: 60px;
+  font-size: 44px;
+  color: #fff;
+  font-weight: 900;
+  content: '\f028';
+}
+
+.buttons button.mute:before {
+  content: '\f6a9'
+}
+
+.buttons button.unmute:before {
+  content: '\f028'
+}
 
  /* timeline styles */
  ul.timeline {

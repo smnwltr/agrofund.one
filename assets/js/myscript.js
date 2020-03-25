@@ -18,6 +18,30 @@ $(document).ready(function () {
     });
 });
 
+// video control
+
+// video custom controls
+var video = document.querySelector('.bp-video');
+var btnMute = document.getElementById('mute-unmute-btn');
+
+// mute unmute function
+
+function toggleMuteUnmute() {
+    if (video.muted) {
+        video.muted = false;
+        btnMute.className = 'mute'
+    }
+    else {
+        video.muted = true;
+        btnMute.className = 'unmute'
+    }
+}
+
+btnMute.onclick = function () {
+    toggleMuteUnmute();
+}
+
+
 // Hamburger menu toggling
 window.onload = function () {
     // Look for .hamburger
