@@ -1,20 +1,20 @@
 items:
   -
-    name: Introduction
+    name: What We Do
     url: "#introduction"
   -
-    name: Management
+    name: Team
     url: "#team"
   -
     name: Portfolio
     url: "#portfolio"
   -
-    name: Timeline
-    url: "#timeline"
-  -
-      name: Experience
-      url: "#experience"
+    name: Media
+    url: "#media"
   -
     name: Contact
     url: "#contact"
+  -
+    name: Invest with us
+    url: "#invest"
 

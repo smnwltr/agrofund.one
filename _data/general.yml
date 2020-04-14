@@ -1,10 +1,79 @@
-description: >-
-  Agro Fund One is an agricultural investment fund with a plan to deploy capital 
-  into early growth stage companies in the agricultural sector. With emphasis on 
-  diversity this fund aims to exploit the synergy of owning a vertically integrated 
-  and functional farm investment portfolio, without directly owning or operating the assets. 
-  This practice is commonly known as landless farming.
-
-colors:
-  primary: "#967274"
-  secondary: "#6a9b7d"
+items:
+  description: >-
+    Agro Fund One is an agricultural investment fund with a plan to deploy capital 
+    into early growth stage companies in the agricultural sector. With emphasis on 
+    diversity this fund aims to exploit the synergy of owning a vertically integrated 
+    and functional farm investment portfolio, without directly owning or operating the assets. 
+    This practice is commonly known as landless farming.
+  opps:
+    heading: "Opportunities"
+    items:
+      -
+        icon: /assets/img/opps/growth.png
+        text: Opportunity
+      -
+        icon: /assets/img/opps/growth.png
+        text: Opportunity
+      -
+        icon: /assets/img/opps/growth.png
+        text: Opportunity
+      -
+        icon: /assets/img/opps/growth.png
+        text: Opportunity
+      -
+        icon: /assets/img/opps/growth.png
+        text: Opportunity
+      -
+        icon: /assets/img/opps/growth.png
+        text: Opportunity
+  team:
+    heading: Team
+    intro:
+    items:
+      -
+        name: Team 1
+        title: Title
+        img: https://via.placeholder.com/180x180
+        mail: info@agrofund.one
+        text: >-
+          My unique skills to observe, interpret, and make decisions on many matters in the agribusiness 
+          industry have empowered me to launch this initiative to participate in farming in diverse 
+          countries, climatic regions, commodity types and targeted "end user" markets.
+      -
+        name: Team 2
+        title: Title
+        img: https://via.placeholder.com/180x180
+        mail: info@agrofund.one
+        text: >-
+          My unique skills to observe, interpret, and make decisions on many matters in the agribusiness 
+          industry have empowered me to launch this initiative to participate in farming in diverse 
+          countries, climatic regions, commodity types and targeted "end user" markets.
+      -
+        name: Team 3
+        title: Title
+        img: https://via.placeholder.com/180x180
+        mail: info@agrofund.one
+        text: >-
+          My unique skills to observe, interpret, and make decisions on many matters in the agribusiness 
+          industry have empowered me to launch this initiative to participate in farming in diverse 
+          countries, climatic regions, commodity types and targeted "end user" markets.
+  portfolio:
+    heading: Portfolio
+    items:
+      -
+        heading: AEROFLEET.ONE
+        p:
+          - As a licensee of AeroDrone heavy payload, fixed wing technology from Europe we are working with customers throughout north and South America to develop the first UAV fleet capable of commercial scale aerial application services.
+          - Based in North Dakota our company currently focuses on fleet development, marketing and the development of a logistical and operations team. 
+      -
+        heading: IN FIELD STORAGE AND LOGISTICS
+        p:
+          - In our second harvest season we have increased our in field storage and marketing operations to serve over 30 small stakeholder farmers in Kazakhstan, Georgia and Russia preserving and increasing revenue for high value, perishable crops.
+          - Having proven our model we anticipate a significant growth in the demand for our services in 2019 growing season. -
+      -
+        heading: INTERNATIONAL TEST NETWORK
+        p:
+          - Successful seasons with our crop input client companies have secured our reputation as a trusted source for experimentation and marketing for new products.
+          - Due to this demand we are working to strengthen our network of farms and developing a new team of indoor farming operations for 2019.  
+  media:
+    heading: Media
