@@ -1,15 +1,10 @@
 {
-    "name": "Agro Fund One",
-    "short_name": "Agro Fund One",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
-            "src": "/assets/img/icon/android-chrome-192x192.png?v=XBbagkJeva",
+            "src": "/assets/img/icon/android-chrome-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/assets/img/icon/android-chrome-256x256.png?v=XBbagkJeva",
-            "sizes": "256x256",
             "type": "image/png"
         }
     ],
