@@ -1,31 +1,58 @@
 items:
   description: >-
-    Agro Fund One is an agricultural investment fund with a plan to deploy capital 
-    into early growth stage companies in the agricultural sector. With emphasis on 
-    diversity this fund aims to exploit the synergy of owning a vertically integrated 
-    and functional farm investment portfolio, without directly owning or operating the assets. 
-    This practice is commonly known as landless farming.
+    Agro Fund One is an agricultural investment fund with a plan to deploy capital into early growth
+    stage companies in the agricultural sector. In addition to enhancing international cooperation and
+    sustainable development, Agro Fund One is also committed to improve the sustainability impact of
+    international investments so that it genuinely benefits local communities and generates desired
+    return on investment.
   opps:
     heading: "Opportunities"
     items:
       -
         icon: /assets/img/opps/growth.png
-        text: Opportunity
+        heading: Fund sustainable development and local impact across the globe
+        text: >-
+          Through a variety of diverse investments, Agro Fund One actively manages to 
+          flow capital into profitable projects that are driven by sustainability and local impact.
       -
         icon: /assets/img/opps/growth.png
-        text: Opportunity
+        heading: Access to international capital and banking
+        text: >-
+          Agro Fund One has developed close relationships with approximately 50 high and
+          ultra-high net worth individual investors from around the world. Furthermore,
+          international banking transactions are facilitated through our many offices around
+          the globe.
       -
         icon: /assets/img/opps/growth.png
-        text: Opportunity
+        heading: Partnership with farms located in historical low cost producer regions of the world
+        text: >-
+          Rural smallholder farmers in developing countries often lack timely information on
+          market prices, agricultural techniques, and weather, and have limited access to
+          traditional financial services - making it relatively difficult for them to adjust
+          production, or expand operations by investing in infrastructure. However,
+          according to the World Economic Forum, a market estimated to be as large as
+          US$450 billion could be tapped if financial services were sufficiently extended to
+          smallholders farmers.
       -
         icon: /assets/img/opps/growth.png
-        text: Opportunity
+        heading: 100mm of verifiable turn over in 2019, our first year of standardized auditing.
+        text: >-
+          Supported by this audit, a great team and strategic vision - combined with Mark
+          M. Erjavec’s unique skill set of complex financial engineering, this fund now has
+          the opportunity to invest into a new, scalable enterprise model utilizing the
+          resources, and more importantly the dynamic international relationships earned
+          through our developments-to-date.
       -
         icon: /assets/img/opps/growth.png
-        text: Opportunity
+        heading: Public-Private investments
+        text: >-
+          Experience in key public-private partnerships in developing countries. More
+          capital mobilized through innovative methods like blended finance and
+          benchmarks to explore ways to cooperate.
       -
         icon: /assets/img/opps/growth.png
-        text: Opportunity
+        heading: Focus on South, Central and North America
+        text:
   team:
     heading: Team
     intro:
