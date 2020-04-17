@@ -3,11 +3,11 @@ items:
     name: What We Do
     url: "#introduction"
   -
-    name: Team
-    url: "#team"
-  -
     name: Portfolio
     url: "#portfolio"
+  -
+    name: Team
+    url: "#team"
   -
     name: Media
     url: "#media"

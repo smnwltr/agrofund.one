@@ -11,5 +11,8 @@ theme: minima
 plugins:
   - jekyll-feed
 
+sass:
+  sass_dir: assets/css/_sass
+
 collections:
   - news

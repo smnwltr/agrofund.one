@@ -10,82 +10,65 @@ items:
     items:
       -
         icon: /assets/img/opps/growth.png
-        heading: Fund sustainable development and local impact across the globe
+        heading: Fund sustainable development and local impact across the globe.
         text: >-
-          Through a variety of diverse investments, Agro Fund One actively manages to 
-          flow capital into profitable projects that are driven by sustainability and local impact.
+          Through a variety of diverse investments, Agro Fund One actively manages to flow capital into profitable projects that are driven by sustainability and local impact.
       -
         icon: /assets/img/opps/growth.png
-        heading: Access to international capital and banking
+        heading: Access to international capital, markets and banking
         text: >-
-          Agro Fund One has developed close relationships with approximately 50 high and
-          ultra-high net worth individual investors from around the world. Furthermore,
-          international banking transactions are facilitated through our many offices around
-          the globe.
-      -
-        icon: /assets/img/opps/growth.png
-        heading: Partnership with farms located in historical low cost producer regions of the world
-        text: >-
-          Rural smallholder farmers in developing countries often lack timely information on
-          market prices, agricultural techniques, and weather, and have limited access to
-          traditional financial services - making it relatively difficult for them to adjust
-          production, or expand operations by investing in infrastructure. However,
-          according to the World Economic Forum, a market estimated to be as large as
-          US$450 billion could be tapped if financial services were sufficiently extended to
-          smallholders farmers.
-      -
-        icon: /assets/img/opps/growth.png
-        heading: 100mm of verifiable turn over in 2019, our first year of standardized auditing.
-        text: >-
-          Supported by this audit, a great team and strategic vision - combined with Mark
-          M. Erjavec’s unique skill set of complex financial engineering, this fund now has
-          the opportunity to invest into a new, scalable enterprise model utilizing the
-          resources, and more importantly the dynamic international relationships earned
-          through our developments-to-date.
-      -
-        icon: /assets/img/opps/growth.png
-        heading: Public-Private investments
-        text: >-
-          Experience in key public-private partnerships in developing countries. More
-          capital mobilized through innovative methods like blended finance and
-          benchmarks to explore ways to cooperate.
+          Agro Fund One has developed close relationships with approximately 50 high and ultra-high net worth individual investors from around the world. Furthermore, international banking transactions are facilitated through our many offices around the globe.
       -
         icon: /assets/img/opps/growth.png
         heading: Focus on South, Central and North America
-        text:
+        text: >-
+          The Fund is actively focusing its efforts along agribusiness supply chains across South, Central and North America. Investments in farm distressed debts in the United States and Brazil, as well as growing, processing and logistics will be our main focus.
+      -
+        icon: /assets/img/opps/growth.png
+        heading: Partnership with farms located in low cost producer regions
+        text: >-
+         Farmland represents an attractive, long-term investment while providing significant relative capital preservation during times of economic turmoil.
+      -
+        icon: /assets/img/opps/growth.png
+        heading: 100mm of verifiable turn over in 2019
+        text: >-
+          Supported by this audit, a great international team and strategic vision, this fund now has the opportunity to invest into a new, scalable enterprise model utilizing the resources, and more importantly the dynamic international relationships earned through our developments-to-date.
+      -
+        icon: /assets/img/opps/growth.png
+        heading: Public-Private partneship
+        text: >-
+          Experience in key public-private partnerships in developing countries. More capital mobilized through innovative methods like blended finance and benchmarks to explore ways to cooperate.
   team:
     heading: Team
     intro:
     items:
       -
-        name: Team 1
-        title: Title
-        img: https://via.placeholder.com/180x180
-        mail: info@agrofund.one
+        name: Mark M. Erjavec
+        title: Fund Manager
+        img: /assets/img/mark-erjavec.jpg
+        mail: mark@mesabafinance.com
         text: >-
-          My unique skills to observe, interpret, and make decisions on many matters in the agribusiness 
-          industry have empowered me to launch this initiative to participate in farming in diverse 
-          countries, climatic regions, commodity types and targeted "end user" markets.
+          With the support of a market-leading research team and hands-on management of direct investments, Mark now travels the world exploring new opportunities and working to construct a quality portfolio of investments on behalf of Agro Fund One.
       -
-        name: Team 2
-        title: Title
-        img: https://via.placeholder.com/180x180
-        mail: info@agrofund.one
+        name: Guilherme Moreira
+        title:  Head of International Projects
+        img: https://via.placeholder.com/250x250
+        mail:  guilherme@mesabafinance.com
         text: >-
-          My unique skills to observe, interpret, and make decisions on many matters in the agribusiness 
-          industry have empowered me to launch this initiative to participate in farming in diverse 
-          countries, climatic regions, commodity types and targeted "end user" markets.
+          Guilherme is a brazilian Environmental and Sanitary Engineer passionate about sustainable development. He is committed to work alongside communities, businesses and nonprofits to ensure the sustainability impact of our international investments so that it genuinely benefits local communities while ensuring long term profitability for investors.
       -
-        name: Team 3
-        title: Title
-        img: https://via.placeholder.com/180x180
-        mail: info@agrofund.one
+        name: Tina Zaryuta
+        title: Head of Marketing
+        img: https://via.placeholder.com/250x250
+        mail: tina@mesabafinance.com
         text: >-
-          My unique skills to observe, interpret, and make decisions on many matters in the agribusiness 
-          industry have empowered me to launch this initiative to participate in farming in diverse 
-          countries, climatic regions, commodity types and targeted "end user" markets.
+          Text
   portfolio:
     heading: Portfolio
+    text: >-
+      Between an Eastern European office in Kyiv, Ukraine and a Midwestern United States office in 
+      Denver, USA and the Fund headquarters in Hong Kong, and our field operations spread over
+       5 continents, the reach of our fund is truly global touching each market and sector that we serve.
     items:
       -
         heading: AEROFLEET.ONE
@@ -104,3 +87,12 @@ items:
           - Due to this demand we are working to strengthen our network of farms and developing a new team of indoor farming operations for 2019.  
   media:
     heading: Media
+
+  invest:
+    title: A Letter From Mark M. Erjavec
+    text: >-
+      My career and business success includes the experiences of being a first mover. I and the colleagues I surround myself with demonstrate keen ability to identify feasible pathways to success. I have learned that the leading agricultural players, many of whom I nurture relations, value transparency and therefore I make it a hallmark of my relationship building. In developing relationships my goal is to make a market for others by forging a business model that attracts capital investment from the world’s agricultural investors. Because assets can react differently to the same economic event, investment diversity will ensure ongoing success.<br><br>
+      My investments are done through Mesaba Finance Company Inc, which supports a boutique investment banking operation and employs international staff to manage funds related to agriculture and other specialty finance in North, Central and South America, as well as a project in the Horn of Africa.
+    link: Go To MesabaFinance.com
+    url: http://www.mesabafinance.com
+    

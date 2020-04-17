@@ -24,71 +24,63 @@ title:
     <div class="row mt-3">
         {% for i in general.opps.items %}
             <div class="col-sm-6 col-md-4 col-12 mt-4 justify-content-center">
-                <div class="opps-circle">
-                    <img src="{{i.icon}}">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="opps-circle">
+                                <img src="{{i.icon}}">
+                            </div>
+                            <h5 class="mt-3 text-center px-4">{{i.heading}}</h5>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>{{i.text}}</p>
+                        </div>
+                    </div>
                 </div>
-                <h5 class="mt-3 text-center">{{i.heading}}</h5>
-                <p>{{i.text}}</p>
+
             </div>
         {% endfor %}
     </div>
 </div>
 
-<!-- team section -->
-{% assign team = site.data.general.items.team %}
-<div class="section bg-green">
-    <a class="anchor" id="team"></a>
-    <div class="container text-white text-center">
-        <h2>{{team.heading}}</h2>
-        <div class="card-deck mt-3 text-dark">
-            {% for i in team.items %}
-                <div class="row bg-white my-3">
-                    <div class="col-sm-3">
-                        <img src="{{i.img}}" alt="{{i.name}}" class="m-5 img-portrait img-fluid">
-                    </div>
-                    <div class="col-sm-9 text-left align-self-center">
-                        <h4 class="mt-3 mb-0 pt-2">{{i.name}}</h4>
-                        <h5 class="font-weight-bold">{{i.title}}</h5>
-                        <p class="mt-2 text-left">{{i.text}}</p>
-                        <p>
-                            <a href="mailto:{{i.mail}}">{{i.mail}}</a>
-                        </p>
-                    </div>
-                </div>
-
-            {% endfor %}
-        </div>
+<!-- portfolio section -->
+{% assign port = site.data.general.items.portfolio %}
+<div class="section bg-light">
+    <a class="anchor" id="portfolio"></a>
+    <div class="container">
+        <h2 class="text-center">{{port.heading}}</h2>
+        <p class="mt-4">{{port.text}}</p>
+        {% include map.html %}
     </div>
 </div>
 
-<!-- portfolio section -->
-{% assign port = site.data.general.items.portfolio %}
-<div class="section bg-farm">
-    <a class="anchor" id="portfolio"></a>
+
+<!-- team section -->
+{% assign team = site.data.general.items.team %}
+
+<div class="section">
+    <a class="anchor" id="team"></a>
     <div class="container">
-        <h2 class="text-white text-center">{{port.heading}}</h2>
-        <div class="card-deck mt-5">
-            {% for i in port.items %}
-                <div class="card mt-3">
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
-                    <div class="card-body">
-                        <h5 class="card-title text-center" style="min-height: 3rem">{{i.heading}}</h5>
-                        <div class="card-text">
-                            {% for j in i.p %}
-                                <p>{{j}}</p>
-                            {% endfor %}
-                        </div>
-                    </div>
+        <h2 class="text-center">{{team.heading}}</h2>
+        <div class="row mt-5">
+            {% for i in team.items %}
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-circle img-team" alt="{{i.name}}" src="{{i.img}}">
+                    <h5 class="mb-0 mt-4 font-weight-bold">{{i.name}}</h5>
+                    <p class="font-weight-bold mb-1">{{i.title}}</p>
+                    <p>{{i.text}}</p>
+                    <p>
+                        <a href="mailto:{{i.mail}}">{{i.mail}}</a>
+                    </p>
                 </div>
             {% endfor %}
         </div>
     </div>
-
 </div>
 
 <!-- media section -->
 {% assign media = site.data.general.items.media %}
-<div class="section">
+<div class="section bg-light">
     <a class="anchor" id="media"></a>
     <div class="container">
         <h2 class="text-center">{{media.heading}}</h2>
@@ -110,7 +102,7 @@ title:
 </div>
 
 <!-- contact section -->
-<div class="section bg-light">
+<div class="section">
     <a class="anchor" id="contact"></a>
     <div class="container">
         <h2 class="text-center">Contact Us</h2>
@@ -153,10 +145,28 @@ title:
     </div>
 </div>
 
-<!-- invest section -->
-<div class="section bg-red">
-    <a class="anchor" id="invest"></a>
-    <div class="container">
-        <h2 class="text-white text-center">Invest</h2>
+<!-- invest modal -->
+{% assign invest = site.data.general.items.invest %}
+<div aria-hidden="true" aria-labelledby="investModalLabel" class="modal fade" id="investModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="investModalLabel">{{invest.title}}</h3>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img alt="Mark M. Erjavec" class="text-center my-4 img-fluid rounded-circle img-team" src="/assets/img/mark-erjavec.jpg">
+                <p>{{invest.text}}</p>
+                <h4 class="mt-4">Let's get started!</h4>
+                <p>
+                    <a class="btn st-btn mt-3" href="{{invest.url}}" target="_blank">{{invest.link}}</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
     </div>
 </div>
