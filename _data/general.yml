@@ -47,6 +47,7 @@ items:
         title: Fund Manager
         img: /assets/img/team/mark-erjavec.jpg
         mail: mark@mesabafinance.com
+        linkedin: https://www.linkedin.com/in/markerjavec/
         text: >-
           With the support of a market-leading research team and hands-on management of direct investments, Mark now travels the world exploring new investment opportunities while working to construct a quality portfolio of investments on behalf of Agro Fund One.
       -
@@ -54,6 +55,7 @@ items:
         title:  Head of International Development
         img: /assets/img/team/gui-moreira.jpg
         mail:  guilherme@mesabafinance.com
+        linkedin: https://www.linkedin.com/in/guilhermesvsmoreira/
         text: >-
           Guilherme is a Brazilian Environmental Engineer passionate about sustainable development. He is committed to ensure the sustainability impact of our international investments so that they genuinely benefits local communities while ensuring profitability for investors.
       -
@@ -61,6 +63,7 @@ items:
         title: Head of Marketing & Public Relations
         img: https://via.placeholder.com/250x250
         mail: tina@mesabafinance.com
+        linkedin: https://www.linkedin.com/in/tina-zaryuta-a945b3188/
         text: >-
           Text
   portfolio:

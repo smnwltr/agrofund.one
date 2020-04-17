@@ -66,7 +66,9 @@ title:
             {% for i in team.items %}
                 <div class="col-md-4">
                     <img class="img-fluid rounded-circle img-team" alt="{{i.name}}" src="{{i.img}}">
-                    <h5 class="mb-0 mt-4 font-weight-bold">{{i.name}}</h5>
+                    <h4 class="mb-0 mt-4 font-weight-bold">{{i.name}}
+                        <a href="{{i.linkedin}}" target="_blank"><img src="/assets/icon/linkedin.png" alt="{{i.name}}"></a>
+                    </h4>
                     <p class="font-weight-bold mb-0">{{i.title}}</p>
                     <p class="mb-1">
                         <a href="mailto:{{i.mail}}">{{i.mail}}</a>
@@ -151,7 +153,7 @@ title:
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title text-center" id="investModalLabel">{{invest.title}}</h3>
+                <h3 class="modal-title" id="investModalLabel" style="margin-left: auto">{{invest.title}}</h3>
                 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
                     <span aria-hidden="true">&times;</span>
                 </button>
