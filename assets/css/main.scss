@@ -224,6 +224,24 @@ background-color: #fff;
   }
 }
 
+/* portfolio styles */
+
+.placeholder-card {
+  background: none;
+  border: none;
+  box-shadow: none !important;
+}
+
+.card-a {
+  box-shadow: 0 6px 18px 0 rgba(86, 91, 115, .15) !important;
+  transition: box-shadow .2s;
+
+  &:hover {
+    box-shadow: 10px 18px 40px 0 rgba(86, 91, 115, .15) !important;
+  }
+
+}
+
 /* team styles */
 
 .img-team {

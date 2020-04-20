@@ -55,6 +55,47 @@ title:
 </div>
 
 
+<div class="section bg-light">
+    <a class="anchor" id="portfolio2"></a>
+    <div class="container">
+        <img alt="AgroFundOne Portfolio Locations" class="img-fluid" src="/assets/img/map.png">
+        <div class="card-deck mt-5">
+            {% for i in port.items %}
+                {% assign remainder = forloop.index |modulo: 3 %}
+                <div class="card card-a">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">{{i.heading}}</h5>
+                        <p class="card-text">{{i.p}}</p>
+                        {% if i.href %}
+                            <p class="card-text">
+                                <a href="//{{i.href}}" target="_blank">{{i.href}}</a>
+                            </p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if remainder == 0 %}
+                </div>
+                <div class="card-deck mt-5">
+                {% endif %}
+
+                {% if forloop.last == true %}
+
+                    {% case remainder %}
+                        {% when 1 %}
+                            <div class="card placeholder-card"></div>
+                            <div class="card placeholder-card"></div>
+                        {% when 2 %}
+                            <div class="card placeholder-card"></div>
+                    {% endcase %}
+
+                {% endif %}
+
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
 <!-- team section -->
 {% assign team = site.data.general.items.team %}
 
@@ -64,7 +105,7 @@ title:
         <h2 class="text-center">{{team.heading}}</h2>
         <div class="row mt-5">
             {% for i in team.items %}
-                <div class="col-md-4">
+                <div class="col-md-4 mb-5">
                     <img class="img-fluid rounded-circle img-team" alt="{{i.name}}" src="{{i.img}}">
                     <h4 class="mb-0 mt-4 font-weight-bold">{{i.name}}
                         <a href="{{i.linkedin}}" target="_blank"><img src="/assets/icon/linkedin.png" alt="{{i.name}}"></a>
