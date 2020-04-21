@@ -10,22 +10,22 @@ items:
     heading: "Opportunities"
     items:
       -
-        icon: /assets/img/opps/growth.png
+        icon: /assets/img/opps/turnover.png
         heading: 100mm of verifiable turn over in 2019
         text: >-
           Supported by this audit, a great international team and strategic vision, this fund now has the opportunity to invest into a new, scalable enterprise model utilizing the resources, and more importantly the dynamic international relationships earned through our developments-to-date.
       -
-        icon: /assets/img/opps/growth.png
+        icon: /assets/img/opps/bank.png
         heading: Access to international capital, markets and banking
         text: >-
           Agro Fund One has developed close relationships with approximately 50 high and ultra-high net worth individual investors from around the world. Furthermore, international banking transactions are facilitated through our many offices around the globe.
       -
-        icon: /assets/img/opps/growth.png
+        icon: /assets/img/opps/america.png
         heading: Focus on South, Central and North America
         text: >-
           The Fund is actively focusing its efforts along agribusiness supply chains across South, Central and North America. Investments in farm distressed debts in the United States and Brazil, as well as growing, processing and logistics will be our main focus.
       -
-        icon: /assets/img/opps/growth.png
+        icon: /assets/img/opps/farm.png
         heading: Partnership with farms located in low cost producer regions
         text: >-
          Farmland represents an attractive, long-term investment while providing significant relative capital preservation during times of economic turmoil.
@@ -35,7 +35,7 @@ items:
         text: >-
           Through a variety of diverse investments, Agro Fund One actively manages to flow capital into profitable projects that are driven by sustainability and local impact.
       -
-        icon: /assets/img/opps/growth.png
+        icon: /assets/img/opps/partner.png
         heading: Public-Private partneship
         text: >-
           Experience in key public-private partnerships in developing countries. More capital mobilized through innovative methods like blended finance and benchmarks to explore ways to cooperate.
