@@ -12,7 +12,7 @@ title:
         <source src="{{'/assets/video/seeds.mp4'}}?{{cache_buster}}" type="video/mp4">
     </video>
     <div class="tagline">
-        <h1 class="text-white" style="font-size: 5rem;">{{general.headline}}</h1>
+        <h1 class="text-white headline">{{general.headline}}</h1>
     </div>
 </div>
 
@@ -50,15 +50,10 @@ title:
     <div class="container">
         <h2 class="text-center">{{port.heading}}</h2>
         <p class="mt-4">{{port.text}}</p>
-        {% include map.html %}
-    </div>
-</div>
 
+        {% include static_map.html %}
 
-<div class="section bg-light">
-    <a class="anchor" id="portfolio2"></a>
-    <div class="container">
-        <img alt="AgroFundOne Portfolio Locations" class="img-fluid" src="/assets/img/map.png">
+        <!-- portfolio cards -->
         <div class="card-deck mt-5">
             {% for i in port.items %}
                 {% assign remainder = forloop.index |modulo: 3 %}
@@ -75,11 +70,9 @@ title:
                 </div>
                 {% if remainder == 0 %}
                 </div>
-                <div class="card-deck mt-5">
+                <div class="card-deck mt-4">
                 {% endif %}
-
                 {% if forloop.last == true %}
-
                     {% case remainder %}
                         {% when 1 %}
                             <div class="card placeholder-card"></div>
@@ -89,7 +82,6 @@ title:
                     {% endcase %}
 
                 {% endif %}
-
             {% endfor %}
         </div>
 
