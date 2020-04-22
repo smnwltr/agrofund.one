@@ -1,39 +1,35 @@
 items:
-  headline: Sustainable Solutions for Risk
+  headline: REDUCED RISK THROUGH A LEVERAGED INVESTMENT METHODOLOGY
   description: >-
-    Agro Fund One is an agricultural investment fund with a plan to deploy capital into early growth
-    stage companies in the agricultural sector. In addition to enhancing international cooperation and
-    sustainable development, Agro Fund One is also committed to improve the sustainability impact of
-    international investments so that it genuinely benefits local communities and generates desired
-    return on investment.
+    Agro Fund One is an agricultural investment fund with a plan to deploy capital into early growth stage companies in the international agricultural sector. The Fund’s primary focus is aimed at growing investor wealth through the alternative asset investment strategy of buying, aggregating, and reselling assets that meet the criteria for successful roll up and disposition to larger Agro-holding companies.
   opps:
-    heading: "Opportunities"
+    heading: Opportunities
     items:
       -
         icon: /assets/img/opps/turnover.png
         heading: 100mm of verifiable turn over in 2019
         text: >-
-          Supported by this audit, a great international team and strategic vision, this fund now has the opportunity to invest into a new, scalable enterprise model utilizing the resources, and more importantly the dynamic international relationships earned through our developments-to-date.
+          Supported by this audit, a great international team and strategic vision, this fund now has the opportunity to invest into a new, scalable enterprise model utilizing the resources, and more importantly the dynamic international relationships earned through our developments-to-date
       -
         icon: /assets/img/opps/bank.png
         heading: Access to international capital, markets and banking
         text: >-
-          Agro Fund One has developed close relationships with approximately 50 high and ultra-high net worth individual investors from around the world. Furthermore, international banking transactions are facilitated through our many offices around the globe.
+          Agro Fund One has developed close relationships with approximately 50 high and ultra-high net worth individual investors from around the world. Furthermore, international banking transactions are facilitated through our many offices around the globe.  
       -
         icon: /assets/img/opps/america.png
         heading: Focus on South, Central and North America
         text: >-
-          The Fund is actively focusing its efforts along agribusiness supply chains across South, Central and North America. Investments in farm distressed debts in the United States and Brazil, as well as growing, processing and logistics will be our main focus.
-      -
-        icon: /assets/img/opps/farm.png
-        heading: Partnership with farms located in low cost producer regions
-        text: >-
-         Farmland represents an attractive, long-term investment while providing significant relative capital preservation during times of economic turmoil.
+          The Fund manager has identified specific opportunistic market opportunities in North, Central and South America. The plan is to acquire assets in agricultural processing, logistics and storage by targeting institution owned or controlled, non-performing and distressed loans or equity positions.
       -
         icon: /assets/img/opps/growth.png
-        heading: Fund sustainable development and local impact across the globe.
+        heading: Support growth-stage companies in the international agricultural sector
         text: >-
-          Through a variety of diverse investments, Agro Fund One actively manages to flow capital into profitable projects that are driven by sustainability and local impact.
+         Projects focus on North and South America and a stand-alone project in the Horn of Africa in a wide range of sectors ranging from crop inputs, logistics, processing, growing and ag tech innovations.
+      -
+        icon: /assets/img/opps/farm.png
+        heading: Partnership with farms located in historical low cost producer regions of the world
+        text: >-
+          Farmland represents an attractive, long-term investment while providing significant relative capital preservation during times of economic turmoil.
       -
         icon: /assets/img/opps/partner.png
         heading: Public-Private partneship
@@ -50,7 +46,7 @@ items:
         mail:  guilherme@mesabafinance.com
         linkedin: https://www.linkedin.com/in/guilhermesvsmoreira/
         text: >-
-          Guilherme is a Brazilian Environmental Engineer passionate about sustainable development. He is committed to ensure the sustainability impact of our international investments so that they genuinely benefits local communities while ensuring profitability for investors.
+          Guilherme is a Brazilian Environmental Engineer passionate about sustainable development. He is committed to ensure the sustainability impact of our international investments so that they genuinely benefit local communities while ensuring profitability for investors.
       -
         name: Tina Zaryuta
         title: Head of Marketing & PR
@@ -61,7 +57,7 @@ items:
           Text
       -
         name: Anatolii Osadchyi
-        title: European Project Manager
+        title: European Project Analyst
         img: https://via.placeholder.com/250x250
         mail: anatolii@mesabafinance.com
         linkedin: https://www.linkedin.com/in/aosadchyi/
@@ -74,7 +70,7 @@ items:
         mail: mark@mesabafinance.com
         linkedin: https://www.linkedin.com/in/markerjavec/
         text: >-
-          With the support of a market-leading research team and hands-on management of direct investments, Mark now travels the world exploring new investment opportunities while working to construct a quality portfolio of investments on behalf of Agro Fund One.
+          With the support of a market-leading research team and hands-on management of direct investments, Mark now travels the world exploring new opportunities and working to construct a quality portfolio of investments on behalf of Agro Fund One.
   portfolio:
     heading: Portfolio
     text: >-
@@ -83,30 +79,74 @@ items:
        5 continents, the reach of our fund is truly global touching each market and sector that we serve.
     items:
       -
-        heading: Blue Heron Farms (Republic of Georgia)
+        heading: Blue Heron Farms in the country of Georgia
         p: >-
-          Actively managing an 1800 hector farm on behalf of the Georgian patriarchy since 2015. Our work in Georgia further includes the active management of one of the region’s largest bee apiary enterprises and imports of specialty row crop machinery through a revenue share model on specialty crops.
+          Actively managing an 1800 hectares farm on behalf of a Georgian patriarchy since 2015. Our work in Georgia further includes the active management of one of the region’s largest bee apiary enterprises and imports of specialty row crop machinery through a revenue share model on specialty crops.
         href: www.blueheron.info
 
       -
-        heading: Djibouti Indoor Vertical Farms
+        heading: Marvella Farms - just in time delivery sourcing for perishable food grown in the desert
         p: >-
-          Complex of indoor vertical farms utilizing practical, sustainable and affordable design that can be replicated at scale utilizing local landscape and resources. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa.
+          Oasis complex of indoor vertical farms producing year round fresh produce grown in the desert utilizing practical, sustainable and affordable design that can be replicated at scale. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa.
         href: dji.wltr.co
-
       -
-        heading: Site management in Minnesota
+        heading: Precision aero application done by Aero Fleet One 
         p: >-
-          Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are connected to the energy grid and able to supply solar energy to our grow operations to come.
-      -
-        heading: Site management in Colorado
-        p: >-
-          Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are connected to the energy grid and able to supply solar energy to our grow operations to come.
-      -
-        heading: Precision aero application drone
-        p: >-
-          As a licensee of AeroDrone heavy payload, fixed wing technology from Europe we are working with customers throughout north and South America to develop the first UAV fleet capable of commercial scale aerial application services. Based in North Dakota our company currently focuses on fleet development, marketing and the development of a logistical and operations team.
+          As a licensee of AeroDrone heavy payload, a fixed wing technology from Europe, we are working with customers throughout north and South America to develop the first UAV fleet capable of commercial scale aerial application services. Based in North Dakota our company currently focuses on fleet development, marketing and the development of a logistical and operations team.
         href: www.arefleetone.com
+      -
+        heading: Site management in Minnesota - USA
+        p: >-
+          Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are powered by renewable solar energy.
+      -
+        heading: Site management in Colorado - USA
+        p: >-
+          Agro Fund One is actively talking with our network to create a sustainable business model to develop this site
+    pois:
+      -
+        name: Hong Kong
+        content: 
+          - Hong Kong - Asian Headquarter
+        top: 43%
+        left: 77%
+        top_m: 38%
+        left_m: 75%
+      -
+        name: Minnesota, USA
+        content:
+          - Minneapolis, US Headquarter
+          - Site management in Minnesota
+          - Precision aero application done by Aero Fleet One in North Dakota
+        top: 26%
+        left: 22%
+        top_m: 20%
+        left_m: 17%
+      -
+        name: Eastern Europe
+        content:
+          - Eastern European office in Kyiv, Ukraine
+          - Blue Heron Farms in the country of Georgia
+        top: 27%
+        left: 58%
+        top_m: 20%
+        left_m: 54%
+      -
+        name: Colorado, USA
+        content: 
+          - US Office location in Denver
+          - Site management in Colorado
+        top: 33%
+        left: 17%
+        top_m: 28%
+        left_m: 13%
+      -
+        name: Djibouti
+        content:
+          - Marvella Farms
+        top: 52%
+        left: 57%
+        top_m: 45%
+        left_m: 52%
   media:
     heading: Media
 

@@ -8,11 +8,11 @@ title:
 {% assign general = site.data.general.items %}
 
 <div class="video-container" id="video">
-    <video autoplay muted playsinline preload class="bg-video" poster="{{'/assets/video/boilerplate.png'}}?{{cache_buster}}">
+    <video autoplay muted playsinline preload loop class="bg-video" poster="{{'/assets/video/poster.jpg'}}?{{cache_buster}}">
         <source src="{{'/assets/video/seeds.mp4'}}?{{cache_buster}}" type="video/mp4">
     </video>
-    <div class="tagline">
-        <h1 class="text-white headline">{{general.headline}}</h1>
+    <div class="headline">
+        <h1 class="text-white">{{general.headline}}</h1>
     </div>
 </div>
 
@@ -45,6 +45,7 @@ title:
 
 <!-- portfolio section -->
 {% assign port = site.data.general.items.portfolio %}
+
 <div class="section bg-light">
     <a class="anchor" id="portfolio"></a>
     <div class="container">
@@ -52,7 +53,6 @@ title:
         <p class="mt-4">{{port.text}}</p>
 
         {% include static_map.html %}
-
         <!-- portfolio cards -->
         <div class="card-deck mt-5">
             {% for i in port.items %}
@@ -84,7 +84,6 @@ title:
                 {% endif %}
             {% endfor %}
         </div>
-
     </div>
 </div>
 

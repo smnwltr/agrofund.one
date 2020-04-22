@@ -1,70 +1,40 @@
+{% assign pois = site.data.general.items.portfolio.pois %}
+
 <div class="map-bg my-5">
-    <a data-target="#locationModal1" data-toggle="modal" href="">
-        <span class="location" style="top: 29%; left: 18%"></span>
-    </a>
-    <a data-target="#locationModal2" data-toggle="modal" href="">
-        <span class="location" style="top: 65%; left: 32%"></span>
-    </a>
-    <a data-target="#locationModal3" data-toggle="modal" href="">
-        <span class="location" style="top: 29%; left: 52%"></span>
-    </a>
+    {% for i in pois %}
+        <a data-target="#locationModal{{forloop.index}}" data-toggle="modal" href="">
+            <span class="location d-none d-md-block" style="top: {{i.top}}; left: {{i.left}}"></span>
+        </a>
 
-    <!-- Modal -->
-    <div aria-hidden="true" aria-labelledby="locationModal1Title" class="modal fade" id="locationModal1" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="locationModal1Title">North America</h5>
-                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Text
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+        <a data-target="#locationModal{{forloop.index}}" data-toggle="modal" href="">
+            <span class="location d-md-none" style="top: {{i.top_m}}; left: {{i.left_m}}"></span>
+        </a>
+    {% endfor %}
+
+    <!-- Modals -->
+    {% for i in pois %}
+        <div aria-hidden="true" aria-labelledby="locationModal{{forloop.index}}Title" class="modal fade" id="locationModal{{forloop.index}}" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="locationModal{{forloop.index}}Title">{{i.name}}</h5>
+                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            {% for j in i.content %}
+                                <li>{{j}}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    {% endfor %}
 
-    <!-- Modal -->
-    <div aria-hidden="true" aria-labelledby="locationModal2Title" class="modal fade" id="locationModal2" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="locationModal2Title">South America</h5>
-                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Text
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div aria-hidden="true" aria-labelledby="locationModal3Title" class="modal fade" id="locationModal3" role="dialog" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="locationModal3Title">Eastern Europe</h5>
-                    <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    Text
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
