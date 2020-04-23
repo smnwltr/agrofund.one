@@ -59,7 +59,7 @@ items:
       -
         name: Anatolii Osadchyi
         title: European Project Analyst
-        img: https://via.placeholder.com/250x250
+        img: /assets/img/team/anatolii-osadchyi.jpg
         mail: anatolii@mesabafinance.com
         linkedin: https://www.linkedin.com/in/aosadchyi/
         text: >-
@@ -78,17 +78,20 @@ items:
       Between Eastern European offices in Georgia and Ukraine, a trading office scheduled to open mid-2021 in Switzerland, our banking center in Hong Kong, field operations spread over 5 continents, our key Horn of Africa strategy, and our Midwestern headquarters in the United States, we have built our fund on a truly global reach.
     items:
       -
-        heading: Marvella farms - fresh produce grown in the desert
+        heading: Marvella Farms
+        subheading: Fresh produce grown in the desert
         p: >-
           Oasis complex of indoor vertical farms producing year round fresh produce grown in the desert utilizing practical, sustainable and affordable design that can be replicated at scale. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa, the fastest growing population in the world.
         href: dji.wltr.co      
       -
-        heading: Precision aero application done by Aero Fleet One 
+        heading: Aero Fleet One
+        subheading: Precision aero application
         p: >-
           As a licensee of an advanced heavy payload, a fixed wing technology from Europe, we work with customers throughout North and South America to develop the first UAV fleet capable of commercial scale aerial application services. Based in North Dakota our company currently focuses on fleet development, marketing and the development of a logistical and operations team.
         href: www.aerofleetone.com
       -
-        heading: Blue Heron Farms in the country of Georgia
+        heading: Blue Heron Farms
+        subheading: Wide variety of crops and specialty foods
         p: >-
           Actively managing an 1800 hectare farm on behalf of a Georgian institutional client since 2012. We also co-own a large specialty row crop machinery portfolio that is lease through a revenue share model on specialty crops in the region. Our work in Georgia once included the active management of one of the region’s largest bee apiary enterprises.
         href: www.blueheron.info        
@@ -105,7 +108,7 @@ items:
         name: Hong Kong
         content: 
           - Hong Kong - Asian Headquarter
-        top: 43%
+        top: 44%
         left: 77%
         top_m: 38%
         left_m: 75%
@@ -114,17 +117,17 @@ items:
         content:
           - Minneapolis, US Headquarter
           - Site management in Minnesota
-          - Precision aero application done by Aero Fleet One in North Dakota
-        top: 26%
-        left: 22%
-        top_m: 20%
+          - <a href="https://www.aerofleetone.com" target="_blank">Precision aero application done by Aero Fleet One in North Dakota</a>
+        top: 29%
+        left: 21%
+        top_m: 21%
         left_m: 17%
       -
         name: Eastern Europe
         content:
           - Eastern European office in Kyiv, Ukraine
-          - Blue Heron Farms in the country of Georgia
-        top: 27%
+          - <a href="http://www.blueheron.info" target="_blank">Blue Heron Farms in the country of Georgia</a>
+        top: 29%
         left: 58%
         top_m: 20%
         left_m: 54%
@@ -134,13 +137,13 @@ items:
           - US Office location in Denver
           - Site management in Colorado
         top: 33%
-        left: 17%
+        left: 18%
         top_m: 28%
         left_m: 13%
       -
         name: Djibouti
         content:
-          - Marvella Farms
+          - <a href="https://dji.wltr.co" target="_blank">Marvella Farms</a>
         top: 52%
         left: 57%
         top_m: 45%
