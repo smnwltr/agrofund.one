@@ -51,7 +51,7 @@ items:
       -
         name: Tina Zaryuta
         title: Head of Marketing & PR
-        img: https://via.placeholder.com/250x250
+        img: /assets/img/team/tina-zaryuta.jpg
         mail: tina@mesabafinance.com
         linkedin: https://www.linkedin.com/in/tina-zaryuta-a945b3188/
         text: >-
@@ -67,7 +67,7 @@ items:
       -
         name: Mark M. Erjavec
         title: Fund Manager
-        img: /assets/img/team/mark-erjavec.jpg
+        img: /assets/img/team/mark-erjavec-hat.jpg
         mail: mark@mesabafinance.com
         linkedin: https://www.linkedin.com/in/markerjavec/
         text: >-
