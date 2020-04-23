@@ -1,38 +1,39 @@
 items:
-  headline: REDUCED RISK THROUGH A LEVERAGED INVESTMENT METHODOLOGY
+  headline: AGRO FUND ONE
+  subline: REDUCED RISK THROUGH A LEVERAGED INVESTMENT METHODOLOGY
   description: >-
-    Agro Fund One is an agricultural investment fund with a plan to deploy capital into early growth stage companies in the international agricultural sector. The Fund’s primary focus is aimed at growing investor wealth through the alternative asset investment strategy of buying, aggregating, and reselling assets that meet the criteria for successful roll up and disposition to larger Agro-holding companies.
+    Agro Fund One, Limited is an agricultural investment fund focused on the international agricultural sector. The Fund’s primary mandate is to grow investor wealth through the alternative asset investment strategy of buying, aggregating, and reselling assets that meet the criteria for successful roll up and disposition to Agro-holding companies.
   opps:
     heading: Opportunities
     items:
       -
         icon: /assets/img/opps/turnover.png
-        heading: 100mm of verifiable turn over in 2019
+        heading: 4 years of verifiable turnover (2017-2020)
         text: >-
-          Supported by this audit, a great international team and strategic vision, this fund now has the opportunity to invest into a new, scalable enterprise model utilizing the resources, and more importantly the dynamic international relationships earned through our developments-to-date
-      -
+          Having built a great international team and strategic vision, this fund now has the opportunity to invest into a new, scalable enterprise model utilizing the resources, and more importantly the dynamic international relationships earned through our developments-to-date.
+      -  
         icon: /assets/img/opps/bank.png
         heading: Access to international capital, markets and banking
         text: >-
-          Agro Fund One has developed close relationships with approximately 50 high and ultra-high net worth individual investors from around the world. Furthermore, international banking transactions are facilitated through our many offices around the globe.  
+          Agro Fund One, Limited has developed close relationships with approximately 50 high and ultra-high net worth individual investors from around the world as well as proprietary and partner based international banking and multi-currency relationships.
       -
         icon: /assets/img/opps/america.png
         heading: Focus on South, Central and North America
         text: >-
-          The Fund manager has identified specific opportunistic market opportunities in North, Central and South America. The plan is to acquire assets in agricultural processing, logistics and storage by targeting institution owned or controlled, non-performing and distressed loans or equity positions.
+          Agro Fund One, Limited has identified specific opportunistic market opportunities in North, Central and South America. We plan to acquire assets in agricultural processing, logistics and storage by targeting institution owned or controlled, non-performing and distressed loans or equity positions.
       -
         icon: /assets/img/opps/growth.png
-        heading: Support growth-stage companies in the international agricultural sector
+        heading: Growing with innovative companies in the international agricultural sector
         text: >-
-         Projects focus on North and South America and a stand-alone project in the Horn of Africa in a wide range of sectors ranging from crop inputs, logistics, processing, growing and ag tech innovations.
+         Projects in North and South America and a stand-alone project in the Horn of Africa focus on a wide range of sectors ranging from crop inputs, logistics, processing, growing and ag-tech innovations.
       -
         icon: /assets/img/opps/farm.png
-        heading: Partnership with farms located in historical low cost producer regions of the world
+        heading: Partnerships with farmers located in high yield production regions over two continents world
         text: >-
-          Farmland represents an attractive, long-term investment while providing significant relative capital preservation during times of economic turmoil.
+          Farmland and food represent a an attractive, long-term investment while providing significant relative capital preservation throughout times of economic turmoil.
       -
         icon: /assets/img/opps/partner.png
-        heading: Public-Private partneship
+        heading: Public-Private partnership supporting food security and sustainability
         text: >-
           Experience in key public-private partnerships in developing countries. More capital mobilized through innovative methods like blended finance and benchmarks to explore ways to cooperate.
   team:
@@ -62,7 +63,7 @@ items:
         mail: anatolii@mesabafinance.com
         linkedin: https://www.linkedin.com/in/aosadchyi/
         text: >-
-          Text
+          Based in Kyiv, Ukraine. Anatolii is responsible for developing and managing initiatives for international project management improvements. His ability to review international project plans and coordinate project activities alongside his experience in the agro field will ensure the ongoing success of our investments. Anatolii is also the founder of Labirudza farms, the first large-scale eco-tourism project in Ukraine.
       -
         name: Mark M. Erjavec
         title: Fund Manager
@@ -70,38 +71,35 @@ items:
         mail: mark@mesabafinance.com
         linkedin: https://www.linkedin.com/in/markerjavec/
         text: >-
-          With the support of a market-leading research team and hands-on management of direct investments, Mark now travels the world exploring new opportunities and working to construct a quality portfolio of investments on behalf of Agro Fund One.
+          With the support of a market-leading research team and hands-on management of direct investments, Mark travels the world exploring new opportunities and working to develop quality relationships on behalf of the Agro Fund One and for our our stakeholders.
   portfolio:
     heading: Portfolio
     text: >-
-      Between an Eastern European office in Kyiv, Ukraine and a Midwestern United States office in 
-      Denver, USA and the Fund headquarters in Hong Kong, and our field operations spread over
-       5 continents, the reach of our fund is truly global touching each market and sector that we serve.
+      Between Eastern European offices in Georgia and Ukraine, a trading office scheduled to open mid-2021 in Switzerland, our banking center in Hong Kong, field operations spread over 5 continents, our key Horn of Africa strategy, and our Midwestern headquarters in the United States, we have built our fund on a truly global reach.
     items:
       -
-        heading: Blue Heron Farms in the country of Georgia
+        heading: Marvella farms - fresh produce grown in the desert
         p: >-
-          Actively managing an 1800 hectares farm on behalf of a Georgian patriarchy since 2015. Our work in Georgia further includes the active management of one of the region’s largest bee apiary enterprises and imports of specialty row crop machinery through a revenue share model on specialty crops.
-        href: www.blueheron.info
-
-      -
-        heading: Marvella Farms - just in time delivery sourcing for perishable food grown in the desert
-        p: >-
-          Oasis complex of indoor vertical farms producing year round fresh produce grown in the desert utilizing practical, sustainable and affordable design that can be replicated at scale. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa.
-        href: dji.wltr.co
+          Oasis complex of indoor vertical farms producing year round fresh produce grown in the desert utilizing practical, sustainable and affordable design that can be replicated at scale. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa, the fastest growing population in the world.
+        href: dji.wltr.co      
       -
         heading: Precision aero application done by Aero Fleet One 
         p: >-
-          As a licensee of AeroDrone heavy payload, a fixed wing technology from Europe, we are working with customers throughout north and South America to develop the first UAV fleet capable of commercial scale aerial application services. Based in North Dakota our company currently focuses on fleet development, marketing and the development of a logistical and operations team.
-        href: www.arefleetone.com
+          As a licensee of an advanced heavy payload, a fixed wing technology from Europe, we work with customers throughout North and South America to develop the first UAV fleet capable of commercial scale aerial application services. Based in North Dakota our company currently focuses on fleet development, marketing and the development of a logistical and operations team.
+        href: www.aerofleetone.com
+      -
+        heading: Blue Heron Farms in the country of Georgia
+        p: >-
+          Actively managing an 1800 hectare farm on behalf of a Georgian institutional client since 2012. We also co-own a large specialty row crop machinery portfolio that is lease through a revenue share model on specialty crops in the region. Our work in Georgia once included the active management of one of the region’s largest bee apiary enterprises.
+        href: www.blueheron.info        
+      -
+        heading: Site management in Colorado - USA
+        p: >-
+          Agro Fund One has the opportunity to develop indoor grow facilities on two sites one with rail access and both with water and solar capabilities.
       -
         heading: Site management in Minnesota - USA
         p: >-
           Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are powered by renewable solar energy.
-      -
-        heading: Site management in Colorado - USA
-        p: >-
-          Agro Fund One is actively talking with our network to create a sustainable business model to develop this site
     pois:
       -
         name: Hong Kong
@@ -154,7 +152,7 @@ items:
     title: A Letter From Mark M. Erjavec
     text: >-
       My career and business success includes the experiences of being a first mover. I and the colleagues I surround myself with demonstrate keen ability to identify feasible pathways to success. I have learned that the leading agricultural players, many of whom I nurture relations, value transparency and therefore I make it a hallmark of my relationship building. In developing relationships my goal is to make a market for others by forging a business model that attracts capital investment from the world’s agricultural investors. Because assets can react differently to the same economic event, investment diversity will ensure ongoing success.<br><br>
-      My investments are done through Mesaba Finance Company Inc, which supports a boutique investment banking operation and employs international staff to manage funds related to agriculture and other specialty finance in North, Central and South America, as well as a project in the Horn of Africa.
+      My investments are done through Mesaba Finance Company Incorporated, which supports a boutique investment banking operation and employs international staff to manage funds related to agriculture and other specialty finance in North, Central and South America, as well as a project in the Horn of Africa.
     link: Go To MesabaFinance.com
     url: http://www.mesabafinance.com
     img: /assets/img/team/mark-erjavec.jpg

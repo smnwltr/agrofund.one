@@ -199,7 +199,7 @@ background-color: #fff;
 
   .headline {
     position: absolute;
-    top: 50%;
+    top: 27%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -318,6 +318,14 @@ background-color: #fff;
     text-decoration: none;
   }
 
+}
+
+/* footer */
+
+#footer {
+  a {
+    color: white
+  }
 }
 
 #map {

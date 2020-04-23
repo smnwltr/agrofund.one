@@ -11,15 +11,26 @@ title:
     <video autoplay muted playsinline preload loop class="bg-video" poster="{{'/assets/video/poster.jpg'}}?{{cache_buster}}">
         <source src="{{'/assets/video/seeds.mp4'}}?{{cache_buster}}" type="video/mp4">
     </video>
-    <div class="headline">
+    <div class="headline d-none d-md-block">
         <h1 class="text-white">{{general.headline}}</h1>
+        <h3 class="text-white">{{general.subline}}</h3>
     </div>
 </div>
 
 <!-- intro section -->
-<div class="container section">
+
+<div class="section bg-light">
     <a class="anchor" id="introduction"></a>
-    <p>{{general.description}}</p>
+    <div class="container">
+        <div class="d-md-none text-center mb-5">
+            <h1>{{general.headline}}</h1>
+            <h4>{{general.subline}}</h4>
+        </div>
+        <p class="lead">{{general.description}}</p>
+    </div>
+</div>
+
+<div class="container pb-5 mb-5">
     <h2 class="mt-5 pt-5 text-center">{{general.opps.heading}}</h2>
     <div class="row mt-3">
         {% for i in general.opps.items %}
@@ -63,7 +74,7 @@ title:
                         <p class="card-text">{{i.p}}</p>
                         {% if i.href %}
                             <p class="card-text">
-                                <a href="//{{i.href}}" target="_blank">{{i.href}}</a>
+                                <a href="http://{{i.href}}" target="_blank">{{i.href}}</a>
                             </p>
                         {% endif %}
                     </div>
