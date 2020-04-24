@@ -168,31 +168,32 @@ title:
                     <div class="form-group">
                         <label for="contactFormName">Name<sup>*</sup>
                         </label>
-                        <input class="form-control" id="contactFormName" placeholder="Your Name" required type="text">
+                        <input class="form-control" id="contactFormName" name="Name" placeholder="Your Name" required type="text">
                     </div>
                     <div class="form-group">
                         <label for="contactFormEmail">Email<sup>*</sup>
                         </label>
-                        <input class="form-control" id="contactFormEmail" placeholder="name@example.com" required type="email">
+                        <input class="form-control" id="contactFormEmail" name="Email" placeholder="name@example.com" required type="email">
                     </div>
                     <div class="form-group">
                         <label for="contactFormPhone">Phone number (optional)</label>
-                        <input class="form-control" id="contactFormPhone" placeholder="+ 1 (888) 888-8888" type="text">
+                        <input class="form-control" id="contactFormPhone" name="Phone" placeholder="+ 1 (888) 888-8888" type="text">
                     </div>
                     <div class="form-group">
-                        <label for="contactFormType">I am an...<sup>*</sup>
+                        <label for="contactFormType">I am a...<sup>*</sup>
                         </label>
-                        <select class="form-control" id="contactFormType">
+                        <select class="form-control" id="contactFormType" name="Category">
                             <option disabled selected value="">Please choose one...</option>
                             <option>Investor</option>
                             <option>Entrepreneur</option>
+                            <option>Farmer</option>
                             <option>Other</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="contactFormMessage">Message<sup>*</sup>
                         </label>
-                        <textarea class="form-control" id="contactFormMessage" rows="5"></textarea>
+                        <textarea class="form-control" id="contactFormMessage" name="Message" rows="5"></textarea>
                     </div>
 
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
