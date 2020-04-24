@@ -103,6 +103,11 @@ items:
         heading: Site management in Minnesota - USA
         p: >-
           Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are powered by renewable solar energy.
+      -
+        heading: Do you have a project in mind?
+        subheading: We are open to proposals!
+        p: >-
+          <a href="#contact" class="btn st-btn smooth-scroll my-3">Submit a Proposal</a>
     pois:
       -
         name: Hong Kong

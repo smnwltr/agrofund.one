@@ -48,3 +48,17 @@ window.onload = function () {
         });
     });
 }
+
+// read the url to check for contact=sent parameter (contact form)
+$(document).ready(
+    function () {
+        let searchParams = new URLSearchParams(window.location.search);
+        let param = searchParams.get('contact');
+        if (param == 'sent') {
+            $('#contactForm').addClass('d-none');
+            $('#contactSuccess').removeClass('d-none');
+            $('#contactSuccess').addClass('d-block');
+            $('#contactSuccess').get(0).scrollIntoView();
+        }
+    }
+)
