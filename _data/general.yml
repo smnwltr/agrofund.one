@@ -82,7 +82,7 @@ items:
         subheading: Fresh produce grown in the desert
         p: >-
           Oasis complex of indoor vertical farms producing year round fresh produce grown in the desert utilizing practical, sustainable and affordable design that can be replicated at scale. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa, the fastest growing population in the world.
-        href: dji.wltr.co      
+        # href: dji.wltr.co      
       -
         heading: Aero Fleet One
         subheading: Precision aero application
@@ -148,7 +148,8 @@ items:
       -
         name: Djibouti
         content:
-          - <a href="https://dji.wltr.co" target="_blank">Marvella Farms</a>
+          # - <a href="https://dji.wltr.co" target="_blank">Marvella Farms</a>
+          - Marvella Farms
         top: 52%
         left: 57%
         top_m: 45%
