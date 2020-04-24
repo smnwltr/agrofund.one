@@ -13,20 +13,27 @@ title:
     </video>
     <div class="headline d-none d-md-block">
         <h1 class="text-white">{{general.headline}}</h1>
-        <h3 class="text-white">{{general.subline}}</h3>
     </div>
 </div>
 
 <!-- intro section -->
 
-<div class="section bg-light">
+<div class="bg-light py-5">
     <a class="anchor" id="introduction"></a>
     <div class="container">
         <div class="d-md-none text-center mb-5">
             <h1>{{general.headline}}</h1>
-            <h4>{{general.subline}}</h4>
         </div>
         <p class="lead">{{general.description}}</p>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-8">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video controls playsinline>
+                        <source src="{{'/assets/video/markerjavec.mp4'|relative_url}}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
