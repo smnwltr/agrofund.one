@@ -1,0 +1,6 @@
+---
+permalink: robots.txt
+published: false
+---
+User-agent: *
+Disallow: /
