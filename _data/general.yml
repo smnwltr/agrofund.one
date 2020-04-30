@@ -30,7 +30,7 @@ items:
         icon: /assets/img/opps/farm.png
         heading: Partnerships with farmers located in high yield production regions over two continents world
         text: >-
-          Farmland and food represent a an attractive, long-term investment while providing significant relative capital preservation throughout times of economic turmoil.
+          Farmland and food represent an attractive, long-term investment while providing significant relative capital preservation throughout times of economic turmoil.
       -
         icon: /assets/img/opps/partner.png
         heading: Public-Private partnership supporting food security and sustainability
@@ -63,7 +63,7 @@ items:
         mail: anatolii@mesabafinance.com
         linkedin: https://www.linkedin.com/in/aosadchyi/
         text: >-
-          Based in Kyiv, Ukraine. Anatolii is responsible for developing and managing international project initiatives. His ability to review international project plans and coordinate project activities while drawing from his experience in the agricultural field will ensure the ongoing success of our investments. Anatolii is also the founder of Labirudza farms, the a pioneering eco-tourism project in Ukraine.
+          Based in Kyiv, Ukraine. Anatolii is responsible for developing and managing international project initiatives. Anatolii is also the founder of Labirudza farms, the a pioneering eco-tourism project in Ukraine.
       -
         name: Mark M. Erjavec
         title: Fund Manager
@@ -71,11 +71,11 @@ items:
         mail: mark@mesabafinance.com
         linkedin: https://www.linkedin.com/in/markerjavec/
         text: >-
-          With the support of a market-leading research team and hands-on management of direct investments, Mark travels the world exploring new opportunities and working to develop quality relationships on behalf of the Agro Fund One and for our our stakeholders.
+          With the support of a market-leading research team and hands-on management of direct investments, Mark travels the world exploring new opportunities and working to develop quality relationships on behalf of the Agro Fund One and for our stakeholders.
   portfolio:
     heading: Portfolio
     text: >-
-      Between Eastern European offices in Georgia and Ukraine, a trading office scheduled to open mid-2021 in Switzerland, our banking center in Hong Kong, field operations spread over 5 continents, our key Horn of Africa strategy, and our Midwestern headquarters in the United States, we have built our fund on a truly global reach.
+      Between Eastern European offices in Georgia and Ukraine, a trading office scheduled to open mid-2021 in Switzerland, our banking center in Hong Kong, field operations spread over 5 continents, our key Horn of Africa strategy, and our Midwestern headquarters in the United States, <strong>we have built our fund on a truly global reach.</strong>
     items:
       -
         heading: Marvella Farms
