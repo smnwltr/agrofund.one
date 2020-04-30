@@ -43,23 +43,24 @@ title:
         {% for i in general.opps.items %}
             <div class="col-sm-6 col-md-4 col-12 mt-4 justify-content-center">
                 <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <div class="opps-circle">
-                                <img src="{{i.icon}}">
+                    <a class="fliplink">
+                        <div {% if forloop.index == 1 %} id="firstflip" {% endif %} class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="opps-circle">
+                                    <img src="{{i.icon}}">
+                                </div>
+                                <h5 class="mt-3 text-center px-4 font-weight-bold">{{i.heading}}</h5>
                             </div>
-                            <h5 class="mt-3 text-center px-4 font-weight-bold">{{i.heading}}</h5>
+                            <div class="flip-card-back">
+                                <p>{{i.text}}</p>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
-                            <p>{{i.text}}</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         {% endfor %}
     </div>
 </div>
-
 <!-- portfolio section -->
 {% assign port = site.data.general.items.portfolio %}
 

@@ -62,3 +62,14 @@ $(document).ready(
         }
     }
 )
+
+
+var mq = window.matchMedia("(max-width: 768px)");
+
+if (mq.matches) {
+    $("#firstflip").addClass("hovered");
+    $(".fliplink").click(function () {
+        $(this).children().toggleClass("hovered");
+        $(".fliplink").children().removeClass("hovered");
+    });
+}
