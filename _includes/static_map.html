@@ -2,11 +2,11 @@
 
 <div class="map-bg my-5">
     {% for i in pois %}
-        <a data-target="#locationModal{{forloop.index}}" data-toggle="modal" href="">
+        <a aria-label="{{i.name}}" data-target="#locationModal{{forloop.index}}" data-toggle="modal" href="">
             <span class="location d-none d-md-block" style="top: {{i.top}}; left: {{i.left}}"></span>
         </a>
 
-        <a data-target="#locationModal{{forloop.index}}" data-toggle="modal" href="">
+        <a aria-label="{{i.name}}" data-target="#locationModal{{forloop.index}}" data-toggle="modal" href="">
             <span class="location d-md-none" style="top: {{i.top_m}}; left: {{i.left_m}}"></span>
         </a>
     {% endfor %}
