@@ -5,6 +5,7 @@ $primary-color: #967274;
 $secondary-color: #6a9b7d;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 $theme-font: 'Lato', Helvetica, sans-serif;
 
 * {
@@ -13,6 +14,11 @@ $theme-font: 'Lato', Helvetica, sans-serif;
 
 h1,h2,h3,h4 {
   font-weight: bold;
+}
+
+h1 {
+  font-family: 'Anton', 'sans serif';
+  letter-spacing: 3px;;
 }
 
 h2 {
@@ -244,11 +250,11 @@ background-color: #fff;
 }
 
 .card-a {
-  box-shadow: 0 6px 18px 0 rgba(86, 91, 115, .15) !important;
+  box-shadow: 0 6px 18px 0 rgba(86, 91, 115, .45) !important;
   transition: box-shadow .2s;
-  &:hover {
-    box-shadow: 10px 18px 40px 0 rgba(86, 91, 115, .15) !important;
-  }
+  // &:hover {
+  //   box-shadow: 10px 18px 40px 0 rgba(86, 91, 115, .35) !important;
+  // }
 }
 
 .map-bg {
