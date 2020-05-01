@@ -63,11 +63,34 @@ $(document).ready(
     }
 )
 
-
+// flip card once element is scrolled into view
 var mq = window.matchMedia("(max-width: 768px)");
 
+
+var scrollEventHandler = function () {
+    if (isScrolledIntoView(document.getElementById('firstflip')) && mq.matches) {
+        $("#firstflip").addClass("hovered");
+        unbindScrollEventHandler();
+    }
+}
+
+function unbindScrollEventHandler() {
+    $(document).unbind('scroll', scrollEventHandler);
+}
+
+$(document).scroll(scrollEventHandler);
+
+function isScrolledIntoView(el) {
+    var elemTop = el.getBoundingClientRect().top;
+    var elemBottom = el.getBoundingClientRect().bottom;
+
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    return isVisible;
+}
+
+// make flip cards clickable on mobile
+
 if (mq.matches) {
-    $("#firstflip").addClass("hovered");
     $(".fliplink").click(function () {
         $(this).children().toggleClass("hovered");
         $(".fliplink").children().removeClass("hovered");
