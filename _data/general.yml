@@ -122,7 +122,7 @@ items:
         content:
           - Minneapolis, US Headquarter
           - Site management in Minnesota
-          - <a href="https://www.aerofleetone.com" target="_blank">Precision aero application done by Aero Fleet One in North Dakota</a>
+          - <a href="https://www.aerofleetone.com" target="_blank" rel="noopener">Precision aero application done by Aero Fleet One in North Dakota</a>
         top: 29%
         left: 21%
         top_m: 21%
@@ -131,7 +131,7 @@ items:
         name: Eastern Europe
         content:
           - Eastern European office in Kyiv, Ukraine
-          - <a href="http://www.blueheron.info" target="_blank">Blue Heron Farms in the country of Georgia</a>
+          - <a href="http://www.blueheron.info" target="_blank" rel="noopener">Blue Heron Farms in the country of Georgia</a>
         top: 29%
         left: 58%
         top_m: 20%
