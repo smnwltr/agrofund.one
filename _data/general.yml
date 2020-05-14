@@ -148,8 +148,7 @@ items:
       -
         name: Djibouti
         content:
-          # - <a href="https://dji.wltr.co" target="_blank">Marvella Farms</a>
-          - Marvella Farms
+          - <a href="https://www.marvellafarms.com" target="_blank" rel="noopener">Marvella Farms</a>
         top: 52%
         left: 57%
         top_m: 45%
