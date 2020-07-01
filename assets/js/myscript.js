@@ -2,6 +2,13 @@
 // Insert year for copyright
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
+$('.light-img').click(function (e) {
+    e.preventDefault();
+    $(this).ekkoLightbox();
+});
+
+
+
 // Add white background to navbar upon scroll
 
 $(document).ready(function () {
