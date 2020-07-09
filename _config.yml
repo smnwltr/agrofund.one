@@ -16,3 +16,5 @@ sass:
 
 collections:
   - news
+
+exclude: [README.md]
