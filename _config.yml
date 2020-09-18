@@ -21,10 +21,10 @@ exclude: [README.md]
 
 # data for privacy policy
 address:
-  name: Agro Fund One
-  street: "1041 Grand Ave #300"
-  city: St. Paul
-  state: Minnesota
-  zip: 55105
+  name: Agro Fund One, Limited
+  street: "321 Park Ave"
+  city: Wilmette
+  state: Illinois
+  zip: 60091
   country: United States
   phone: +1 (303) 835-7901
