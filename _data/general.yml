@@ -1,8 +1,8 @@
 items:
   headline: AGRO FUND ONE
-  subline: REDUCED RISK THROUGH A LEVERAGED INVESTMENT METHODOLOGY
-  description: >-
-    Agro Fund One, Limited is an agricultural investment fund focused on the international agricultural sector. Our mandate is to grow investor wealth through buying, aggregating, and reselling agricultural assets for further disposition to Agro-holding companies. This process is commonly referred to as a "roll-up".
+  subheadline: Investing in Sustainability and Regeneration
+  description: Agro Fund One, Limited is an agricultural investment fund targeting the agricultural sector in North, Central and South America. The Fund’s primary focus is on generating competitive risk-adjusted returns while ensuring benefits to all stakeholders across the ecosystems in which we operate.
+  description2: Agro Fund One’s mandate is to grow investor wealth by converting conventional commercial farmland to regenerative as well as developing sustainable indoor farming operations in regions of the world affected by climate change.
   opps:
     heading: Opportunities
     items:
@@ -20,22 +20,19 @@ items:
         icon: /assets/img/opps/america.png
         heading: Focus on South, Central and North America
         text: >-
-          Agro Fund One, Limited has identified specific market opportunities in North, Central and South America that demonstrate opportunity for disruption. We evaluate assets in agricultural processing, logistics and storage by targeting institution owned or controlled, non-performing and distressed loans or equity positions.
+          Agro Fund One, Limited has identified specific opportunistic market opportunities in North, Central and South America. We plan to acquire assets in agricultural growing, processing, logistics and storage by targeting institution owned or controlled, non-performing and distressed loans or equity positions.
       -
         icon: /assets/img/opps/growth.png
-        heading: Growing with innovative companies in the international agricultural sector
-        text: >-
-         Projects in North and South America and a stand-alone project in the Horn of Africa focus on a wide range of sectors ranging from crop inputs, logistics, processing, growing and ag-tech innovations.
+        heading: Portfolio diversification and risk management
+        text: "Real assets and alternatives allocations offer inflation protection. Agro Fund One’s model aligns financial goals for investors with positive impacts for other stakeholders: the environment, farm managers, consumers, our communities, and future generations."
       -
         icon: /assets/img/opps/farm.png
-        heading: Partnerships with farmers located in high yield production regions over two continents
-        text: >-
-          Farmland and food represent an attractive, long-term investment while providing significant relative capital preservation throughout times of economic turmoil.
+        heading: Partnerships with farmers located in high yield production regions over American continent
+        text: "Our approach to acquiring and converting farmland relies on our unique operational expertise to add value in each of our farming investments. Farmland and food represent an attractive, long-term investment while providing significant relative capital preservation throughout times of economic turmoil."
       -
         icon: /assets/img/opps/partner.png
-        heading: Public-Private partnership supporting food security and sustainability
-        text: >-
-          Experience in key public-private partnerships in developing countries. More capital mobilized through innovative methods like blended finance and benchmarks to explore ways to cooperate.
+        heading: Investing in infrastructure
+        text: We target opportunities poised to benefit from infrastructure improvements. We create value by updating specialty farm equipment, irrigation systems, water rights, fencing, and other assets. Improvements to technology, business management systems, and bulk buying improve long-term profitability of our investments.
   team:
     heading: Team
     intro:
