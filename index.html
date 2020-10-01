@@ -35,6 +35,10 @@ title:
             </div>
         </div>
         <p class="lead">{{general.description2}}</p>
+        <p class="text-center mt-5">
+            <a class="btn st-btn mr-4" data-target="#investModal" data-toggle="modal" href="">For Investors</a>
+            <a class="btn st-btn" data-target="#submitModal" data-toggle="modal" href="">For Entrepreneurs</a>
+        </p>
     </div>
 </div>
 
@@ -219,28 +223,4 @@ title:
     </div>
 </div>
 
-<!-- invest modal -->
-{% assign invest = site.data.general.items.invest %}
-<div aria-hidden="true" aria-labelledby="investModalLabel" class="modal fade" id="investModal" role="dialog" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title" id="investModalLabel" style="margin-left: auto">{{invest.title}}</h3>
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body text-center">
-                <img alt="Mark M. Erjavec" class="text-center my-4 img-fluid rounded-circle img-invest" src="{{invest.img}}">
-                <p class="text-justify">{{invest.text}}</p>
-                <h4 class="mt-4">Let's get started!</h4>
-                <p>
-                    <a class="btn st-btn mt-3" href="{{invest.url}}" target="_blank" rel="noopener">{{invest.link}}</a>
-                </p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
+{% include modals.html %}

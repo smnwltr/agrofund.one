@@ -96,7 +96,7 @@ items:
         heading: Do you have a project in mind?
         subheading: We are open to proposals!
         p: >-
-          <a href="#contact" class="btn st-btn smooth-scroll my-3">Submit a Proposal</a>
+          <a data-target="#submitModal" data-toggle="modal" href="" class="btn st-btn smooth-scroll my-3">Submit a Proposal</a>
     pois:
       -
         name: Hong Kong
@@ -154,3 +154,6 @@ items:
     url: http://www.mesabafinance.com
     img: /assets/img/team/mark-erjavec.jpg
     
+  submit:
+    title: We are Open for Proposals
+    text:

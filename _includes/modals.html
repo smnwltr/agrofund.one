@@ -1,0 +1,85 @@
+<!-- invest modal -->
+{% assign invest = site.data.general.items.invest %}
+<div aria-hidden="true" aria-labelledby="investModalLabel" class="modal fade" id="investModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="investModalLabel" style="margin-left: auto">{{invest.title}}</h3>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img alt="Mark M. Erjavec" class="text-center my-4 img-fluid rounded-circle img-invest" src="{{invest.img}}">
+                <p class="text-justify">{{invest.text}}</p>
+                <h4 class="mt-4">Let's get started!</h4>
+                <p>
+                    <a class="btn st-btn mt-3" href="{{invest.url}}" target="_blank" rel="noopener">{{invest.link}}</a>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- submit modal -->
+{% assign submit = site.data.general.items.submit %}
+<div aria-hidden="true" aria-labelledby="submitModalLabel" class="modal fade" id="submitModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="submitModalLabel" style="margin-left: auto">{{submit.title}}</h3>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-justify">{{submit.text}}</p>
+                <form action="https://submit-form.com/xfXf8CuT1ISwK-YGu-6EN" class="mt-5" id="contactForm">
+                    <input name="_redirect" type="hidden" value="agrofundone.com/index.html?contact=sent">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-md-6">
+                            <div class="form-group">
+                                <label for="contactFormName">Name<sup>*</sup>
+                                </label>
+                                <input class="form-control" id="contactFormName" name="Name" placeholder="Your Name" required type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactFormEmail">Email<sup>*</sup>
+                                </label>
+                                <input class="form-control" id="contactFormEmail" name="Email" placeholder="name@example.com" required type="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactFormPhone">Phone number (optional)</label>
+                                <input class="form-control" id="contactFormPhone" name="Phone" placeholder="+ 1 (888) 888-8888" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactFormWebsite">Website (optional)</label>
+                                <input class="form-control" id="contactFormWebsite" name="Website" placeholder="http://" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactFormLocation">Location
+                                    <sup>*</sup>
+                                </label>
+                                <input class="form-control" id="contactFormLocation" name="Location" placeholder="e.g. United States, Brazil, ..." required type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactFormMessage">Description<sup>*</sup>
+                                </label>
+                                <textarea class="form-control" id="contactFormMessage" name="Message" placeholder="Briefly describe the business or deal you want to discuss" rows="5"></textarea>
+                            </div>
+
+                            <div class="g-recaptcha" data-sitekey="6LcFKrUZAAAAAMGnRi8pGOuBr1rlWmxqt5lCuyZF"></div>
+                            <button class="btn st-btn mt-3" type="submit">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
