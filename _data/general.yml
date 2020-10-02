@@ -39,9 +39,9 @@ items:
     items:
       -
         name: Guilherme Moreira
-        title:  Head of International Development
+        title:  Managing Partner
         img: /assets/img/team/gui-moreira.jpg
-        mail:  guilherme@mesabafinance.com
+        mail:  guilherme@agrofundone.com
         linkedin: https://www.linkedin.com/in/guilhermesvsmoreira/
         text: >-
           Guilherme is a Brazilian Environmental Engineer passionate about sustainable development. He is committed to ensure the sustainability impact of our international investments so that they genuinely benefit local communities while ensuring profitability for investors.
@@ -49,18 +49,26 @@ items:
         name: Mark M. Erjavec
         title: Fund Manager
         img: /assets/img/team/mark-erjavec-hat.jpg
-        mail: mark@mesabafinance.com
+        mail: mark@agrofundone.com
         linkedin: https://www.linkedin.com/in/markerjavec/
         text: >-
           With the support of a market-leading research team and hands-on management of direct investments, Mark travels the world exploring new opportunities and working to develop quality relationships on behalf of the Agro Fund One and for our stakeholders.
       -
         name: Anatolii Osadchyi
-        title: European Project Analyst
+        title: European and African Project Analyst
         img: /assets/img/team/anatolii-osadchyi.jpg
-        mail: anatolii@mesabafinance.com
+        mail: anatolii@agrofundone.com
         linkedin: https://www.linkedin.com/in/aosadchyi/
         text: >-
           Based in Kyiv, Ukraine. Anatolii is responsible for developing and managing international project initiatives. Anatolii is also the founder of Labirudza farms, a pioneering eco-tourism project in Ukraine.
+      -
+        name: Dionas Silva
+        title: South American Project Analyst
+        img: /assets/img/team/dionas-silva.jpg
+        mail: dionas@agrofundone.com
+        linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
+        text: >-
+          Dionas is an Agronomist from Brazil. He has experience in agricultural development focussed on continuous improvement and innovation. Dionas’ mission is to raise the level of food production in underdeveloped countries in a sustainable and regenerative way.
   portfolio:
     heading: Portfolio
     text: >-
