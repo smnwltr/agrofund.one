@@ -165,3 +165,12 @@ items:
   submit:
     title: We are Open for Proposals
     text:
+  socialmedia:
+    -
+      name: Twitter
+      url: https://www.twitter.com/agrofundone
+      img: /assets/icon/twitter.png
+    -
+      name: LinkedIn
+      url: https://www.linkedin.com/company/agro-fund-one/
+      img: /assets/icon/linkedin.png

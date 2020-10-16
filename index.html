@@ -130,7 +130,7 @@ title:
                 <div class="col mb-5">
                     <img class="img-fluid rounded-circle img-team" alt="{{i.name}}" src="{{i.img}}">
                     <h4 class="mb-0 mt-4 font-weight-bold">{{i.name}}
-                        <a href="{{i.linkedin}}" target="_blank" rel="noopener"><img src="/assets/icon/linkedin.png" alt="{{i.name}}"></a>
+                        <a href="{{i.linkedin}}" target="_blank" rel="noopener"><img src="/assets/icon/linkedin.png" alt="{{i.name}}" height="24px" class="sm-icon"></a>
                     </h4>
                     <p class="font-weight-bold mb-0">{{i.title}}</p>
                     <p class="mb-1">
@@ -227,5 +227,13 @@ title:
         </div>
     </div>
 </div>
+<div class="container text-center pt-2 pb-5">
+    <p>
+        {% for i in site.data.general.items.socialmedia %}
+            <a href="{{i.url}}" target="_blank" rel="noopener" class="mr-4"><img src="{{i.img}}" class="sm-icon" alt="Agro Fund One {{i.name}}"></a>
+        {% endfor %}
+    </p>
+</div>
+
 
 {% include modals.html %}
