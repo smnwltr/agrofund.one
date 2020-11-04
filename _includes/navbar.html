@@ -1,5 +1,12 @@
-<!-- assign variable to invalidate cache upon each new build -->
-{% assign cache_buster = site.time | date: '%s%N' %}
+{% case page.lang %}
+    {% when "en" %}
+        {% assign nav = site.data.english.items.navigation.items %}
+    {% when "es" %}
+        {% assign nav = site.data.spanish.items.navigation.items %}
+    {% when "pt" %}
+        {% assign nav = site.data.portuguese.items.navigation.items %}
+{% endcase %}
+
 
 <nav class="navbar navbar-expand-md fixed-top">
     <a class="navbar-brand smooth-scroll" href="#top">
@@ -14,18 +21,11 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto mr-2">
-
-            {% for i in site.data.navigation.items %}
-                {% unless forloop.last %}
+            {% for i in nav %}
                     <li class="nav-item underline ml-2">
                         <a class="nav-link smooth-scroll" href="{{i.url}}">{{i.name}}</a>
                     </li>
-                {% endunless %}
             {% endfor %}
-
-            <li class="nav-item cta-btn ml-2">
-                <a class="nav-link" data-target="#investModal" data-toggle="modal" href="">Invest</a>
-            </li>
         </ul>
     </div>
 </nav>

@@ -1,0 +1,33 @@
+items:
+  languages:
+    - short: en
+      name: English
+    - short: es
+      name: Español
+    - short: pt
+      name: Português
+  navigation:
+    items:
+      - url: /about/
+        name: About
+      - url: /investment-approach/
+        name: Investment Approach
+      - url: /Portfolio/
+        name: Portfolio
+      - url: /news/
+        name: News
+      - url: /contact/
+        name: Get in Touch
+
+  home:
+    heading:
+  about:
+    heading: About Agro Fund One
+  investment:
+    heading: Investment Approach
+  portfolio:
+    heading: Portfolio Companies
+  news:
+    heading: News & Press Releases
+  contact:
+    heading: Get in Touch

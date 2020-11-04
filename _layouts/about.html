@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items.home %}
+    {% when "es" %}
+        {% assign data = site.data.spanish.items.home %}
+    {% when "pt" %}
+        {% assign data = site.data.portuguese.items.home %}
+{% endcase %}
+
+<h1>{{page.title}}</h1>
