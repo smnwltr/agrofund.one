@@ -6,63 +6,46 @@ items:
   opps:
     heading: Opportunities
     items:
-      -
-        icon: /assets/img/opps/turnover.png
+      - icon: /assets/img/opps/turnover.png
         heading: 4 years of verifiable turnover (2017-2020)
         text: >-
           Having built a great international team and strategic vision, this fund now has the opportunity to invest into a new, scalable enterprise model utilizing the resources, and more importantly the dynamic international relationships earned through our developments-to-date.
-      -  
-        icon: /assets/img/opps/bank.png
+      - icon: /assets/img/opps/bank.png
         heading: Access to international capital, markets and banking
         text: >-
           Agro Fund One, Limited has developed close relationships with approximately 50 high and ultra-high net worth individual investors from around the world as well as proprietary and partner based international banking and multi-currency relationships.
-      -
-        icon: /assets/img/opps/america.png
+      - icon: /assets/img/opps/america.png
         heading: Focus on South, Central and North America
         text: >-
           Agro Fund One, Limited has identified specific opportunistic market opportunities in North, Central and South America. We plan to acquire assets in agricultural growing, processing, logistics and storage by targeting institution owned or controlled, non-performing and distressed loans or equity positions.
-      -
-        icon: /assets/img/opps/growth.png
+      - icon: /assets/img/opps/growth.png
         heading: Portfolio diversification and risk management
         text: "Real assets and alternatives allocations offer inflation protection. Agro Fund One’s model aligns financial goals for investors with positive impacts for other stakeholders: the environment, farm managers, consumers, our communities, and future generations."
-      -
-        icon: /assets/img/opps/farm.png
+      - icon: /assets/img/opps/farm.png
         heading: Partnerships with farmers located in high yield production regions over American continent
         text: "Our approach to acquiring and converting farmland relies on our unique operational expertise to add value in each of our farming investments. Farmland and food represent an attractive, long-term investment while providing significant relative capital preservation throughout times of economic turmoil."
-      -
-        icon: /assets/img/opps/partner.png
+      - icon: /assets/img/opps/partner.png
         heading: Investing in infrastructure
         text: We target opportunities poised to benefit from infrastructure improvements. We create value by updating specialty farm equipment, irrigation systems, water rights, fencing, and other assets. Improvements to technology, business management systems, and bulk buying improve long-term profitability of our investments.
   team:
     heading: Team
     intro:
     items:
-      -
-        name: Guilherme Moreira
-        title:  Managing Partner
+      - name: Guilherme Moreira
+        title: Managing Partner
         img: /assets/img/team/gui-moreira.jpg
-        mail:  guilherme@agrofundone.com
+        mail: guilherme@agrofundone.com
         linkedin: https://www.linkedin.com/in/guilhermesvsmoreira/
         text: >-
           Guilherme is a Brazilian Environmental Engineer passionate about sustainable development. He is committed to ensure the sustainability impact of our international investments so that they genuinely benefit local communities while ensuring profitability for investors.
-      -
-        name: Mark M. Erjavec
+      - name: Mark M. Erjavec
         title: Fund Manager
         img: /assets/img/team/mark-erjavec-hat.jpg
         mail: mark@agrofundone.com
         linkedin: https://www.linkedin.com/in/markerjavec/
         text: >-
           With the support of a market-leading research team and hands-on management of direct investments, Mark travels the world exploring new opportunities and working to develop quality relationships on behalf of the Agro Fund One and for our stakeholders.
-      -
-        name: Anatolii Osadchyi
-        title: European and African Project Analyst
-        img: /assets/img/team/anatolii-osadchyi.jpg
-        mail: anatolii@agrofundone.com
-        linkedin: https://www.linkedin.com/in/aosadchyi/
-        text: >-
-          Based in Kyiv, Ukraine. Anatolii is responsible for developing and managing international project initiatives. Anatolii is also the founder of Labirudza farms, a pioneering eco-tourism project in Ukraine.
-      -
-        name: Dionas Silva
+      - name: Dionas Silva
         title: South American Project Analyst
         img: /assets/img/team/dionas-silva.jpg
         mail: dionas@agrofundone.com
@@ -74,48 +57,40 @@ items:
     text: >-
       Between Eastern European offices in Georgia and Ukraine, a trading office scheduled to open mid-2021 in Switzerland, our banking center in Hong Kong, field operations spread over 5 continents, our key Horn of Africa strategy, and our Midwestern headquarters in the United States, <strong>we have built our fund on a truly global reach.</strong>
     items:
-      -
-        heading: Marvella Farms
+      - heading: Marvella Farms
         subheading: Fresh produce grown in the desert
         p: >-
           Oasis complex of indoor farms producing year round fresh produce grown in the desert utilizing practical, sustainable and affordable design that can be replicated at scale. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa, the fastest growing population in the world.
-        href: www.marvellafarms.com      
-      -
-        heading: Aero Fleet One
+        href: www.marvellafarms.com
+      - heading: Aero Fleet One
         subheading: Precision aero application
         p: >-
           As a licensee of an advanced heavy payload, a fixed wing technology from Europe, we work with customers throughout North and South America to develop the first UAV fleet capable of commercial scale aerial application services. Based in North Dakota our company currently focuses on fleet development, marketing and the development of a logistical and operations team.
         href: www.aerofleetone.com
-      -
-        heading: Blue Heron Farms
+      - heading: Blue Heron Farms
         subheading: Wide variety of crops and specialty foods
         p: >-
           Actively managing an 1800 hectare farm on behalf of a Georgian institutional client since 2012. We also co-own a large specialty row crop machinery portfolio that is lease through a revenue share model on specialty crops in the region. Our work in Georgia once included the active management of one of the region’s largest bee apiary enterprises.
-        href: www.blueheron.info        
-      -
-        heading: Site management in Colorado - USA
+        href: www.blueheron.info
+      - heading: Site management in Colorado - USA
         p: >-
           Agro Fund One has the opportunity to develop indoor grow facilities on two sites one with rail access and both with water and solar capabilities.
-      -
-        heading: Site management in Minnesota - USA
+      - heading: Site management in Minnesota - USA
         p: >-
           Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are powered by renewable solar energy.
-      -
-        heading: Do you have a project in mind?
+      - heading: Do you have a project in mind?
         subheading: We are open to proposals!
         p: >-
           <a data-target="#submitModal" data-toggle="modal" href="" class="btn st-btn smooth-scroll my-3">Submit a Proposal</a>
     pois:
-      -
-        name: Hong Kong
-        content: 
+      - name: Hong Kong
+        content:
           - Hong Kong - Asian Headquarter
         top: 44%
         left: 77%
         top_m: 38%
         left_m: 75%
-      -
-        name: Minnesota, USA
+      - name: Minnesota, USA
         content:
           - Minneapolis, US Headquarter
           - Site management in Minnesota
@@ -124,8 +99,7 @@ items:
         left: 21%
         top_m: 21%
         left_m: 17%
-      -
-        name: Eastern Europe
+      - name: Eastern Europe
         content:
           - Eastern European office in Kyiv, Ukraine
           - <a href="http://www.blueheron.info" target="_blank" rel="noopener">Blue Heron Farms in the country of Georgia</a>
@@ -133,17 +107,15 @@ items:
         left: 58%
         top_m: 20%
         left_m: 54%
-      -
-        name: Colorado, USA
-        content: 
+      - name: Colorado, USA
+        content:
           - US Office location in Denver
           - Site management in Colorado
         top: 33%
         left: 18%
         top_m: 28%
         left_m: 13%
-      -
-        name: Djibouti
+      - name: Djibouti
         content:
           - <a href="https://www.marvellafarms.com" target="_blank" rel="noopener">Marvella Farms</a>
         top: 52%
@@ -161,16 +133,14 @@ items:
     link: Go To MesabaFinance.com
     url: http://www.mesabafinance.com
     img: /assets/img/team/mark-erjavec.jpg
-    
+
   submit:
     title: We are Open for Proposals
     text:
   socialmedia:
-    -
-      name: Twitter
+    - name: Twitter
       url: https://www.twitter.com/agrofundone
       img: /assets/icon/twitter.png
-    -
-      name: LinkedIn
+    - name: LinkedIn
       url: https://www.linkedin.com/company/agro-fund-one/
       img: /assets/icon/linkedin.png
