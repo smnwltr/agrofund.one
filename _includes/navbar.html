@@ -1,15 +1,15 @@
 {% case page.lang %}
     {% when "en" %}
-        {% assign nav = site.data.english.items.navigation.items %}
+        {% assign nav = site.data.english.items.navigation %}
     {% when "es" %}
-        {% assign nav = site.data.spanish.items.navigation.items %}
+        {% assign nav = site.data.spanish.items.navigation %}
     {% when "pt" %}
-        {% assign nav = site.data.portuguese.items.navigation.items %}
+        {% assign nav = site.data.portuguese.items.navigation %}
 {% endcase %}
 
 
 <nav class="navbar navbar-expand-md fixed-top">
-    <a class="navbar-brand smooth-scroll" href="#top">
+    <a class="navbar-brand" href="/{{page.lang}}/">
         <img class="my-navbar-img" src="{{'/assets/img/logo-full.png' | relative_url }}?{{cache_buster}}" alt="{{site.title}}">
     </a>
 
@@ -21,11 +21,25 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto mr-2">
-            {% for i in nav %}
-                    <li class="nav-item underline ml-2">
-                        <a class="nav-link smooth-scroll" href="{{i.url}}">{{i.name}}</a>
-                    </li>
+            {% for i in nav.items %}
+                <li class="nav-item ml-2">
+                    <a class="nav-link {% if forloop.last %} btn st-btn{% endif %}" href="/{{page.lang}}{{i.url}}">{{i.name}}</a>
+                </li>
             {% endfor %}
+            <li class="nav-item dropdown ml-md-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      {% for i in site.data.english.items.languages %}{% if page.lang == i.short%}{{i.name}}{% endif %}{% endfor %}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    {% for i in site.data.english.items.languages %}
+                        {% unless page.lang == i.short %}
+                            {% capture current_lang %}/{{page.lang}}/{% endcapture %}
+                            {% capture target_lang %}/{{i.short}}/{% endcapture %}
+                            <a class="dropdown-item" href="{{page.url|replace: current_lang,target_lang|replace: "index.html", "" }}">{{i.name}}</a>
+                        {% endunless %}
+                    {% endfor %}
+                </div>
+            </li>
         </ul>
     </div>
 </nav>

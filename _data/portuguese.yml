@@ -1,0 +1,16 @@
+items:
+  navigation:
+    language: Change Language
+    items:
+      - url: /
+        name: Home
+      - url: /about/
+        name: About
+      - url: /investment-approach/
+        name: Investment Approach
+      - url: /portfolio/
+        name: Portfolio
+      - url: /news/
+        name: News
+      - url: /contact/
+        name: Get in Touch

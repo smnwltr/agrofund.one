@@ -7,12 +7,15 @@ items:
     - short: pt
       name: Português
   navigation:
+    language: Change Language
     items:
+      - url: /
+        name: Home
       - url: /about/
         name: About
       - url: /investment-approach/
         name: Investment Approach
-      - url: /Portfolio/
+      - url: /portfolio/
         name: Portfolio
       - url: /news/
         name: News
@@ -20,7 +23,7 @@ items:
         name: Get in Touch
 
   home:
-    heading:
+    heading: Agro Fund One provides capital and expertise to sustainable and innovative businesses in the agricultural industry.
   about:
     heading: About Agro Fund One
   investment:
