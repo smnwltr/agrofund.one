@@ -14,14 +14,16 @@ $('.light-img').click(function (e) {
 $(document).ready(function () {
     //caches a jQuery object containing the header element
     var header = $(".navbar");
-    var links = $(".nav-item");
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 250) {
             header.addClass("navbar-scroll");
+            $(".my-navbar-img").css({ "height": "40px" });
+
         } else {
-            header.removeClass("navbar-scroll")
+            header.removeClass("navbar-scroll");
+            $(".my-navbar-img").css({ "height": "80px" });
         }
     });
 });

@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items.meeting %}
+    {% when "es" %}
+        {% assign data = site.data.spanish.items.meeting %}
+    {% when "pt" %}
+        {% assign data = site.data.portuguese.items.meeting %}
+{% endcase %}
+
+<div class="container text-center">
+    <h1 class="mt-5">{{data.heading}}</h1>
+    <p class="mb-5 lead">{{data.intro}}</p>
+    <!-- Start of Meetings Embed Script --><div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/simon508?embed=true"></div><script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script><!-- End of Meetings Embed Script -->
+</div>

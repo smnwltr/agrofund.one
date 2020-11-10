@@ -5,10 +5,35 @@ layout: base
 {% case page.lang %}
     {% when "en" %}
         {% assign data = site.data.english.items.home %}
-    {% when "es" %}
+        {% assign team = site.data.english.items.team %}
+        {% when "es" %}
         {% assign data = site.data.spanish.items.home %}
+        {% assign team = site.data.spanish.items.team %}
     {% when "pt" %}
         {% assign data = site.data.portuguese.items.home %}
+        {% assign team = site.data.portuguese.items.team %}
 {% endcase %}
 
-<h1>{{page.title}}</h1>
+<div class="container">
+    <h1 class="mt-5">{{page.title}}</h1>
+
+    <h2 class="text-center">{{team.heading}}</h2>
+    <div class="row justify-content-center mt-5">
+        {% for i in team.items %}
+            <div class="col mb-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle img-team" alt="{{i.name}}" src="{{i.img}}">
+                </div>
+                <h4 class="mb-0 mt-4 font-weight-bold">{{i.name}}
+                    <a href="{{i.linkedin}}" target="_blank" rel="noopener"><img src="/assets/icon/linkedin.png" alt="{{i.name}}" height="24px" class="sm-icon"></a>
+                </h4>
+                <p class="font-weight-bold mb-0">{{i.title}}</p>
+                <p class="mb-1">
+                    <a href="mailto:{{i.mail}}">{{i.mail}}</a>
+                </p>
+                <p class="">{{i.text}}</p>
+            </div>
+        {% endfor %}
+    </div>
+    
+</div>

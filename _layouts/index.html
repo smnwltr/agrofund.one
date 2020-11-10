@@ -5,17 +5,117 @@ layout: base
 {% case page.lang %}
     {% when "en" %}
         {% assign data = site.data.english.items.home %}
+        {% assign portfolio = site.data.english.items.portfolio %}
+        {% assign team = site.data.english.items.team %}
+        {% assign news = site.data.english.items.news %}
     {% when "es" %}
         {% assign data = site.data.spanish.items.home %}
+        {% assign portfolio = site.data.spanish.items.portfolio %}
+        {% assign team = site.data.spanish.items.team %}
+        {% assign news = site.data.spanish.items.news %}
     {% when "pt" %}
         {% assign data = site.data.portuguese.items.home %}
+        {% assign portfolio = site.data.portuguese.items.portfolio %}
+        {% assign team = site.data.portuguese.items.team %}
+        {% assign news = site.data.portuguese.items.news %}
 {% endcase %}
 
-<video playsinline autoplay muted loop poster="/assets/video/poster.jpg" id="bgvid">
-  <source src="/assets/video/bgvideo.mp4" type="video/mp4">
-</video>
-
-<div class="container my-5 py-5">
-
-
+<div class="video-container">
+    <video playsinline autoplay muted loop poster="/assets/video/poster.jpg" id="bgvid">
+        <source src="/assets/video/bgvideo.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1 class="video-header">{{data.heading}}</h1>
+    </div>
 </div>
+
+<section class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            {% for i in data.intro limit:1 %}
+            <p class="lead">{{i}}</p>
+            {% endfor %}
+            <p class="mt-5 text-center">
+                <a class="btn st-btn" href="/{{page.lang}}/contact/" target="_blank">
+                    <svg class="bi" width="24" height="24" fill="currentColor">
+                        <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+                    </svg> Start a Conversation
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6 align-self-center">
+            <h2 class="text-center">{{team.heading}}</h2>
+            <p>{{team.intro}}</p>            
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                {% for i in team.items %}
+                <div class="col-6 col-sm-4 mb-5 text-center">
+                    <img class="img-fluid rounded-circle img-team" style="max-height: 100px; max-width: 100px" alt="{{i.name}}" src="{{i.img}}">
+                    <h5 class="mb-0 mt-2">{{i.name}}</h5>
+                    <p class="mb-0">{{i.title}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <p class="text-right">
+        <a class="btn st-btn" href="/{{page.lang}}/about/">
+            <svg class="bi" width="24" height="24" fill="currentColor">
+                <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+            </svg> {{team.button}}
+        </a>
+    </p>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6 align-self-center">
+            <h2 class="text-center">{{portfolio.heading}}</h2>
+            <p class="lead mt-3">{{portfolio.text}}</p>
+        </div>
+        <div class="col-md-6">
+            {% include static_map.html %}
+        </div>
+    </div>
+    <p class="text-right">
+        <a class="btn st-btn" href="/{{page.lang}}/portfolio/">
+            <svg class="bi" width="24" height="24" fill="currentColor">
+                <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+            </svg> {{portfolio.button}}
+        </a>
+    </p>
+</section>
+
+<section class="container">
+    <h2>{{news.home.heading}}</h2>
+    <div class="card-deck mt-3">
+        {% for i in site.news reversed limit:4 %}
+            <div class="card">
+                <div>
+                    <a href="/{{page.lang}}/news/index.html#{{i.title|slugify}}">
+                        <img class="card-img-top" style="height: 150px; object-fit: cover; object-position: top;" src="{% if i.img %}{{i.img}}{% else %}/assets/img/logo.png{% endif %}" alt="{{i.title}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{i.title}}</h5>
+                            <p class="card-text">{{i.content|strip_html|truncatewords: 20}}</p>
+                            <p><a href="/{{page.lang}}/news/index.html#{{i.title|slugify}}">Full Article</a></p>
+                            <p class="card-text"><small class="text-muted">{{i.date|date:'%B %e, %Y'}}</small></p>
+                        </div>                    
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <p class="text-right mt-3">
+        <a class="btn st-btn" href="/{{page.lang}}/news/}}">
+            <svg class="bi" width="24" height="24" fill="currentColor">
+                <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+            </svg> {{news.home.button}}
+        </a>
+    </p>
+</section>

@@ -4,11 +4,50 @@ layout: base
 
 {% case page.lang %}
     {% when "en" %}
-        {% assign data = site.data.english.items.home %}
+        {% assign data = site.data.english.items.portfolio %}
     {% when "es" %}
-        {% assign data = site.data.spanish.items.home %}
+        {% assign data = site.data.spanish.items.portfolio %}
     {% when "pt" %}
-        {% assign data = site.data.portuguese.items.home %}
+        {% assign data = site.data.portuguese.items.portfolio %}
 {% endcase %}
 
-<h1>{{page.title}}</h1>
+<div class="container py-5">
+    <h1 class="text-center mt-5">{{data.heading}}</h2>
+    <p class="mt-4">{{data.text}}</p>
+
+    {% include static_map.html %}
+    <!-- portfolio cards -->
+    <div class="card-deck mt-5">
+        {% for i in data.items %}
+            {% assign remainder = forloop.index |modulo: 3 %}
+            <div class="card card-a">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold mb-0">{{i.heading}}</h5>
+                    {% if i.subheading %}
+                        <p class="font-weight-bold">{{i.subheading}}</p>
+                    {% endif %}
+                    <p class="card-text">{{i.p}}</p>
+                    {% if i.href %}
+                        <p class="card-text">
+                            <a href="http://{{i.href}}" rel="noopener" target="_blank">{{i.href}}</a>
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+            {% if remainder == 0 %}
+            </div>
+            <div class="card-deck mt-4">
+            {% endif %}
+            {% if forloop.last == true %}
+                {% case remainder %}
+                    {% when 1 %}
+                        <div class="card placeholder-card"></div>
+                        <div class="card placeholder-card"></div>
+                    {% when 2 %}
+                        <div class="card placeholder-card"></div>
+                {% endcase %}
+
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

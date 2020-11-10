@@ -1,4 +1,12 @@
-{% assign pois = site.data.general.items.portfolio.pois %}
+{% case page.lang %}
+    {% when "en" %}
+        {% assign pois = site.data.english.items.portfolio.pois %}
+    {% when "es" %}
+        {% assign pois = site.data.spanish.items.portfolio.pois %}
+    {% when "pt" %}
+        {% assign pois = site.data.portuguese.items.portfolio.pois %}
+{% endcase %}
+
 
 <div class="map-bg my-5">
     {% for i in pois %}
