@@ -88,7 +88,7 @@ items:
       - heading: Do you have a project in mind?
         subheading: We are open to proposals!
         p: >-
-          <a data-target="#submitModal" data-toggle="modal" href="" class="btn st-btn smooth-scroll my-3">Submit a Proposal</a>
+          <a data-target="#submitModal" data-toggle="modal" href="" class="btn btn-primary smooth-scroll my-3">Submit a Proposal</a>
     pois:
       - name: Hong Kong
         content:

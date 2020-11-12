@@ -27,6 +27,7 @@ items:
     intro:
       - Agro Fund One, Limited is an agricultural investment fund targeting the agricultural sector in North, Central and South America. The Fund’s primary focus is on generating competitive risk-adjusted returns while ensuring benefits to all stakeholders across the ecosystems in which we operate.
       - Agro Fund One’s mandate is to grow investor wealth by converting conventional commercial farmland to regenerative as well as developing sustainable indoor farming operations in regions of the world affected by climate change.
+    button: Start a Conversation
   team:
     heading: Team
     button: Meet our Team
@@ -84,10 +85,6 @@ items:
       - heading: Site management in Minnesota - USA
         p: >-
           Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are powered by renewable solar energy.
-      - heading: Do you have a project in mind?
-        subheading: We are open to proposals!
-        p: >-
-          <a data-target="#submitModal" data-toggle="modal" href="" class="btn st-btn smooth-scroll my-3">Submit a Proposal</a>
     pois:
       - name: Hong Kong
         content:
@@ -135,8 +132,9 @@ items:
       button: All News & Press Releases
   contact:
     heading: Get in Touch
+    intro: We are excited to hear from you. Send us a message through the form below or directly schedule a time for a short intro meeting via our booking widget.
+    button: Schedule Meeting
     meeting:
       heading: Schedule a Meeting
-      intro: We are excited to hear from you. Schedule a time that works for you directly below in our calendar.
     message:
       heading: Send us a Message

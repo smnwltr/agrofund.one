@@ -36,13 +36,16 @@ layout: base
             <p class="lead">{{i}}</p>
             {% endfor %}
             <p class="mt-5 text-center">
-                <a class="btn st-btn" href="/{{page.lang}}/contact/" target="_blank">
+                <button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#collapseSchedule" role="button" aria-expanded="false" aria-controls="collapseSchedule" target="_blank">
                     <svg class="bi" width="24" height="24" fill="currentColor">
                         <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
-                    </svg> Start a Conversation
-                </a>
+                    </svg> {{data.button}}
+                </button>
             </p>
         </div>
+    </div>
+    <div id="collapseSchedule" class="collapse">
+        <!-- Start of Meetings Embed Script --><div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/simon508?embed=true"></div><script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script><!-- End of Meetings Embed Script -->
     </div>
 </section>
 
@@ -65,7 +68,7 @@ layout: base
         </div>
     </div>
     <p class="text-right">
-        <a class="btn st-btn" href="/{{page.lang}}/about/">
+        <a class="btn btn-primary btn-lg" href="/{{page.lang}}/about/">
             <svg class="bi" width="24" height="24" fill="currentColor">
                 <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
             </svg> {{team.button}}
@@ -84,7 +87,7 @@ layout: base
         </div>
     </div>
     <p class="text-right">
-        <a class="btn st-btn" href="/{{page.lang}}/portfolio/">
+        <a class="btn btn-primary btn-lg" href="/{{page.lang}}/portfolio/">
             <svg class="bi" width="24" height="24" fill="currentColor">
                 <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
             </svg> {{portfolio.button}}
@@ -111,8 +114,8 @@ layout: base
             </div>
         {% endfor %}
     </div>
-    <p class="text-right mt-3">
-        <a class="btn st-btn" href="/{{page.lang}}/news/}}">
+    <p class="text-right mt-4">
+        <a class="btn btn-primary btn-lg" href="/{{page.lang}}/news/}}">
             <svg class="bi" width="24" height="24" fill="currentColor">
                 <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
             </svg> {{news.home.button}}

@@ -19,18 +19,25 @@
   background: darken($primary-color, 15%);
 }
 
-.st-btn {
-  background-color: $secondary-color;
+.btn-primary {
+  background-color: transparent;
   border-radius: 20px;
-  transition: 0.4s box-shadow;
+  border: 4px solid $secondary-color;
+  transition: 0.2s all;
   padding: 5px 20px;
-  color: white;
+  color: $secondary-color;
   font-weight: bold;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: white !important;
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+}
+
+.btn-lg {
   min-width: 120px;
   font-size: 120%;
-  &:hover {
-    box-shadow: 2px 5px 3px #dcdcdc;
-    text-decoration: none;
-    color: white;
-  }
 }

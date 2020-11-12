@@ -9,9 +9,12 @@
     color: black;
     text-shadow: none;
   }
-  .st-btn {
-    color: white !important;
+  .btn-primary {
+    color: $secondary-color !important;
     padding: 5px 20px !important;
+    &:hover {
+      color: white !important;
+    }
   }
 }
 
