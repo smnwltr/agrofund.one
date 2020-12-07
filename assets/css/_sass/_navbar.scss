@@ -38,6 +38,7 @@
 .navbar .dropdown-item {
   background-color: #fff;
   color: black;
+  padding-right: 0px;
 }
 .my-navbar-img {
   height: 80px;
@@ -52,6 +53,9 @@
     color: black;
   }
   background-color: white;
+  .bi {
+    fill: black;
+  }
 }
 
 .navbar-scroll {
@@ -60,6 +64,9 @@
   }
   background-color: white;
   border-bottom: 1px solid whitesmoke;
+  .bi {
+    fill: black;
+  }
 }
 
 .my-navbar-img {

@@ -14,6 +14,15 @@ sass:
 collections:
   news:
     output: false
+  portfolio:
+    output: true
+    permalink: /:path/index.html
+
+defaults:
+  - scope:
+      type: "portfolio"
+    values:
+      layout: portfolio_sites
 
 exclude: [README.md]
 
