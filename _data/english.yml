@@ -11,16 +11,22 @@ items:
     items:
       - url: /
         name: Home
+        id: home
       - url: /about/
         name: About
+        id: about
       - url: /investment-process/
         name: Investment Process
+        id: process
       - url: /portfolio/
         name: Portfolio
+        id: portfolio
       - url: /news/
         name: News
+        id: news
       - url: /contact/
         name: Get in Touch
+        id: contact
 
   home:
     heading: Agro Fund One provides capital and expertise to sustainable and innovative businesses in the agricultural industry.
@@ -29,7 +35,7 @@ items:
       - Agro Fund One’s mandate is to grow investor wealth by converting conventional commercial farmland to regenerative as well as developing sustainable indoor farming operations in regions of the world affected by climate change.
     button: Start a Conversation
   team:
-    heading: Team
+    heading: Our Team
     button: Meet our Team
     intro: Agro Fund One employs a team of experts in agriculture and investment management around the globe.
     items:
@@ -56,8 +62,77 @@ items:
           Dionas is an Agronomist from Brazil. He has experience in agricultural development focussed on continuous improvement and innovation. Dionas’ mission is to raise the level of food production in underdeveloped countries in a sustainable and regenerative way.
   about:
     heading: About Agro Fund One
+    intro:
+      - In 2050, the number of people living on our planet will grow to 10 billion, and that could double the demand for food, feed, fiber and biofuels from 2005 levels. It is imperative that this demand be met in a way that is economically viable, environmentally sustainable and socially beneficial.
+      - Agro Fund One provides capital and expertise to sustainable and innovative businesses that tackle these challenges.
+    intro_list:
+      - Investments into agriculture projects that promote soil health and increase biodiversity
+      - Turnaround investments into distressed operations
+      - Venture capital to promising agricultural technology
+      - Financial brokerage for access to capital
+
   investment:
-    heading: Investment Process
+    heading: Investment Approach
+    values:
+      heading: Investment Values
+      items:
+        - heading: We Actively Lead
+          text: Agro Fund One typically invests in control positions in order to impact financial and operational results. Our strategy is operationally-driven, with a focus on adding value and substantially improving businesses.
+        - heading: We are an add-value partner
+          text: Our investment and operating professionals work closely with management teams to drive operational results, increase growth, and strengthen overall performance of each and every one of our portfolio companies.
+        - heading: Deep-dive due diligence in each of our investment evaluations
+          text: By combining our collaborative research-intensive framework with our sector expertise and unique international industry relationships, we have been able to identify a number of unique opportunities outside the scope of competitive auction processes, unlocking attractive growth prospects while maintaining valuation discipline.
+        - heading: We support disruption and innovation
+          text: "We are committed to addressing real, imminent challenges in the global food and agribusiness sector by championing companies that deliver innovative and meaningful solutions that support the following:"
+          list:
+            - Economic Growth
+            - Human rights and Fair labor standards
+            - Safe and Healthy products to end consumers
+            - Food Supply Security
+            - Profitability for Farmers
+            - Soil Health/Carbon Sequestration
+            - Biodiversity
+        - heading: We are focused
+          text: Agro Fund One focuses exclusively on the sustainable food supply chain in North, Central and South America. Our professionals are culturally diverse and have unique experience in food and agribusiness, with a demonstrated track record necessary to invest competitively and successfully in the space.
+        - heading: Build relationships
+          text: Through our investments we seek to develop trusted, long-term relationships that allow the development and achievement of longstanding production and sustainability goals.
+
+    criteria:
+      heading: Investment Criteria
+      text: Agro Fund One is seeking high-quality businesses that ideally satisfies the following criteria.
+      items:
+        - name: Industry
+          list:
+            - Sizeable and growing industry
+            - Sustainable agriculture supply chain
+            - Fragmented landscape
+            - Minimal regulatory risk
+        - name: Business
+          list:
+            - Distinctive value proposition
+            - Adopt effective ag tech resources
+            - Recurring/contractual revenue
+            - Identifiable growth opportunities
+            - Diverse, loyal customer base
+        - name: Financial
+          list:
+            - $5m+ of annual revenue
+            - $2m+ of annual cash flow
+            - +15% EBITDA margins
+            - +7% Revenue growth y/y
+    process:
+      heading: Investment Process
+      text: We have a straightforward 8-week process approach that requires minimal time from all parties involved and guarantees a transparent and efficient process.
+      items:
+        - name: "Step 1: Understand"
+          text: "Issue a Non-Disclosure Agreement (NDA) : Explore ownership, vision, goals, opportunities, and preliminary terms. Discuss customers, products, finance, marketing, sales, value proposition and growth trajectories."
+        - name: "Step 2: In-depth due diligence"
+          text: "Review finance model, legal, operations, executive team, information and technology. In most situations we elaborate our own investor model in collaboration with our prospect partner."
+        - name: "Step 3: Indication of Interest (IoI)"
+          text: "Review and negotiate Purchase or Operating Agreement term sheet."
+        - name: "Complete the transaction and begin the management onboarding process."
+          text: "Issue a Non-Disclosure Agreement (NDA) : Explore ownership, vision, goals, opportunities, and preliminary terms. Discuss customers, products, finance, marketing, sales, value proposition and growth trajectories."
+
   portfolio:
     heading: Our Portfolio
     text: >-
@@ -127,6 +202,7 @@ items:
         left_m: 52%
   news:
     heading: News & Press Releases
+    text: Find all our recent news posts and press releases below. <br>Want to talk about a specific topic?
     home:
       heading: Recent News
       button: All News & Press Releases

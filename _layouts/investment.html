@@ -4,13 +4,59 @@ layout: base
 
 {% case page.lang %}
     {% when "en" %}
-        {% assign data = site.data.english.items.home %}
+        {% assign data = site.data.english.items.investment %}
     {% when "es" %}
-        {% assign data = site.data.spanish.items.home %}
+        {% assign data = site.data.spanish.items.investment %}
     {% when "pt" %}
-        {% assign data = site.data.portuguese.items.home %}
+        {% assign data = site.data.portuguese.items.investment %}
 {% endcase %}
 
-<div class="container">
-    <h1 class="mt-5">{{page.title}}</h1>
+<div class="container mt-5 py-5">
+    <h1 class="text-center">{{data.heading}}</h1>
+    <div class="row mt-5 justify-content-center">
+        <div class="col-sm-8">
+            <h2>{{data.values.heading}}</h2>
+            {% for i in data.values.items %}
+                <div class="mb-4">
+                    <h4>{{i.heading}}</h4>
+                    <p>{{i.text}}</p>
+                    {% if i.list %}
+                    <ul class="dashed">
+                        {% for j in i.list %}
+                        <li>{{j}}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %} 
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+        <div class="col-sm-8">
+            <h2>{{data.criteria.heading}}</h2>
+            <p>{{data.criteria.text}}</p>            
+            {% for i in data.criteria.items %}
+                <div class="mb-4">
+                    <h4>{{i.name}}</h4>
+                    <ul class="dashed">
+                        {% for j in i.list %}
+                            <li>{{j}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+        <div class="col-sm-8">
+            <h2>{{data.process.heading}}</h2>
+            <p>{{data.process.text}}</p>
+            {% for i in data.process.items %}
+                <div class="mb-4">
+                    <h4>{{i.name}}</h4>
+                    <p>{{i.text}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>

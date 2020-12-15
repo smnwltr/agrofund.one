@@ -145,6 +145,18 @@ a.anchor {
   }
 }
 
+ul.dashed {
+  list-style: none;
+  margin-left: 2em;
+  padding-left: 1em;
+}
+ul.dashed > li:before {
+  display: inline-block;
+  content: "—";
+  width: 2em;
+  margin-left: -1em;
+}
+
 @import "hamburger";
 @import "flipcard";
 @import "lightbox";

@@ -11,8 +11,8 @@ layout: base
         {% assign data = site.data.portuguese.items.portfolio %}
 {% endcase %}
 
-<div id="portfolio" class="container py-5">
-    <h1 class="text-center mt-5">{{data.heading}}</h1>
+<div id="portfolio" class="container mt-5 py-5">
+    <h1 class="text-center">{{data.heading}}</h1>
     <div class="row justify-content-center">
         <div class="col-sm-9">
             <p class="mt-4">{{data.text}}</p>
@@ -21,7 +21,7 @@ layout: base
 
     {% include static_map.html %}
     <!-- portfolio cards -->
-    <div class="row pt-5 mt-5 justify-content-center">
+    <div class="row pt-5 mt-5">
         {% for i in site.portfolio %}
             <div class="col-md-4">
                 <div class="card card-a mb-5">

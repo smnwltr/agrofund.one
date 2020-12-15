@@ -34,7 +34,7 @@
                 <a class="nav-link dropdown-toggle font-weight-normal text-uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {% for i in site.data.english.items.languages %}{% if page.lang == i.short%}{{i.short}}{% endif %}{% endfor %}
                 </a>
-                <div class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdownMenuLink">
+                <div class="dropdown-menu pr-3 dropdown-menu-right text-right" aria-labelledby="navbarDropdownMenuLink">
                     <p class="mb-1 text-muted"><small>{{nav.language}}</small></p>
                     {% for i in site.data.english.items.languages %}
                         {% unless page.lang == i.short %}

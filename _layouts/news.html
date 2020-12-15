@@ -5,34 +5,55 @@ layout: base
 {% case page.lang %}
     {% when "en" %}
         {% assign data = site.data.english.items.news %}
+        {% for i in site.data.english.items.navigation.items %}
+            {% if i.id == "contact" %}
+                {% assign contact_link = i.url %}
+                {% assign contact_name = i.name %}
+            {% endif %}
+        {% endfor %}
     {% when "es" %}
         {% assign data = site.data.spanish.items.news %}
+        {% for i in site.data.spanish.items.navigation.items %}
+        {% if i.id == "contact" %}
+            {% assign contact_link = i.url %}
+            {% assign contact_name = i.name %}
+        {% endif %}
+    {% endfor %}
     {% when "pt" %}
         {% assign data = site.data.portuguese.items.news %}
+        {% for i in site.data.portuguese.items.navigation.items %}
+        {% if i.id == "contact" %}
+            {% assign contact_link = i.url %}
+            {% assign contact_name = i.name %}
+        {% endif %}
+    {% endfor %}
 {% endcase %}
 
 <div class="container mt-5 pt-5">
-    <!-- media section -->
-    <h1>{{data.heading}}</h2>
-    <div class="mt-3 mb-5">
+    <h1 class="text-center">{{data.heading}}</h1>
+    <div class="row justify-content-center">
+        <div class="col-sm-6 text-center">
+            <p class="mt-4">{{data.text}}</p>
+            <p><a href="/{{page.lang}}/{{contact_link}}/" class="btn btn-primary btn-solid btn-sm">{{contact_name}}</a></p>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5 justify-content-center">
         {% for i in site.news reversed %}
-        <a class="anchor" id="{{i.title|slugify}}"></a>
-        {% if i.link %}
-            <a href="{{i.link}}" target="_blank" rel="noopener" class="media">
-            {% endif %}
-                <div class="row my-3 py-5">
-                    <div class="d-none d-sm-block col-sm-2">
-                        <img src="{% if i.img %}{{i.img}}{% else %}/assets/img/logo.png{% endif %}" alt="{{i.title}}" class="img-fluid media-preview">
+        <div class="col-12 col-sm-7">
+            <div class="card card-a mb-5">
+                {% if i.img %}
+                <img class="card-img-top img-fluid" src="{{i.img}}" alt="{{i.title}}" style="max-height: 200px;object-fit: cover; object-position: top center; ">
+                {% endif %}
+                <div class="card-block">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">{{i.title}}</h4>
+                        <p class="card-text">{{i.content|truncatewords: 20}}</p>
+                        <a class="btn btn-primary btn-solid stretched-link" href="{{i.url}}">Read Full Post</a>
                     </div>
-                    <div class="col-sm-10">
-                        <p class="font-weight-bold mb-0">{{i.date|date:'%B %e, %Y'}}</p>
-                        <h4>{{i.title}}</h4>
-                        <p>{{i.content}}</p>
-                    </div>
+                    <p class="card-footer mb-0 mt-2"><small class="text-muted">{{i.date|date:'%B %e, %Y'}}</small></p>
                 </div>
-            {% if i.link %}
-            </a>
-        {% endif %}
-    {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
