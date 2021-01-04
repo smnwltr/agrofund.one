@@ -9,7 +9,7 @@ logo: /assets/img/portfolio/afo-logo.png
 invested:
 Location: Tioga, North Dakota, USA
 website: aerofleetone.com
-linkedin:
+linkedin: www.linkedin.com/company/aero-fleet-one/
 twitter:
 ---
 

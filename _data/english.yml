@@ -46,6 +46,13 @@ items:
         linkedin: https://www.linkedin.com/in/guilhermesvsmoreira/
         text: >-
           Guilherme is a Brazilian Environmental Engineer passionate about sustainable development. He is committed to ensure the sustainability impact of our international investments so that they genuinely benefit local communities while ensuring profitability for investors.
+      - name: Maria Dyatchyna
+        title: European Project Analyst
+        img: /assets/img/team/maria-dyatchyna.jpg
+        mail: maria@agrofundone.com
+        linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
+        text: >-
+          Having an innovative approach and background in IT & business development Maria is a believer in Artificial Intelligence, IoT & Robotics. She is bringing her experience and expertise with the aim to find new European technologies and solutions with the potential for application in Latin America and the US to support Sustainable and Precision agriculture.
       - name: Mark M. Erjavec
         title: Fund Manager
         img: /assets/img/team/mark-erjavec-hat.jpg
@@ -58,6 +65,13 @@ items:
         img: /assets/img/team/dionas-silva.jpg
         mail: dionas@agrofundone.com
         linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
+        text: >-
+          Dionas is an Agronomist from Brazil. He has experience in agricultural development focussed on continuous improvement and innovation. Dionas’ mission is to raise the level of food production in underdeveloped countries in a sustainable and regenerative way.
+      - name: Matheus Picinin
+        title: Social Media Coordinator
+        img: /assets/img/team/dionas-silva.jpg
+        mail: matheus@agrofundone.com
+        linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
         text: >-
           Dionas is an Agronomist from Brazil. He has experience in agricultural development focussed on continuous improvement and innovation. Dionas’ mission is to raise the level of food production in underdeveloped countries in a sustainable and regenerative way.
   about:
@@ -168,6 +182,14 @@ items:
         left: 77%
         top_m: 38%
         left_m: 75%
+      - name: Brazil
+        content:
+          - South American Headquarter
+          - Development of Fazenda Jacob, a regenerative agroforestry model farm
+        top: 63%
+        left: 32%
+        top_m: 58%
+        left_m: 32%
       - name: Minnesota, USA
         content:
           - Minneapolis, US Headquarter
