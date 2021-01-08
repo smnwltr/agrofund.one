@@ -31,6 +31,10 @@ defaults:
       layout: news_sites
 exclude: [README.md]
 
+social_media:
+  twitter: https://twitter.com/agrofundone
+  linkedin: https://www.linkedin.com/company/agro-fund-one/
+
 # data for privacy policy
 address:
   name: Agro Fund One, Limited

@@ -69,11 +69,11 @@ items:
           Dionas is an Agronomist from Brazil. He has experience in agricultural development focussed on continuous improvement and innovation. Dionas’ mission is to raise the level of food production in underdeveloped countries in a sustainable and regenerative way.
       - name: Matheus Picinin
         title: Social Media Coordinator
-        img: /assets/img/team/dionas-silva.jpg
+        img: /assets/img/team/matheus-picinin.jpg
         mail: matheus@agrofundone.com
         linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
         text: >-
-          Dionas is an Agronomist from Brazil. He has experience in agricultural development focussed on continuous improvement and innovation. Dionas’ mission is to raise the level of food production in underdeveloped countries in a sustainable and regenerative way.
+          Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to build a social media presence for Agro Fund One. In addition he creates visual concepts (pictures and videos) to communicate ideas and concepts related to Agro Fund's investment strategy.
   about:
     heading: About Agro Fund One
     intro:
@@ -144,8 +144,8 @@ items:
           text: "Review finance model, legal, operations, executive team, information and technology. In most situations we elaborate our own investor model in collaboration with our prospect partner."
         - name: "Step 3: Indication of Interest (IoI)"
           text: "Review and negotiate Purchase or Operating Agreement term sheet."
-        - name: "Complete the transaction and begin the management onboarding process."
-          text: "Issue a Non-Disclosure Agreement (NDA) : Explore ownership, vision, goals, opportunities, and preliminary terms. Discuss customers, products, finance, marketing, sales, value proposition and growth trajectories."
+        - name: "Step 4: Invest"
+          text: "Complete the transaction and begin the management onboarding process."
 
   portfolio:
     heading: Our Portfolio
@@ -186,8 +186,8 @@ items:
         content:
           - South American Headquarter
           - Development of Fazenda Jacob, a regenerative agroforestry model farm
-        top: 63%
-        left: 32%
+        top: 69%
+        left: 34%
         top_m: 58%
         left_m: 32%
       - name: Minnesota, USA

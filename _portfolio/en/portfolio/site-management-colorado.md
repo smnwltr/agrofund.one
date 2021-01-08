@@ -7,6 +7,7 @@ location: Colorado, USA
 website:
 linkedin:
 twitter:
+published: false
 ---
 
 Agro Fund One has the opportunity to develop indoor grow facilities on two sites one with rail access and both with water and solar capabilities.

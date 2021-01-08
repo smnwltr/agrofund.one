@@ -157,6 +157,11 @@ ul.dashed > li:before {
   margin-left: -1em;
 }
 
+.img-white {
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
+}
+
 @import "hamburger";
 @import "flipcard";
 @import "lightbox";
