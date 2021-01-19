@@ -4,35 +4,23 @@ layout: base
 
 {% case page.lang %}
     {% when "en" %}
-        {% assign data = site.data.english.items.home %}
+        {% assign navigation = site.data.english.items.navigation %}
+        {% assign home = site.data.english.items.home %}
         {% assign portfolio = site.data.english.items.portfolio %}
         {% assign team = site.data.english.items.team %}
         {% assign news = site.data.english.items.news %}
-        {% for i in site.data.english.items.navigation.items %}
-        {% if i.id == "news" %}
-            {% assign news_link = i.url %}
-        {% endif %}
-        {% endfor %}
     {% when "es" %}
-        {% assign data = site.data.spanish.items.home %}
+        {% assign navigation = site.data.spanish.items.navigation %}
+        {% assign home = site.data.spanish.items.home %}
         {% assign portfolio = site.data.spanish.items.portfolio %}
         {% assign team = site.data.spanish.items.team %}
         {% assign news = site.data.spanish.items.news %}
-        {% for i in site.data.english.items.navigation.items %}
-        {% if i.id == "news" %}
-            {% assign news_link = i.url %}
-        {% endif %}
-        {% endfor %}
     {% when "pt" %}
-        {% assign data = site.data.portuguese.items.home %}
+        {% assign navigation = site.data.portuguese.items.navigation %}
+        {% assign home = site.data.portuguese.items.home %}
         {% assign portfolio = site.data.portuguese.items.portfolio %}
         {% assign team = site.data.portuguese.items.team %}
         {% assign news = site.data.portuguese.items.news %}
-        {% for i in site.data.english.items.navigation.items %}
-        {% if i.id == "news" %}
-            {% assign news_link = i.url %}
-        {% endif %}
-        {% endfor %}
 {% endcase %}
 
 <div class="video-container">
@@ -40,21 +28,21 @@ layout: base
         <source src="/assets/video/bgvideo.mp4" type="video/mp4">
     </video>
     <div class="container">
-        <h1 class="video-header">{{data.heading}}</h1>
+        <h1 class="video-header">{{home.heading}}</h1>
     </div>
 </div>
 
 <section class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            {% for i in data.intro limit:1 %}
+            {% for i in home.intro limit:1 %}
             <p class="lead">{{i}}</p>
             {% endfor %}
             <p class="mt-5 text-center">
                 <button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#collapseSchedule" role="button" aria-expanded="false" aria-controls="collapseSchedule" target="_blank">
                     <svg class="bi" width="24" height="24" fill="currentColor">
                         <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
-                    </svg> {{data.button}}
+                    </svg> {{home.button}}
                 </button>
             </p>
         </div>
@@ -73,9 +61,9 @@ layout: base
         <div class="col-md-6">
             <div class="row">
                 {% for i in team.items %}
-                <div class="col-6 col-sm-4 mb-5 text-center">
-                    <img class="img-fluid rounded-circle img-team" style="max-height: 100px; max-width: 100px" alt="{{i.name}}" src="{{i.img}}">
-                    <h5 class="mb-0 mt-2">{{i.name}}</h5>
+                <div class="col-6 col-lg-4 mb-2 text-center">
+                    <img class="img-fluid rounded-circle img-team" style="max-height: 80px; max-width: 80px" alt="{{i.name}}" src="{{i.img}}">
+                    <p class="mb-0 mt-2 font-weight-bold">{{i.name}}</p>
                     <p class="mb-0">{{i.title}}</p>
                 </div>
                 {% endfor %}
@@ -83,7 +71,12 @@ layout: base
         </div>
     </div>
     <p class="text-right">
-        <a class="btn btn-primary btn-lg" href="/{{page.lang}}/about/">
+        {% for i in navigation.items %}
+            {% if i.id == 'about' %}
+                {% assign about_link = i.url %}
+            {% endif %}
+        {% endfor %}
+        <a class="btn btn-primary btn-lg" href="/{{page.lang}}{{about_link}}">
             <svg class="bi" width="24" height="24" fill="currentColor">
                 <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
             </svg> {{team.button}}
@@ -95,8 +88,8 @@ layout: base
     <div class="container py-5">
         <h2 class="text-white text-center">Follow Us on Social Media</h2>
         <p class="text-center mt-4">
-            <a class="mr-2" href="{{site.social_media.twitter}}" target="_blank" rel="noopener"><img class="img-white" height="32px" width="32px" src="/assets/img/icon/twitter.png" alt="{{page.title}} Twitter"></a>
-            <a class="mr-2" href="{{site.social_media.linkedin}}" target="_blank" rel="noopener"><img class="img-white" height="32px" width="32px" src="/assets/img/icon/linkedin.png" alt="{{page.title}} LinkedIn"></a>
+            <a class="mr-4" href="{{site.social_media.twitter}}" target="_blank" rel="noopener"><img class="img-white" height="32px" width="32px" src="/assets/img/icon/twitter.png" alt="{{page.title}} Twitter"></a>
+            <a class="mr-4" href="{{site.social_media.linkedin}}" target="_blank" rel="noopener"><img class="img-white" height="32px" width="32px" src="/assets/img/icon/linkedin.png" alt="{{page.title}} LinkedIn"></a>
         </p>
     </div>
 </div>
@@ -112,7 +105,12 @@ layout: base
         </div>
     </div>
     <p class="text-right">
-        <a class="btn btn-primary btn-lg" href="/{{page.lang}}/portfolio/">
+        {% for i in navigation.items %}
+            {% if i.id == 'portfolio' %}
+                {% assign portfolio_link = i.url %}
+            {% endif %}
+        {% endfor %}
+        <a class="btn btn-primary btn-lg" href="/{{page.lang}}{{portfolio_link}}">
             <svg class="bi" width="24" height="24" fill="currentColor">
                 <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
             </svg> {{portfolio.button}}
@@ -123,7 +121,7 @@ layout: base
 <section class="container">
     <h2>{{news.home.heading}}</h2>
     <div class="card-deck mt-3">
-        {% for i in site.news reversed limit:4 %}
+        {% for i in site.news reversed limit:3 %}
             <div class="card">
                 <img class="card-img-top" style="height: 150px; object-fit: cover; object-position: top;" src="{% if i.img %}{{i.img}}{% else %}/assets/img/logo.png{% endif %}" alt="{{i.title}}">
                 <div class="card-body d-flex flex-column align-items-start">
@@ -137,6 +135,11 @@ layout: base
         {% endfor %}
     </div>
     <p class="text-right mt-4">
+        {% for i in navigation.items %}
+        {% if i.id == "news" %}
+            {% assign news_link = i.url %}
+        {% endif %}
+        {% endfor %}
         <a class="btn btn-primary btn-lg" href="/{{page.lang}}{{news_link}}">
             <svg class="bi" width="24" height="24" fill="currentColor">
                 <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>

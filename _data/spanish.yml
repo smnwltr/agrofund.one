@@ -11,26 +11,33 @@ items:
     items:
       - url: /
         name: Home
+        id: home
       - url: /about/
         name: About
+        id: about
       - url: /investment-process/
         name: Investment Process
+        id: process
       - url: /portfolio/
         name: Portfolio
+        id: portfolio
       - url: /news/
         name: News
+        id: news
       - url: /contact/
         name: Get in Touch
+        id: contact
 
   home:
     heading: Agro Fund One provides capital and expertise to sustainable and innovative businesses in the agricultural industry.
     intro:
       - Agro Fund One, Limited is an agricultural investment fund targeting the agricultural sector in North, Central and South America. The Fund’s primary focus is on generating competitive risk-adjusted returns while ensuring benefits to all stakeholders across the ecosystems in which we operate.
       - Agro Fund One’s mandate is to grow investor wealth by converting conventional commercial farmland to regenerative as well as developing sustainable indoor farming operations in regions of the world affected by climate change.
+    button: Start a Conversation
   team:
-    heading: Team
+    heading: Our Team
     button: Meet our Team
-    intro:
+    intro: Agro Fund One employs a team of experts in agriculture and investment management around the globe.
     items:
       - name: Guilherme Moreira
         title: Managing Partner
@@ -39,6 +46,13 @@ items:
         linkedin: https://www.linkedin.com/in/guilhermesvsmoreira/
         text: >-
           Guilherme is a Brazilian Environmental Engineer passionate about sustainable development. He is committed to ensure the sustainability impact of our international investments so that they genuinely benefit local communities while ensuring profitability for investors.
+      - name: Maria Dyatchyna
+        title: European Project Analyst
+        img: /assets/img/team/maria-dyatchyna.jpg
+        mail: maria@agrofundone.com
+        linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
+        text: >-
+          Having an innovative approach and background in IT & business development Maria is a believer in Artificial Intelligence, IoT & Robotics. She is bringing her experience and expertise with the aim to find new European technologies and solutions with the potential for application in Latin America and the US to support Sustainable and Precision agriculture.
       - name: Mark M. Erjavec
         title: Fund Manager
         img: /assets/img/team/mark-erjavec-hat.jpg
@@ -53,13 +67,88 @@ items:
         linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
         text: >-
           Dionas is an Agronomist from Brazil. He has experience in agricultural development focussed on continuous improvement and innovation. Dionas’ mission is to raise the level of food production in underdeveloped countries in a sustainable and regenerative way.
-
+      - name: Matheus Picinin
+        title: Marketing Coordinator
+        img: /assets/img/team/matheus-picinin.jpg
+        mail: matheus@agrofundone.com
+        linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
+        text: >-
+          Matheus is a Brazilian Digital Marketer based in Ireland. Matheus’ main role is to build a social media presence for Agro Fund One. In addition he creates visual concepts (pictures and videos) to communicate ideas and concepts related to Agro Fund's investment strategy.
   about:
     heading: About Agro Fund One
+    intro:
+      - In 2050, the number of people living on our planet will grow to 10 billion, and that could double the demand for food, feed, fiber and biofuels from 2005 levels. It is imperative that this demand be met in a way that is economically viable, environmentally sustainable and socially beneficial.
+      - Agro Fund One provides capital and expertise to sustainable and innovative businesses that tackle these challenges.
+    intro_list:
+      - Investments into agriculture projects that promote soil health and increase biodiversity
+      - Turnaround investments into distressed operations
+      - Venture capital to promising agricultural technology
+      - Financial brokerage for access to capital
+
   investment:
-    heading: Investment Process
+    heading: Investment Approach
+    values:
+      heading: Investment Values
+      items:
+        - heading: We Actively Lead
+          text: Agro Fund One typically invests in control positions in order to impact financial and operational results. Our strategy is operationally-driven, with a focus on adding value and substantially improving businesses.
+        - heading: We are an add-value partner
+          text: Our investment and operating professionals work closely with management teams to drive operational results, increase growth, and strengthen overall performance of each and every one of our portfolio companies.
+        - heading: Deep-dive due diligence in each of our investment evaluations
+          text: By combining our collaborative research-intensive framework with our sector expertise and unique international industry relationships, we have been able to identify a number of unique opportunities outside the scope of competitive auction processes, unlocking attractive growth prospects while maintaining valuation discipline.
+        - heading: We support disruption and innovation
+          text: "We are committed to addressing real, imminent challenges in the global food and agribusiness sector by championing companies that deliver innovative and meaningful solutions that support the following:"
+          list:
+            - Economic Growth
+            - Human rights and Fair labor standards
+            - Safe and Healthy products to end consumers
+            - Food Supply Security
+            - Profitability for Farmers
+            - Soil Health/Carbon Sequestration
+            - Biodiversity
+        - heading: We are focused
+          text: Agro Fund One focuses exclusively on the sustainable food supply chain in North, Central and South America. Our professionals are culturally diverse and have unique experience in food and agribusiness, with a demonstrated track record necessary to invest competitively and successfully in the space.
+        - heading: Build relationships
+          text: Through our investments we seek to develop trusted, long-term relationships that allow the development and achievement of longstanding production and sustainability goals.
+
+    criteria:
+      heading: Investment Criteria
+      text: Agro Fund One is seeking high-quality businesses that ideally satisfies the following criteria.
+      items:
+        - name: Industry
+          list:
+            - Sizeable and growing industry
+            - Sustainable agriculture supply chain
+            - Fragmented landscape
+            - Minimal regulatory risk
+        - name: Business
+          list:
+            - Distinctive value proposition
+            - Adopt effective ag tech resources
+            - Recurring/contractual revenue
+            - Identifiable growth opportunities
+            - Diverse, loyal customer base
+        - name: Financial
+          list:
+            - $5m+ of annual revenue
+            - $2m+ of annual cash flow
+            - +15% EBITDA margins
+            - +7% Revenue growth y/y
+    process:
+      heading: Investment Process
+      text: We have a straightforward 8-week process approach that requires minimal time from all parties involved and guarantees a transparent and efficient process.
+      items:
+        - name: "Step 1: Understand"
+          text: "Issue a Non-Disclosure Agreement (NDA) : Explore ownership, vision, goals, opportunities, and preliminary terms. Discuss customers, products, finance, marketing, sales, value proposition and growth trajectories."
+        - name: "Step 2: In-depth due diligence"
+          text: "Review finance model, legal, operations, executive team, information and technology. In most situations we elaborate our own investor model in collaboration with our prospect partner."
+        - name: "Step 3: Indication of Interest (IoI)"
+          text: "Review and negotiate Purchase or Operating Agreement term sheet."
+        - name: "Step 4: Invest"
+          text: "Complete the transaction and begin the management onboarding process."
+
   portfolio:
-    heading: Portfolio
+    heading: Our Portfolio
     text: >-
       Between Eastern European offices in Georgia and Ukraine, a trading office scheduled to open mid-2021 in Switzerland, our banking center in Hong Kong, field operations spread over 5 continents, our key Horn of Africa strategy, and our Midwestern headquarters in the United States, <strong>we have built our fund on a truly global reach.</strong>
     button: More about our Portfolio
@@ -85,10 +174,6 @@ items:
       - heading: Site management in Minnesota - USA
         p: >-
           Agro Fund One has the opportunity to develop indoor grow facilities in two sites that are powered by renewable solar energy.
-      - heading: Do you have a project in mind?
-        subheading: We are open to proposals!
-        p: >-
-          <a data-target="#submitModal" data-toggle="modal" href="" class="btn btn-primary smooth-scroll my-3">Submit a Proposal</a>
     pois:
       - name: Hong Kong
         content:
@@ -97,6 +182,14 @@ items:
         left: 77%
         top_m: 38%
         left_m: 75%
+      - name: Brazil
+        content:
+          - South American Headquarter
+          - Development of Fazenda Jacob, a regenerative agroforestry model farm
+        top: 69%
+        left: 34%
+        top_m: 58%
+        left_m: 32%
       - name: Minnesota, USA
         content:
           - Minneapolis, US Headquarter
@@ -131,8 +224,16 @@ items:
         left_m: 52%
   news:
     heading: News & Press Releases
+    text: Find all our recent news posts and press releases below. <br>Want to talk about a specific topic?
+    message: Our news are available in English only. Should you be interested in more information on a particular topic, please get in touch with us.
+    home:
+      heading: Recent News
+      button: All News & Press Releases
   contact:
     heading: Get in Touch
-  meeting:
-    heading: Schedule a Meeting
-    intro: We are excited to hear from you. Schedule a time that works for you directly below in our calendar.
+    intro: We are excited to hear from you. Send us a message through the form below or directly schedule a time for a short intro meeting via our booking widget.
+    button: Schedule Meeting
+    meeting:
+      heading: Schedule a Meeting
+    message:
+      heading: Send us a Message

@@ -15,8 +15,8 @@ items:
       - url: /about/
         name: About
         id: about
-      - url: /investment-process/
-        name: Investment Process
+      - url: /investment-approach/
+        name: Investment Approach
         id: process
       - url: /portfolio/
         name: Portfolio
@@ -68,7 +68,7 @@ items:
         text: >-
           Dionas is an Agronomist from Brazil. He has experience in agricultural development focussed on continuous improvement and innovation. Dionas’ mission is to raise the level of food production in underdeveloped countries in a sustainable and regenerative way.
       - name: Matheus Picinin
-        title: Social Media Coordinator
+        title: Marketing Coordinator
         img: /assets/img/team/matheus-picinin.jpg
         mail: matheus@agrofundone.com
         linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
@@ -77,43 +77,52 @@ items:
   about:
     heading: About Agro Fund One
     intro:
-      - In 2050, the number of people living on our planet will grow to 10 billion, and that could double the demand for food, feed, fiber and biofuels from 2005 levels. It is imperative that this demand be met in a way that is economically viable, environmentally sustainable and socially beneficial.
-      - Agro Fund One provides capital and expertise to sustainable and innovative businesses that tackle these challenges.
+      - As an US based investment fund focused on agriculture, Agro Fund One strives to encourage environmental health, economic growth, and socioeconomic equity. We collaborate with local governments, institutions, and private enterprises to develop land and establish joint ventures in the food sector. We intend to accelerate and support the transition to a more sustainable, healthy, and fair agricultural market.
+      - In Brazil and the United States our fund counts on experienced advisors that have built successful business ventures in both countries as well as a staff of highly skilled individuals that understand conventional farming methods and have the expertise to apply and spread stakeholder capitalism principles. In addition, Agro Fund One continually fosters  relationships with local farmers and stakeholders to build off local knowledge, culturally sensitive technology use, and sound market analysis.
     intro_list:
       - Investments into agriculture projects that promote soil health and increase biodiversity
       - Turnaround investments into distressed operations
-      - Venture capital to promising agricultural technology
+      - Venture capital to or outright acquisition of promising agricultural technology
       - Financial brokerage for access to capital
+      - Cross-border market development for agricultural technologies
 
   investment:
     heading: Investment Approach
     values:
       heading: Investment Values
       items:
-        - heading: We Actively Lead
+        - heading: We actively lead
+          img: /assets/img/investment/lead.jpg
           text: Agro Fund One typically invests in control positions in order to impact financial and operational results. Our strategy is operationally-driven, with a focus on adding value and substantially improving businesses.
-        - heading: We are an add-value partner
-          text: Our investment and operating professionals work closely with management teams to drive operational results, increase growth, and strengthen overall performance of each and every one of our portfolio companies.
-        - heading: Deep-dive due diligence in each of our investment evaluations
-          text: By combining our collaborative research-intensive framework with our sector expertise and unique international industry relationships, we have been able to identify a number of unique opportunities outside the scope of competitive auction processes, unlocking attractive growth prospects while maintaining valuation discipline.
         - heading: We support disruption and innovation
+          img: /assets/img/investment/innovation.jpg
           text: "We are committed to addressing real, imminent challenges in the global food and agribusiness sector by championing companies that deliver innovative and meaningful solutions that support the following:"
           list:
             - Economic Growth
-            - Human rights and Fair labor standards
-            - Safe and Healthy products to end consumers
-            - Food Supply Security
-            - Profitability for Farmers
-            - Soil Health/Carbon Sequestration
+            - Human rights and fair labor standards
+            - Safe and healthy products to end consumers
+            - Food supply security
+            - Profitability for farmers
+            - Soil health/carbon sequestration
+            - Environmental justice
             - Biodiversity
+        - heading: We are an add-value partner
+          img: /assets/img/investment/partner.jpg
+          text: Our investment and operating professionals work closely with management teams to drive operational results, increase growth, and strengthen overall performance of each and every one of our portfolio companies.
+        - heading: Deep-dive due diligence in each of our investment evaluations
+          img: /assets/img/investment/diligence.jpg
+          text: By combining our collaborative research-intensive framework with our sector expertise and exclusive international industry relationships, we have been able to identify a number of unique opportunities and unlock attractive growth prospects while maintaining valuation discipline.
         - heading: We are focused
-          text: Agro Fund One focuses exclusively on the sustainable food supply chain in North, Central and South America. Our professionals are culturally diverse and have unique experience in food and agribusiness, with a demonstrated track record necessary to invest competitively and successfully in the space.
+          img: /assets/img/investment/focus.jpg
+          text: Agro Fund One focuses exclusively on the sustainable food supply chain in North, Central and South America. Our professionals are culturally diverse and have passion and unique experience in food and agribusiness, with a demonstrated track record necessary to invest competitively and successfully in the space.
         - heading: Build relationships
+          img: /assets/img/investment/relationship.jpg
           text: Through our investments we seek to develop trusted, long-term relationships that allow the development and achievement of longstanding production and sustainability goals.
-
     criteria:
       heading: Investment Criteria
-      text: Agro Fund One is seeking high-quality businesses that ideally satisfies the following criteria.
+      text: Agro Fund One is seeking to invest in high-quality businesses that ideally satisfies the following criteria.
+      text2: Your business does not meet all the desired criteria? Do not worry. These are flexible and we want to hear more from you.
+      text2cta: Schedule an introductory meeting here
       items:
         - name: Industry
           list:
@@ -124,7 +133,7 @@ items:
         - name: Business
           list:
             - Distinctive value proposition
-            - Adopt effective ag tech resources
+            - Adopt effective Ag Tech resources
             - Recurring/contractual revenue
             - Identifiable growth opportunities
             - Diverse, loyal customer base
@@ -141,17 +150,20 @@ items:
         - name: "Step 1: Understand"
           text: "Issue a Non-Disclosure Agreement (NDA) : Explore ownership, vision, goals, opportunities, and preliminary terms. Discuss customers, products, finance, marketing, sales, value proposition and growth trajectories."
         - name: "Step 2: In-depth due diligence"
-          text: "Review finance model, legal, operations, executive team, information and technology. In most situations we elaborate our own investor model in collaboration with our prospect partner."
+          text: "Review finance model, legal, operations, executive team, information and technology."
         - name: "Step 3: Indication of Interest (IoI)"
-          text: "Review and negotiate Purchase or Operating Agreement term sheet."
-        - name: "Step 4: Invest"
-          text: "Complete the transaction and begin the management onboarding process."
+          text: "Review and negotiate Purchase or Operating Agreement term sheet. In some situations we elaborate our own investor model in collaboration with our prospect partner."
+        - name: "Step 4: Complete the transaction and begin the management onboarding process"
+          text: "Establish agreed governance model and start the work. We strive to allowing existing management teams to be fully responsible for day-to-day operations as long as they are meeting the projected financial performance targets and business plan timelines as jointly determined."
 
   portfolio:
     heading: Our Portfolio
     text: >-
       Between Eastern European offices in Georgia and Ukraine, a trading office scheduled to open mid-2021 in Switzerland, our banking center in Hong Kong, field operations spread over 5 continents, our key Horn of Africa strategy, and our Midwestern headquarters in the United States, <strong>we have built our fund on a truly global reach.</strong>
     button: More about our Portfolio
+    message: Our portfolio companies support the expansion of sustainable agricultural production in regions of the world challenged by social injustices, climate risk, and dependency on food imports. Agro Fund One sees great value to collaborate with a diverse set of co-creators in order to enable broader thinking and innovation towards community regeneration, resiliency, and food production. We want to be part of the creation of the future we believe in.
+    support:
+      heading: Projects Supported by Agro Fund One
     items:
       - heading: Marvella Farms
         subheading: Fresh produce grown in the desert
@@ -225,6 +237,7 @@ items:
   news:
     heading: News & Press Releases
     text: Find all our recent news posts and press releases below. <br>Want to talk about a specific topic?
+    message: Our news are available in English only. Should you be interested in more information on a particular topic, please get in touch with us.
     home:
       heading: Recent News
       button: All News & Press Releases

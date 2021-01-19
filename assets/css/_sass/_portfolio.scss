@@ -1,16 +1,5 @@
 /* portfolio styles */
 
-#portfolio {
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .row > div[class*="col-"] {
-    display: flex;
-  }
-}
-
 .card-a {
   &:hover {
     box-shadow: 0 6px 18px 0 rgba(86, 91, 115, 0.45) !important;
