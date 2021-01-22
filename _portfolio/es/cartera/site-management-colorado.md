@@ -1,7 +1,7 @@
 ---
-title: Site Management in Colorado, USA
-lang: en
-region: North America
+title: Gestión de obras en Colorado - Estados Unidos
+lang: es
+region: América del Norte
 invested: 2000
 location: Colorado, USA
 website:
@@ -10,4 +10,4 @@ twitter:
 published: false
 ---
 
-Agro Fund One has the opportunity to develop indoor grow facilities on two sites one with rail access and both with water and solar capabilities.
+Agro Fund One tiene la oportunidad de desarrollar instalaciones de cultivo interior en dos emplazamientos, uno de ellos con acceso ferroviario y ambos con capacidad de suministro de agua y energía solar.

@@ -1,9 +1,9 @@
 ---
-lang: en
+lang: es
 title: Blue Heron Farms
-subtitle: Wide variety of crops and specialty foods
+subtitle: Gran variedad de cultivos y alimentos especiales
 site: http://blueheron.info
-region: Eastern Europe
+region: Europa del Este
 img: /assets/img/portfolio/bh.jpg
 logo: /assets/img/portfolio/bh.jpg
 invested: 2000
@@ -13,4 +13,4 @@ linkedin:
 twitter:
 ---
 
-Actively managing an 1800 hectare farm on behalf of a Georgian institutional client since 2012. We also co-own a large specialty row crop machinery portfolio that is lease through a revenue share model on specialty crops in the region. Our work in Georgia once included the active management of one of the region’s largest bee apiary enterprises.
+Gestionamos activamente una explotación de 1.800 hectáreas en nombre de un cliente institucional de Georgia desde 2012. También somos copropietarios de una gran cartera de maquinaria para cultivos en hilera que se arrienda mediante un modelo de participación en los ingresos de los cultivos especializados de la región. Nuestro trabajo en Georgia incluía la gestión activa de una de las mayores empresas apícolas de la región.

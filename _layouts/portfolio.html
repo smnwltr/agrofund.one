@@ -30,18 +30,20 @@ layout: base
     </div>
     <div class="row justify-content-center">
         {% for i in site.portfolio %}
-            <div class="col-md-4">
-                <div class="card card-a mb-5">
-                    {% if i.img %}
-                    <img class="card-img-top img-fluid" src="{{i.img}}" alt="{{i.title}}">
-                    {% endif %}
-                    <div class="card-block p-3 h-100 d-flex flex-column">
-                        <h5 class="card-title mb-0">{{i.title}}</h5>
-                        <p class="card-text mb-2"><small class="text-muted">{{i.region}}</small></p>
-                        <a class="mt-auto btn btn-primary btn-sm btn-solid stretched-link" href="{{i.url}}">View Details</a>
+            {% if i.lang == page.lang %}
+                <div class="col-md-4">
+                    <div class="card card-a mb-5">
+                        {% if i.img %}
+                        <img class="card-img-top img-fluid" src="{{i.img}}" alt="{{i.title}}">
+                        {% endif %}
+                        <div class="card-block p-3 h-100 d-flex flex-column">
+                            <h5 class="card-title mb-0">{{i.title}}</h5>
+                            <p class="card-text mb-2"><small class="text-muted">{{i.region}}</small></p>
+                            <a class="mt-auto btn btn-primary btn-sm btn-solid stretched-link" href="{{i.url}}">{{data.view_details}}</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            {% endif %}
         {% endfor %}
     </div>
 
@@ -57,7 +59,7 @@ layout: base
                             {% endif %}
                             <div class="card-block p-3 h-100 d-flex flex-column">
                                 <h5 class="card-title mb-2">{{i.project}}</h5>
-                                <a class="mt-auto btn btn-primary btn-sm btn-solid stretched-link" href="{{i.url}}">Read More</a>
+                                <a class="mt-auto btn btn-primary btn-sm btn-solid stretched-link" href="{{i.url}}">{{data.read_more}}</a>
                             </div>
                         </div>
                     </div>
