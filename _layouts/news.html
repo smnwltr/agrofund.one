@@ -34,7 +34,7 @@ layout: base
         <div class="col-md-10 col-lg-8">
             <h1>{{data.heading}}</h1>
             <p class="mt-4">{{data.text}}</p>
-            <p><a href="/{{page.lang}}/{{contact_link}}/" class="btn btn-primary btn-solid btn-sm">{{contact_name}}</a></p>
+            <p><a href="/{{page.lang}}{{contact_link}}" class="btn btn-primary btn-solid btn-sm">{{contact_name}}</a></p>
             {% unless page.lang == "en" %}<p>{{data.message}}</p>{% endunless %}
         </div>
     </div>

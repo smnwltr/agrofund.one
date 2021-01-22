@@ -8,6 +8,8 @@ layout: base
     {% if page.link %}
     <p class="mt-5"><a href="{{page.link}}" target="_blank" rel="noopener" class="btn btn-primary btn-solid"> Read Full Article</a></p>
     {% endif %}
+
+    {% if page.lang == "en" %}
     <p class="mt-5"> 
         <a href="/{{page.lang}}/news/" class="">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -16,5 +18,6 @@ layout: base
             Back to All News
         </a>
     </p>
+    {% endif %}
 
 </div>  

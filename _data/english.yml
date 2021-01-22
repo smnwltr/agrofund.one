@@ -11,13 +11,13 @@ items:
     items:
       - url: /
         name: Home
-        id: home
+        id: index
       - url: /about/
         name: About
         id: about
       - url: /investment-approach/
         name: Investment Approach
-        id: process
+        id: investment
       - url: /portfolio/
         name: Portfolio
         id: portfolio
