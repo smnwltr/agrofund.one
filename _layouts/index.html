@@ -86,7 +86,7 @@ layout: base
 
 <div class="bg-green">
     <div class="container py-5">
-        <h2 class="text-white text-center">Follow Us on Social Media</h2>
+        <h2 class="text-white text-center">{{home.social_media}}</h2>
         <p class="text-center mt-4">
             <a class="mr-4" href="{{site.social_media.twitter}}" target="_blank" rel="noopener"><img class="img-white" height="32px" width="32px" src="/assets/img/icon/twitter.png" alt="{{page.title}} Twitter"></a>
             <a class="mr-4" href="{{site.social_media.linkedin}}" target="_blank" rel="noopener"><img class="img-white" height="32px" width="32px" src="/assets/img/icon/linkedin.png" alt="{{page.title}} LinkedIn"></a>
@@ -126,7 +126,7 @@ layout: base
                 <img class="card-img-top" style="height: 150px; object-fit: cover; object-position: top;" src="{% if i.img %}{{i.img}}{% else %}/assets/img/logo.png{% endif %}" alt="{{i.title}}">
                 <div class="card-body d-flex flex-column align-items-start">
                     <h5 class="card-title mb-4">{{i.title}}</h5>
-                    <p class="mt-auto mb-0"><a class="btn btn-primary btn-solid stretched-link" href="{{i.url}}">Full Article</a></p>
+                    <p class="mt-auto mb-0"><a class="btn btn-primary btn-solid stretched-link" href="{{i.url}}">{{news.full_article}}</a></p>
                 </div>
                 <div class="card-footer">
                     <p class="mb-0"><small class="text-muted">{{i.date|date:'%B %e, %Y'}}</small></p>

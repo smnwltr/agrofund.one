@@ -34,6 +34,7 @@ items:
       - Agro Fund One, Limited is an agricultural investment fund targeting the agricultural sector in North, Central and South America. The Fund’s primary focus is on generating competitive risk-adjusted returns while ensuring benefits to all stakeholders across the ecosystems in which we operate.
       - Agro Fund One’s mandate is to grow investor wealth by converting conventional commercial farmland to regenerative as well as developing sustainable indoor farming operations in regions of the world affected by climate change.
     button: Start a Conversation
+    social_media: Follow Us on Social Media
   team:
     heading: Our Team
     button: Meet our Team
@@ -46,13 +47,6 @@ items:
         linkedin: https://www.linkedin.com/in/guilhermesvsmoreira/
         text: >-
           Guilherme is a Brazilian Environmental Engineer passionate about sustainable development. He is committed to ensure the sustainability impact of our international investments so that they genuinely benefit local communities while ensuring profitability for investors.
-      - name: Maria Dyatchyna
-        title: European Project Analyst
-        img: /assets/img/team/maria-dyatchyna.jpg
-        mail: maria@agrofundone.com
-        linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
-        text: >-
-          Having an innovative approach and background in IT & business development Maria is a believer in Artificial Intelligence, IoT & Robotics. She is bringing her experience and expertise with the aim to find new European technologies and solutions with the potential for application in Latin America and the US to support Sustainable and Precision agriculture.
       - name: Mark M. Erjavec
         title: Fund Manager
         img: /assets/img/team/mark-erjavec-hat.jpg
@@ -60,6 +54,13 @@ items:
         linkedin: https://www.linkedin.com/in/markerjavec/
         text: >-
           With the support of a market-leading research team and hands-on management of direct investments, Mark travels the world exploring new opportunities and working to develop quality relationships on behalf of the Agro Fund One and for our stakeholders.
+      - name: Maria Dyatchyna
+        title: International Project Analyst
+        img: /assets/img/team/maria-dyatchyna.jpg
+        mail: maria@agrofundone.com
+        linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
+        text: >-
+          Having an innovative approach and background in IT & business development Maria is a believer in Artificial Intelligence, IoT & Robotics. She is bringing her experience and expertise with the aim to find new European technologies and solutions with the potential for application in Latin America and the US to support Sustainable and Precision agriculture.
       - name: Dionas Silva
         title: South American Project Analyst
         img: /assets/img/team/dionas-silva.jpg
@@ -164,6 +165,12 @@ items:
     message: Our portfolio companies support the expansion of sustainable agricultural production in regions of the world challenged by social injustices, climate risk, and dependency on food imports. Agro Fund One sees great value to collaborate with a diverse set of co-creators in order to enable broader thinking and innovation towards community regeneration, resiliency, and food production. We want to be part of the creation of the future we believe in.
     view_details: View Details
     read_more: Read More
+    region: Region
+    location: Location
+    invested: Invested
+    website: Website
+    social_media: Social Media
+    back_button: Back to Portfolio
     support:
       heading: Projects Supported by Agro Fund One
     items:
@@ -243,6 +250,8 @@ items:
     home:
       heading: Recent News
       button: All News & Press Releases
+    full_article: Full Article
+    back_button: Back to All News
   contact:
     heading: Get in Touch
     intro: We are excited to hear from you. Send us a message through the form below or directly schedule a time for a short intro meeting via our booking widget.

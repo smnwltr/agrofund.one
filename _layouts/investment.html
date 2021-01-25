@@ -36,6 +36,18 @@ layout: base
     </div>
     <div class="row mt-5 justify-content-center">
         <div class="col-md-12">
+            <h2>{{data.investment.process.heading}}</h2>
+            <p>{{data.investment.process.text}}</p>
+            {% for i in data.investment.process.items %}
+                <div class="mb-4">
+                    <h4>{{i.name}}</h4>
+                    <p>{{i.text}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+        <div class="col-md-12">
             <h2>{{data.investment.criteria.heading}}</h2>
             <p>{{data.investment.criteria.text}}</p>            
             {% for i in data.investment.criteria.items %}
@@ -56,18 +68,6 @@ layout: base
                 {% endif %}
             {% endfor %}
             <p><a class="btn btn-primary" href="/{{page.lang}}{{contact_link}}">{{data.investment.criteria.text2cta}}</a></p>
-        </div>
-    </div>
-    <div class="row mt-5 justify-content-center">
-        <div class="col-md-12">
-            <h2>{{data.investment.process.heading}}</h2>
-            <p>{{data.investment.process.text}}</p>
-            {% for i in data.investment.process.items %}
-                <div class="mb-4">
-                    <h4>{{i.name}}</h4>
-                    <p>{{i.text}}</p>
-                </div>
-            {% endfor %}
         </div>
     </div>
 </div>

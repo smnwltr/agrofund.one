@@ -2,11 +2,20 @@
 layout: base
 ---
 
+{% case page.lang %}
+    {% when "en" %}
+        {% assign news = site.data.english.items.news %}
+    {% when "es" %}
+        {% assign news = site.data.spanish.items.news %}
+    {% when "pt" %}
+        {% assign news = site.data.portuguese.items.news %}
+{% endcase %}
+
 <div class="container mt-5 pt-5">
     <h1>{{page.title}}</h1>
     {{content}}
     {% if page.link %}
-    <p class="mt-5"><a href="{{page.link}}" target="_blank" rel="noopener" class="btn btn-primary btn-solid"> Read Full Article</a></p>
+    <p class="mt-5"><a href="{{page.link}}" target="_blank" rel="noopener" class="btn btn-primary btn-solid">{{news.full_article}}</a></p>
     {% endif %}
 
     {% if page.lang == "en" %}
@@ -15,7 +24,7 @@ layout: base
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
             </svg>
-            Back to All News
+            {{news.back_button}}
         </a>
     </p>
     {% endif %}

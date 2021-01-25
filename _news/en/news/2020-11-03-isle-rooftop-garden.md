@@ -11,7 +11,7 @@ Agro Fund One is actively supporting a development in the city of Isle, Minnesot
 <div class="row">
     <div class="col-md-6">
                 <a href="{{page.img}}" data-toggle="lightbox" data-gallery="Isle Rooftop Garden" class="light-img">
-                <img src="{{page.img}}" class="img-fluid" alt="Isle Rooftop Garden Drawing>
+                <img src="{{page.img}}" class="img-fluid" alt="Isle Rooftop Garden Drawing">
             </a>
     </div>
 </div>

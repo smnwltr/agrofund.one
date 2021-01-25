@@ -47,7 +47,12 @@
                                     {% assign lang = site.data.portuguese.items.navigation.items %}
                             {% endcase %}
                             {% for j in lang %}
-                                {% if page.layout == j.id %}
+                                {% if page.layout == 'portfolio_sites' %}
+                                {% assign ident = 'portfolio' %}
+                                {% else %}
+                                {% assign ident = page.layout %}
+                                {% endif %}
+                                {% if ident == j.id %}
                                     <a class="dropdown-item font-weight-normal" href="/{{i.short}}{{j.url}}">{{i.name}}</a>
                                 {% endif %}
                             {% endfor %}

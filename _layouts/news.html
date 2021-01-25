@@ -49,7 +49,7 @@ layout: base
                     <div class="card-body">
                         <h4 class="card-title mb-0">{{i.title}}</h4>
                         <p class="card-text">{{i.content|truncatewords: 20}}</p>
-                        <a class="btn btn-primary btn-solid stretched-link" href="{{i.url}}">Read Full Post</a>
+                        <a class="btn btn-primary btn-solid stretched-link" href="{{i.url|replace:'index.html'}}">{{data.full_article}}</a>
                     </div>
                     <p class="card-footer mb-0 mt-2"><small class="text-muted">{{i.date|date:'%B %e, %Y'}}</small></p>
                 </div>

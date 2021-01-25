@@ -6,7 +6,7 @@ site: http://blueheron.info
 region: Eastern Europe
 img: /assets/img/portfolio/bh.jpg
 logo: /assets/img/portfolio/bh.jpg
-invested: 2000
+invested:
 location: Georgia
 website: blueheron.info
 linkedin:

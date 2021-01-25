@@ -14,16 +14,16 @@ Read the <a href="/assets/documents/Letter-of-Intent-AFO-Phillips.pdf" target="_
     <div class="col-md-12">
         <div class="row">
             <a href="/assets/img/news/east-phillips.jpg" data-toggle="lightbox" data-gallery="east-phillips-gallery" class="col-sm-3 light-img">
-                <img src="/assets/img/news/east-phillips.jpg" class="img-fluid" alt="East Phillips Image 1>
+                <img src="/assets/img/news/east-phillips.jpg" class="img-fluid" alt="East Phillips Image 1">
             </a>
             <a href="/assets/img/news/east-phillips1.jpg" data-toggle="lightbox" data-gallery="east-phillips-gallery" class="col-sm-3 light-img">
-                <img src="/assets/img/news/east-phillips1.jpg" class="img-fluid" alt="East Phillips Image 2>
+                <img src="/assets/img/news/east-phillips1.jpg" class="img-fluid" alt="East Phillips Image 2">
             </a>
             <a href="/assets/img/news/east-phillips2.jpg" data-toggle="lightbox" data-gallery="east-phillips-gallery" class="col-sm-3 light-img">
-                <img src="/assets/img/news/east-phillips2.jpg" class="img-fluid" alt="East Phillips Image 3>
+                <img src="/assets/img/news/east-phillips2.jpg" class="img-fluid" alt="East Phillips Image 3">
             </a>
                         <a href="/assets/img/news/east-phillips3.jpg" data-toggle="lightbox" data-gallery="east-phillips-gallery" class="col-sm-3 light-img">
-                <img src="/assets/img/news/east-phillips3.jpg" class="img-fluid" alt="East Phillips Image 4>
+                <img src="/assets/img/news/east-phillips3.jpg" class="img-fluid" alt="East Phillips Image 4">
             </a>
         </div>
     </div>

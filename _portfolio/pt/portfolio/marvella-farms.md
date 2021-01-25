@@ -1,16 +1,16 @@
 ---
 title: Marvella Farms
-subtitle: Fresh produce grown in the desert
-lang: en
+subtitle: Produtos frescos cultivados no deserto
+lang: pt
 site: https://marvellafarms.com
-region: Africa
+region: África
 img: /assets/img/portfolio/marvella.jpg
 logo: /assets/img/portfolio/marvella-logo.jpg
-invested: 2020
+invested:
 location: Djibouti
 website: marvellafarms.com
 linkedin: linkedin.com/company/68168854/
 twitter: twitter.com/marvellafarms
 ---
 
-Oasis complex of indoor farms producing year round fresh produce grown in the desert utilizing practical, sustainable and affordable design that can be replicated at scale. The fresh produce will be marketed locally and for export through both the shipping port and inland to support the cities of Africa, the fastest growing population in the world.
+Um oásis feito de estufas protegidas que produzem produtos frescos durante o ano todo, cultivados no deserto, utilizando um design prático, sustentável e acessível que pode ser reproduzido em escala. Os produtos frescos serão comercializados localmente e para exportação através do porto e por terra para apoiar as cidades da África, população com o crescimento mais rápido no mundo.

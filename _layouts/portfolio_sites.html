@@ -2,6 +2,21 @@
 layout: base
 ---
 
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items %}
+    {% when "es" %}
+        {% assign data = site.data.spanish.items %}
+    {% when "pt" %}
+        {% assign data = site.data.portuguese.items %}
+    {% endcase %}
+
+{% for i in data.language.items %}
+    {% if i.short == 'portfolio' %}
+    {% assign portfolio_link = i.url %}
+    {% endif %}
+{% endfor %}
+
 <div class="container mt-5 pt-5">
     <div class="row">
         {% if page.logo %}
@@ -16,31 +31,31 @@ layout: base
         <div class="col-md-2 offset-md-{% if page.logo %}1{% else %}4{% endif %}">
             {% if page.region %}
             <p>
-                <small class="text-muted">Region</small><br>
+                <small class="text-muted">{{data.portfolio.region}}</small><br>
                 {{page.region}}
             </p>
             {% endif %}
             {% if page.location %}
             <p>
-                <small class="text-muted">Location</small><br>
+                <small class="text-muted">{{data.portfolio.location}}</small><br>
                 {{page.location}}
             </p>
             {% endif %}
             {% if page.invested %}
             <p>
-                <small class="text-muted">Invested</small><br>
+                <small class="text-muted">{{data.portfolio.invested}}</small><br>
                 {{page.invested}}
             </p>
             {% endif %}
             {% if page.website %}
             <p>
-                <small class="text-muted">Website</small><br>
+                <small class="text-muted">{{data.portfolio.website}}</small><br>
                 <a href="//{{page.website}}" target="_blank" rel="noopener">{{page.website}}</a>
             </p>
             {% endif %}
             {% if page.twitter or page.linkedin %}
             <p>
-                <small class="text-muted">Social Media</small><br>
+                <small class="text-muted">{{data.portfolio.social_media}}</small><br>
                 {% if page.twitter %}<a class="mr-2" href="//{{page.twitter}}" target="_blank" rel="noopener"><img height="24px" width="24px" src="/assets/img/icon/twitter.png" alt="{{page.title}} Twitter"></a>{% endif %}
                 {% if page.linkedin %}<a class="mr-2" href="//{{page.linkedin}}" target="_blank" rel="noopener"><img height="24px" width="24px" src="/assets/img/icon/linkedin.png" alt="{{page.title}} LinkedIn"></a>{% endif %}
 
@@ -49,11 +64,11 @@ layout: base
         </div>
     </div>
     <p class="mt-5"> 
-        <a href="/{{page.lang}}/portfolio/" class="">
+        <a href="{{portfolio_link}}" class="">
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
             </svg>
-            Back to Portfolio
+            {{data.portfolio.back_button}}
         </a>
     </p>
 </div>

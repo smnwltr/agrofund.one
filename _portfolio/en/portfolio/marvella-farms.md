@@ -6,7 +6,7 @@ site: https://marvellafarms.com
 region: Africa
 img: /assets/img/portfolio/marvella.jpg
 logo: /assets/img/portfolio/marvella-logo.jpg
-invested: 2020
+invested:
 location: Djibouti
 website: marvellafarms.com
 linkedin: linkedin.com/company/68168854/

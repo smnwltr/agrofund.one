@@ -39,7 +39,7 @@ layout: base
                         <div class="card-block p-3 h-100 d-flex flex-column">
                             <h5 class="card-title mb-0">{{i.title}}</h5>
                             <p class="card-text mb-2"><small class="text-muted">{{i.region}}</small></p>
-                            <a class="mt-auto btn btn-primary btn-sm btn-solid stretched-link" href="{{i.url}}">{{data.view_details}}</a>
+                            <a class="mt-auto btn btn-primary btn-sm btn-solid stretched-link" href="{{i.url|replace:'index.html'}}">{{data.view_details}}</a>
                         </div>
                     </div>
                 </div>
