@@ -1,0 +1,149 @@
+---
+layout: base
+---
+
+{% case page.lang %}
+    {% when "en" %}
+        {% assign navigation = site.data.english.items.navigation %}
+        {% assign home = site.data.english.items.home %}
+        {% assign portfolio = site.data.english.items.portfolio %}
+        {% assign team = site.data.english.items.team %}
+        {% assign news = site.data.english.items.news %}
+    {% when "es" %}
+        {% assign navigation = site.data.spanish.items.navigation %}
+        {% assign home = site.data.spanish.items.home %}
+        {% assign portfolio = site.data.spanish.items.portfolio %}
+        {% assign team = site.data.spanish.items.team %}
+        {% assign news = site.data.spanish.items.news %}
+    {% when "pt" %}
+        {% assign navigation = site.data.portuguese.items.navigation %}
+        {% assign home = site.data.portuguese.items.home %}
+        {% assign portfolio = site.data.portuguese.items.portfolio %}
+        {% assign team = site.data.portuguese.items.team %}
+        {% assign news = site.data.portuguese.items.news %}
+{% endcase %}
+
+<div class="video-container">
+    <video playsinline autoplay muted loop poster="/assets/video/poster.jpg" id="bgvid">
+        <source src="/assets/video/bgvideo.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1 class="video-header">{{home.heading}}</h1>
+    </div>
+</div>
+
+<section class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            {% for i in home.intro limit:1 %}
+            <p class="lead">{{i}}</p>
+            {% endfor %}
+            <p class="mt-5 text-center">
+                <button class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#collapseSchedule" role="button" aria-expanded="false" aria-controls="collapseSchedule" target="_blank">
+                    <svg class="bi" width="24" height="24" fill="currentColor">
+                        <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+                    </svg> {{home.button}}
+                </button>
+            </p>
+        </div>
+    </div>
+    <div id="collapseSchedule" class="collapse">
+        <!-- Start of Meetings Embed Script --><div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/simon508?embed=true"></div><script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script><!-- End of Meetings Embed Script -->
+    </div>
+</section>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6 align-self-center">
+            <h2 class="text-center">{{team.heading}}</h2>
+            <p class="lead">{{team.intro}}</p>            
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                {% for i in team.items %}
+                <div class="col-6 col-lg-4 mb-2 text-center">
+                    <img class="img-fluid rounded-circle img-team" style="max-height: 80px; max-width: 80px" alt="{{i.name}}" src="{{i.img}}">
+                    <p class="mb-0 mt-2 font-weight-bold">{{i.name}}</p>
+                    <p class="mb-0">{{i.title}}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <p class="text-right">
+        {% for i in navigation.items %}
+            {% if i.id == 'about' %}
+                {% assign about_link = i.url %}
+            {% endif %}
+        {% endfor %}
+        <a class="btn btn-primary btn-lg" href="/{{page.lang}}{{about_link}}">
+            <svg class="bi" width="24" height="24" fill="currentColor">
+                <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+            </svg> {{team.button}}
+        </a>
+    </p>
+</section>
+
+<div class="bg-green">
+    <div class="container py-5">
+        <h2 class="text-white text-center">{{home.social_media}}</h2>
+        <p class="text-center mt-4">
+            <a class="mr-4" href="{{site.social_media.twitter}}" target="_blank" rel="noopener"><img class="img-white" height="32px" width="32px" src="/assets/img/icon/twitter.png" alt="{{page.title}} Twitter"></a>
+            <a class="mr-4" href="{{site.social_media.linkedin}}" target="_blank" rel="noopener"><img class="img-white" height="32px" width="32px" src="/assets/img/icon/linkedin.png" alt="{{page.title}} LinkedIn"></a>
+        </p>
+    </div>
+</div>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-6 align-self-center">
+            <h2 class="text-center">{{portfolio.heading}}</h2>
+            <p class="lead mt-3">{{portfolio.text}}</p>
+        </div>
+        <div class="col-md-6">
+            {% include static_map.html %}
+        </div>
+    </div>
+    <p class="text-right">
+        {% for i in navigation.items %}
+            {% if i.id == 'portfolio' %}
+                {% assign portfolio_link = i.url %}
+            {% endif %}
+        {% endfor %}
+        <a class="btn btn-primary btn-lg" href="/{{page.lang}}{{portfolio_link}}">
+            <svg class="bi" width="24" height="24" fill="currentColor">
+                <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+            </svg> {{portfolio.button}}
+        </a>
+    </p>
+</section>
+
+<section class="container">
+    <h2>{{news.home.heading}}</h2>
+    <div class="card-deck mt-3">
+        {% for i in site.news reversed limit:3 %}
+            <div class="card">
+                <img class="card-img-top" style="height: 150px; object-fit: cover; object-position: top;" src="{% if i.img %}{{i.img}}{% else %}/assets/img/logo.png{% endif %}" alt="{{i.title}}">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <h5 class="card-title mb-4">{{i.title}}</h5>
+                    <p class="mt-auto mb-0"><a class="btn btn-primary btn-solid stretched-link" href="{{i.url}}">{{news.full_article}}</a></p>
+                </div>
+                <div class="card-footer">
+                    <p class="mb-0"><small class="text-muted">{{i.date|date:'%B %e, %Y'}}</small></p>
+                </div>                    
+            </div>
+        {% endfor %}
+    </div>
+    <p class="text-right mt-4">
+        {% for i in navigation.items %}
+        {% if i.id == "news" %}
+            {% assign news_link = i.url %}
+        {% endif %}
+        {% endfor %}
+        <a class="btn btn-primary btn-lg" href="/{{page.lang}}{{news_link}}">
+            <svg class="bi" width="24" height="24" fill="currentColor">
+                <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+            </svg> {{news.home.button}}
+        </a>
+    </p>
+</section>

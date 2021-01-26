@@ -1,9 +1,7 @@
-
 title: Agro Fund One
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-
 
 # Build settings
 theme: minima
@@ -14,9 +12,28 @@ sass:
   sass_dir: assets/css/_sass
 
 collections:
-  - news
+  news:
+    output: true
+    permalink: /:path/index.html
 
+  portfolio:
+    output: true
+    permalink: /:path/index.html
+
+defaults:
+  - scope:
+      type: "portfolio"
+    values:
+      layout: portfolio_sites
+  - scope:
+      type: "news"
+    values:
+      layout: news_sites
 exclude: [README.md]
+
+social_media:
+  twitter: https://twitter.com/agrofundone
+  linkedin: https://www.linkedin.com/company/agro-fund-one/
 
 # data for privacy policy
 address:

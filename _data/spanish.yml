@@ -1,0 +1,387 @@
+items:
+  languages:
+    - short: en
+      name: English
+    - short: es
+      name: Español
+    - short: pt
+      name: Português
+  navigation:
+    language: Cambiar el Idioma
+    items:
+      - url: "/"
+        name: Inicio
+        id: index
+      - url: "/sobre-nosotros/"
+        name: Sobre Nosotros
+        id: about
+      - url: "/enfoque-inversion/"
+        name: Enfoque de inversión
+        id: investment
+      - url: "/cartera/"
+        name: Nuestra Cartera
+        id: portfolio
+      - url: "/noticias/"
+        name: Noticias
+        id: news
+      - url: "/contacto/"
+        name: Contáctenos
+        id: contact
+  home:
+    heading:
+      Agro Fund One proporciona capital y experiencia a empresas sostenibles
+      e innovadoras del sector agrícola.
+    intro:
+      - Agro Fund One, Limited es un fondo de inversión agrícola dirigido al sector
+        agrícola de América del Norte, Central y del Sur. El objetivo principal del
+        Fondo es generar rendimientos competitivos ajustados al riesgo, garantizando
+        al mismo tiempo los beneficios para todas las partes interesadas en los ecosistemas
+        en los que operamos.
+      - El mandato de Agro Fund One es hacer crecer el valor de los inversores mediante
+        la conversión de tierras de cultivo comerciales convencionales en tierras de
+        cultivo regenerativas, así como también el desarrollo de operaciones sostenibles
+        de agricultura de interior en regiones del mundo afectadas por el cambio climático.
+    button: Inicie una Conversación
+    social_media: Síganos en las Redes Sociales
+  team:
+    heading: Nuestro Equipo
+    button: Conozca a Nuestro Equipo
+    intro:
+      Agro Fund One cuenta con un equipo de expertos en agricultura y gestión
+      de inversiones en todo el mundo.
+    items:
+      - name: Guilherme Moreira
+        title: Socio Director
+        img: "/assets/img/team/gui-moreira.jpg"
+        mail: guilherme@agrofundone.com
+        linkedin: https://www.linkedin.com/in/guilhermesvsmoreira/
+        text:
+          Guilherme es un ingeniero medioambiental brasileño apasionado por el desarrollo
+          sostenible. Se compromete a garantizar que el impacto de la sostenibilidad
+          de nuestras inversiones internacionales beneficien realmente a las comunidades
+          locales, y al mismo tiempo, a respaldar la rentabilidad para los inversores.
+      - name: Mark M. Erjavec
+        title: Gestor de Fondos
+        img: "/assets/img/team/mark-erjavec-hat.jpg"
+        mail: mark@agrofundone.com
+        linkedin: https://www.linkedin.com/in/markerjavec/
+        text:
+          Con el apoyo de un equipo de investigación líder en el mercado y la gestión
+          práctica de las inversiones directas, Mark viaja por el mundo explorando nuevas
+          oportunidades y trabajando para desarrollar relaciones de calidad en nombre
+          de Agro Fund One y para nuestros grupos de interés.
+      - name: Maria Dyatchyna
+        title: Analista de Proyectos Internacionales
+        img: "/assets/img/team/maria-dyatchyna.jpg"
+        mail: maria@agrofundone.com
+        linkedin: https://www.linkedin.com/in/maria-dyatchyna-8ab61137/
+        text:
+          Con un enfoque innovador y experiencia en TI y desarrollo de negocios,
+          María cree en la Inteligencia Artificial, IoT y Robótica. Ella está proporcionando
+          su experiencia y conocimientos con el objetivo de encontrar nuevas tecnologías
+          y soluciones europeas con el potencial de aplicación en América Latina y los
+          EE.UU. para apoyar la agricultura sostenible y de precisión.
+      - name: Dionas Silva
+        title: Analista de Proyectos de América del Sur
+        img: "/assets/img/team/dionas-silva.jpg"
+        mail: dionas@agrofundone.com
+        linkedin: https://www.linkedin.com/in/dionas-silva-1451a8153/
+        text:
+          Dionas es un agrónomo de Brasil. Tiene experiencia en desarrollo agrícola
+          centrado en la mejora continua y la innovación. La misión de Dionas es aumentar
+          el nivel de producción de alimentos en los países subdesarrollados de forma
+          sostenible y regenerativa.
+      - name: Matheus Picinin
+        title: Coordinador de Mercadeo
+        img: "/assets/img/team/matheus-picinin.jpg"
+        mail: matheus@agrofundone.com
+        linkedin: https://www.linkedin.com/in/matheus-raslan-a270941b4/
+        text:
+          Matheus es un comercializador digital brasileño con sede en Irlanda. Su
+          misión principal es construir una presencia en los medios sociales para Agro
+          Fund One. Además, crea conceptos visuales (imágenes y vídeos) para comunicar
+          ideas y conceptos relacionados con la estrategia de inversión de Agro Fund.
+  about:
+    heading: Sobre Agro Fund One
+    intro:
+      - Como fondo de inversión estadounidense centrado en la agricultura, Agro Fund
+        One se esfuerza por fomentar la salud medioambiental, el crecimiento económico
+        y la equidad socioeconómica. Colaboramos con gobiernos locales, instituciones
+        y empresas privadas para desarrollar tierras y establecer empresas conjuntas
+        en el sector alimentario. Pretendemos acelerar y apoyar la transición hacia
+        un mercado agrícola más sostenible, saludable y justo.
+      - En Brasil y Estados Unidos, nuestro fondo cuenta con asesores experimentados
+        que han creado empresas exitosas en ambos países. Asimismo, cont con una plantilla
+        de personas altamente calificadas que entienden los métodos agrícolas convencionales
+        y tienen la experiencia necesaria para aplicar y difundir los principios del
+        capitalismo de las partes interesadas. Además, Agro Fund One fomenta continuamente
+        las relaciones con los agricultores locales y las partes interesadas para aprovechar
+        los conocimientos locales, el uso de tecnología culturalmente sensible y un
+        sólido análisis de mercado.
+    intro_list:
+      - Inversiones en proyectos agrícolas que promuevan la salud del suelo y aumenten
+        la biodiversidad
+      - Inversiones de reconversión en operaciones en dificultades
+      - Capital riesgo o adquisición directa de tecnología agrícola prometedora
+      - Intermediación financiera para el acceso al capital
+      - Desarrollo del mercado transfronterizo de tecnologías agrícolas
+  investment:
+    heading: Enfoque de inversión
+    values:
+      heading: Valores de inversión
+      items:
+        - heading: Dirigimos activamente
+          img: "/assets/img/investment/lead.jpg"
+          text:
+            Agro Fund One suele invertir en posiciones de control para influir en
+            los resultados financieros y operativos. Nuestra estrategia está orientada
+            a las operaciones y se centra en añadir valor y mejorar sustancialmente
+            los negocios.
+        - heading: Apoyamos la disrupción y la innovación
+          img: "/assets/img/investment/innovation.jpg"
+          text:
+            "Nos comprometemos a abordar retos reales e inminentes en el sector
+            mundial de la alimentación y la agroindustria defendiendo a las empresas
+            que ofrecen soluciones innovadoras y significativas."
+          list:
+            - Crecimiento económico
+            - Derechos humanos y normas laborales justas
+            - Productos seguros y saludables para los consumidores finales
+            - Seguridad del suministro de alimentos
+            - Rentabilidad para los agricultores
+            - Soil health/carbon sequestration
+            - Salud del suelo/secuestro de carbono
+            - Biodiversidad
+        - heading: Somos un socio con valor añadido
+          img: "/assets/img/investment/partner.jpg"
+          text:
+            Nuestros profesionales de inversión y explotación trabajan estrechamente
+            con los equipos de gestión para impulsar los resultados operativos, aumentar
+            el crecimiento y reforzar el rendimiento general de todas y cada una de
+            las empresas de nuestra cartera.
+        - heading: Profunda diligencia en cada una de nuestras evaluaciones de inversión
+          img: "/assets/img/investment/diligence.jpg"
+          text:
+            Al combinar nuestro marco de investigación intensiva con nuestra experiencia
+            en el sector y las relaciones exclusivas con la industria internacional,
+            hemos sido capaces de identificar una serie de oportunidades únicas y desbloquear
+            perspectivas de crecimiento atractivas, manteniendo al mismo tiempo la disciplina
+            de valoración.
+        - heading: Somos concentrados
+          img: "/assets/img/investment/focus.jpg"
+          text:
+            Agro Fund One se centra exclusivamente en la cadena de suministro de
+            alimentos sostenibles en América del Norte, Central y del Sur. Nuestros
+            profesionales son culturalmente diversos y tienen pasión y experiencia única
+            en alimentos y agronegocios, con un historial demostrado necesario para
+            invertir competitivamente y con éxito en el espacio.
+        - heading: Construir relaciones
+          img: "/assets/img/investment/relationship.jpg"
+          text:
+            A través de nuestras inversiones buscamos desarrollar relaciones de
+            confianza a largo plazo que permitan el desarrollo y la consecución de objetivos
+            de producción y sostenibilidad a largo plazo.
+    criteria:
+      heading: Criterios de Inversión
+      text:
+        Agro Fund One busca invertir en negocios de alta calidad que idealmente
+        satisfagan los siguientes criterios.
+      text2:
+        "¿Su empresa no cumple todos los criterios deseados? No se preocupe.
+        Estos son flexibles y queremos saber más de usted."
+      text2cta: Programe una reunión de presentación aquí
+      items:
+        - name: Industria
+          list:
+            - Una industria considerable y en crecimiento
+            - Cadena de suministro agrícola sostenible
+            - Paisaje fragmentado
+            - Riesgo normativo mínimo
+        - name: Negocio
+          list:
+            - Propuesta de valor distintiva
+            - Adopción de recursos agrotécnicos eficaces
+            - Ingresos recurrentes/contractuales
+            - Oportunidades de crecimiento identificables
+            - Base de clientes diversa y leal
+        - name: Financiero
+          list:
+            - Más de 5 millones de dólares de ingresos anuales
+            - Más de 2 millones de dólares de flujo de caja anual
+            - "+15% de márgenes EBITDA"
+            - "+7% Crecimiento de los ingresos anuales"
+    process:
+      heading: Proceso de Inversión
+      text:
+        Tenemos un enfoque de proceso directo de 8 semanas que requiere un tiempo
+        mínimo de todas las partes involucradas y garantiza un proceso transparente
+        y eficiente.
+      items:
+        - name: "Paso 1: Entender"
+          text:
+            "Emitir un acuerdo de no divulgación (NDA) : Explorar la propiedad,
+            la visión, los objetivos, las oportunidades y los términos preliminares.
+            Discutir los clientes, los productos, las finanzas, el mercadeo, las ventas,
+            la propuesta de valor y las trayectorias de crecimiento."
+        - name: "Paso 2: Diligencia debida en profundidad"
+          text:
+            Revisar el modelo financiero, legal, operaciones, equipo ejecutivo,
+            información y tecnología
+        - name: "Paso 3: Indicación de interés (IdI)"
+          text:
+            Revisar y negociar la hoja de términos del acuerdo de compra o de explotación.
+            En algunas situaciones elaboramos nuestro propio modelo de inversor en colaboración
+            con nuestro socio potencial.
+        - name:
+            "Paso 4: Completar la transacción y comenzar el proceso de incorporación
+            de la dirección"
+          text:
+            Establecer el modelo de gobernanza acordado y comenzar el trabajo. Nos
+            esforzamos por permitir que los equipos de gestión existentes sean plenamente
+            responsables de las operaciones diarias, siempre que cumplan los objetivos
+            de rendimiento financiero previstos y los plazos del plan de negocio determinados
+            conjuntamente.
+  portfolio:
+    heading: Nuestra Cartera
+    text:
+      Entre las oficinas de Europa del Este en Georgia y Ucrania, una oficina
+      comercial que se abrirá a mediados de 2021 en Suiza, nuestro centro bancario
+      en Hong Kong, las operaciones sobre el terreno repartidas por los 5 continentes,
+      nuestra estrategia clave en el Cuerno de África y nuestra sede central en Estados
+      Unidos, <strong>hemos construido nuestro fondo con un alcance verdaderamente
+      global.</strong>
+    button: Más información sobre nuestra cartera
+    message:
+      Nuestras empresas de cartera apoyan la expansión de la producción agrícola
+      sostenible en regiones del mundo que se enfrentan a injusticias sociales, riesgo
+      climático y dependencia de las importaciones de alimentos. Agro Fund One ve
+      un gran valor en colaborar con un conjunto diverso de cocreadores para permitir
+      un pensamiento más amplio y la innovación hacia la regeneración de la comunidad,
+      la resiliencia y la producción de alimentos. Queremos formar parte de la creación
+      del futuro en el que creemos.
+    view_details: Ver Detalles
+    read_more: Leer Más (En Inglés)
+    region: Región
+    location: Ubicación
+    invested: Invertido
+    website: Página web
+    social_media: Redes Sociales
+    back_button: Volver a la cartera
+    support:
+      heading: Proyectos Apoyados por Agro Fund One
+    items:
+      - heading: Marvella Farms
+        subheading: Productos frescos cultivados en el desierto
+        p:
+          Complejo Oasis de granjas de interior que producen durante todo el año productos
+          frescos cultivados en el desierto utilizando un diseño práctico, sostenible
+          y asequible que puede reproducirse a escala. Los productos frescos se comercializarán
+          a nivel local y para su exportación a través del puerto de embarque y en el
+          interior para apoyar a las ciudades de África, la población de más rápido
+          crecimiento en el mundo.
+        href: www.marvellafarms.com
+      - heading: Aero Fleet One
+        subheading: Aplicación aérea de precisión
+        p:
+          Como licenciataria de una avanzada carga útil pesada, una tecnología de ala
+          fija procedente de Europa, trabajamos con clientes de toda América del Norte
+          y del Sur para desarrollar la primera flota de vehículos aéreos no tripulados
+          capaz de prestar servicios de aplicación aérea a escala comercial. Con sede
+          en Dakota del Norte, nuestra empresa se centra actualmente en el desarrollo
+          de la flota, la comercialización y el desarrollo de un equipo logístico y
+          de operaciones.
+        href: www.aerofleetone.com
+      - heading: Blue Heron Farms
+        subheading: Gran variedad de cultivos y alimentos especiales
+        p:
+          Gestionamos activamente una explotación de 1.800 hectáreas en nombre de un
+          cliente institucional de Georgia desde 2012. También somos copropietarios
+          de una gran cartera de maquinaria para cultivos en hilera que se arrienda
+          mediante un modelo de participación en los ingresos de los cultivos especializados
+          de la región. Nuestro trabajo en Georgia incluía la gestión activa de una
+          de las mayores empresas apícolas de la región.
+        href: www.blueheron.info
+      - heading: Gestión de obras en Colorado - Estados Unidos
+        p:
+          Agro Fund One tiene la oportunidad de desarrollar instalaciones de cultivo
+          interior en dos emplazamientos, uno de ellos con acceso ferroviario y ambos
+          con capacidad de suministro de agua y energía solar.
+      - heading: Gestión de obras en Minnesota - Estados Unidos
+        p:
+          Agro Fund One tiene la oportunidad de desarrollar instalaciones de cultivo
+          interior en dos emplazamientos que funcionan con energía solar renovable.
+    pois:
+      - name: Hong Kong
+        content:
+          - Hong Kong - Sede central de Asia
+        top: 44%
+        left: 77%
+        top_m: 38%
+        left_m: 75%
+      - name: Brazil
+        content:
+          - Sede central de América del Sur
+          - Desarrollo de la Fazenda Jacob, una granja modelo de agroforestería regenerativa
+        top: 69%
+        left: 34%
+        top_m: 58%
+        left_m: 32%
+      - name: Minnesota, USA
+        content:
+          - Minneapolis - Sede central de EE.UU.
+          - Gestión de obras en Minnesota
+          - <a href="https://www.aerofleetone.com" target="_blank" rel="noopener">Aplicación
+            aérea de precisión realizada por Aero Fleet One en Dakota del Norte</a>
+        top: 29%
+        left: 21%
+        top_m: 21%
+        left_m: 17%
+      - name: Europa del Este
+        content:
+          - Oficina de Europa del Este en Kiev, Ucrania
+          - <a href="http://www.blueheron.info" target="_blank" rel="noopener">Blue Heron
+            Farms en el país de Georgia</a>
+        top: 29%
+        left: 58%
+        top_m: 20%
+        left_m: 54%
+      - name: Colorado, EE.UU.
+        content:
+          - Ubicación de la oficina de EE.UU. en Denver
+          - Gestión de obras en Colorado
+        top: 33%
+        left: 18%
+        top_m: 28%
+        left_m: 13%
+      - name: Djibouti
+        content:
+          - <a href="https://www.marvellafarms.com" target="_blank" rel="noopener">Marvella
+            Farms</a>
+        top: 52%
+        left: 57%
+        top_m: 45%
+        left_m: 52%
+  news:
+    heading: Noticias y comunicados de prensa
+    text:
+      A continuación encontrará todas nuestras noticias y comunicados de prensa
+      recientes. <br>¿Quieres hablar de un tema específico?
+    message:
+      Nuestras noticias están disponibles sólo en inglés. Si está interesado
+      en obtener más información sobre un tema concreto, póngase en contacto con nosotros.
+    home:
+      heading: Noticias Recientes
+      button: Todas Noticias y comunicados de prensa
+    full_article: Artículo Completo (En Inglés)
+    back_button: Volver a todas las noticias
+  contact:
+    heading: Ponganse en contacto con nosotros
+    intro:
+      Nos encantaría saber sobre usted. Envíenos un mensaje a través del siguiente
+      formulario o programe directamente una hora para una breve reunión inicial a
+      través de nuestro widget de reservas.
+    button: Porgrama Reunión
+    meeting:
+      heading: Programa una reunión
+    message:
+      heading: Envíenos un mensaje

@@ -1,0 +1,46 @@
+---
+layout: base
+---
+
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items.contact %}
+    {% when "es" %}
+        {% assign data = site.data.spanish.items.contact %}
+    {% when "pt" %}
+        {% assign data = site.data.portuguese.items.contact %}
+{% endcase %}
+
+<div class="container mt-5 pt-5 text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1>{{page.title}}</h1>
+            <p class="mb-2 lead">{{data.intro}}</p>
+            <p>     
+                <a class="btn btn-primary mt-3" href="#meeting">
+                    <svg class="bi" width="24" height="24" fill="currentColor">
+                    <use xlink:href="/assets/icon/bootstrap-icons.svg#arrow-return-right"/>
+                </svg>
+                 {{data.button}}
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <div class="mt-3 pt-3 row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center mb-3">{{data.message.heading}}</h2>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+            <script>
+              hbspt.forms.create({
+            portalId: "8726486",
+            formId: "1701fc8f-4e9a-4599-9238-21fd51449dcb"
+            });
+            </script>
+        </div>
+    </div>
+
+    <h2 class="mt-5 mb-3" id="meeting">{{data.meeting.heading}}</h1>
+    <!-- Start of Meetings Embed Script --><div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/guilherme55?embed=true"></div><script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script><!-- End of Meetings Embed Script -->    
+    
+</div>

@@ -1,239 +1,46 @@
 ---
 layout: base
-title:
+title: Select Language
 ---
-<!-- assign variable to invalidate cache upon each new build -->
-{% assign cache_buster = site.time | date: '%s%N' %}
+<style>
+.lang-select-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    background-image: url("/assets/video/poster.jpg");
+    background-size: cover;
+    margin-top: -8px;
+    margin-left: -8px;
+}
+.lang-select-inner {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 150%;
+}
+#lang-select {
+    margin-top: 1rem;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    background-color: #6a9b7d;
+}
+</style>
 
-{% assign general = site.data.general.items %}
-
-<div class="video-container" id="video">
-    <video autoplay muted playsinline preload loop class="bg-video" poster="{{'/assets/video/poster.jpg'}}?{{cache_buster}}">
-        <source src="{{'/assets/video/seeds.mp4'}}?{{cache_buster}}" type="video/mp4">
-    </video>
-    <div class="headline d-none d-md-block">
-        <h1 class="text-white">{{general.headline}}</h1>
-        <h2>{{general.subheadline}}</h2>
+<div class="lang-select-container">
+    <img src="/assets/img/logo-full.png" alt="Agro Fund One" style="height: 100px; width: 100px; margin: 1rem">
+    <div class="lang-select-inner">
+            <select name="languages" id="lang-select" onchange="location = this.value;">
+                <option value="">Please choose your language</option>
+                <option value="/en/">English</option>
+                <option value="/es/">Español</option>
+                <option value="/pt/">Português</option>
+            </select>
     </div>
 </div>
-
-<!-- intro section -->
-
-<div class="bg-light py-5">
-    <a class="anchor" id="introduction"></a>
-    <div class="container">
-        <div class="d-md-none text-center mb-5">
-            <h1>{{general.headline}}</h1>
-            <h2>{{general.subheadline}}</h2>
-        </div>
-        <p class="lead">{{general.description}}</p>
-        <div class="row justify-content-center my-4">
-            <div class="col-md-8">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe allowfullscreen class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/Ihv931yp5IM?rel=0"></iframe>
-                </div>
-            </div>
-        </div>
-        <p class="lead">{{general.description2}}</p>
-        <div class="row text-center justify-content-center">
-            <div class="col-md-4 mt-4">
-                <a class="btn st-btn" data-target="#investModal" data-toggle="modal" href="" style="width: 180px">For Investors</a>
-            </div>
-            <div class="col-md-4 mt-4">
-                <a class="btn st-btn" data-target="#submitModal" data-toggle="modal" href="" style="width: 180px">For Entrepreneurs</a>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="container pb-5 mb-5">
-    <h2 class="mt-5 pt-5 text-center">{{general.opps.heading}}</h2>
-    <div class="row mt-3">
-        {% for i in general.opps.items %}
-            <div class="col-sm-6 col-md-4 col-12 mt-4 justify-content-center">
-                <div class="flip-card">
-                    <a aria-hidden="true" class="fliplink">
-                        <div {% if forloop.index == 1 %} id="firstflip" {% endif %} class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <div class="opps-circle">
-                                    <img src="{{i.icon}}" alt="{{i.heading}}">
-                                </div>
-                                <h5 class="mt-3 text-center px-4 font-weight-bold">{{i.heading}}</h5>
-                            </div>
-                            <div class="flip-card-back">
-                                <p>{{i.text}}</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        {% endfor %}
-    </div>
-</div>
-<!-- portfolio section -->
-{% assign port = site.data.general.items.portfolio %}
-
-<div class="section bg-light">
-    <a class="anchor" id="portfolio"></a>
-    <div class="container">
-        <h2 class="text-center">{{port.heading}}</h2>
-        <p class="mt-4">{{port.text}}</p>
-
-        {% include static_map.html %}
-        <!-- portfolio cards -->
-        <div class="card-deck mt-5">
-            {% for i in port.items %}
-                {% assign remainder = forloop.index |modulo: 3 %}
-                <div class="card card-a">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold mb-0">{{i.heading}}</h5>
-                        {% if i.subheading %}
-                            <p class="font-weight-bold">{{i.subheading}}</p>
-                        {% endif %}
-                        <p class="card-text">{{i.p}}</p>
-                        {% if i.href %}
-                            <p class="card-text">
-                                <a href="http://{{i.href}}" rel="noopener" target="_blank">{{i.href}}</a>
-                            </p>
-                        {% endif %}
-                    </div>
-                </div>
-                {% if remainder == 0 %}
-                </div>
-                <div class="card-deck mt-4">
-                {% endif %}
-                {% if forloop.last == true %}
-                    {% case remainder %}
-                        {% when 1 %}
-                            <div class="card placeholder-card"></div>
-                            <div class="card placeholder-card"></div>
-                        {% when 2 %}
-                            <div class="card placeholder-card"></div>
-                    {% endcase %}
-
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<!-- team section -->
-{% assign team = site.data.general.items.team %}
-
-<div class="section">
-    <a class="anchor" id="team"></a>
-    <div class="container">
-        <h2 class="text-center">{{team.heading}}</h2>
-        <div class="row justify-content-center mt-5">
-            {% for i in team.items %}
-                <div class="col mb-5">
-                    <img class="img-fluid rounded-circle img-team" alt="{{i.name}}" src="{{i.img}}">
-                    <h4 class="mb-0 mt-4 font-weight-bold">{{i.name}}
-                        <a href="{{i.linkedin}}" target="_blank" rel="noopener"><img src="/assets/icon/linkedin.png" alt="{{i.name}}" height="24px" class="sm-icon"></a>
-                    </h4>
-                    <p class="font-weight-bold mb-0">{{i.title}}</p>
-                    <p class="mb-1">
-                        <a href="mailto:{{i.mail}}">{{i.mail}}</a>
-                    </p>
-                    <p class="">{{i.text}}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<!-- media section -->
-{% assign media = site.data.general.items.media %}
-<div class="section bg-light">
-    <a class="anchor" id="media"></a>
-    <div class="container">
-        <h2 class="text-center">{{media.heading}}</h2>
-        {% for i in site.news reversed %}
-            {% if i.link %}
-                <a href="{{i.link}}" target="_blank" rel="noopener" class="media">
-                {% endif %}
-                <div class="row mt-3 pt-2">
-                    <div class="d-none d-sm-block col-sm-2">
-                        <img src="{% if i.img %}{{i.img}}{% else %}/assets/img/logo.png{% endif %}" alt="{{i.title}}" class="img-fluid media-preview">
-                    </div>
-                    <div class="col-sm-10">
-                        <p class="font-weight-bold mb-0">{{i.date|date:'%B %e, %Y'}}</p>
-                        <h4 class="">{{i.title}}</h4>
-                        <p>{{i.content}}</p>
-                    </div>
-                </div>
-                {% if i.link %}
-                </a>
-            {% endif %}
-        {% endfor %}
-    </div>
-</div>
-
-<!-- contact section -->
-<div class="section">
-    <a class="anchor" id="contact"></a>
-    <div class="container">
-        <h2 class="text-center">Contact Us</h2>
-        <p class="text-center my-3">Call us at +1 (303) 835-7901 or send us a message below and we will get back to you.</p>
-        <form action="https://submit-form.com/xfXf8CuT1ISwK-YGu-6EN" class="mt-5" id="contactForm">
-            <input name="_redirect" type="hidden" value="agrofundone.com/index.html?contact=sent">
-            <div class="row justify-content-center">
-                <div class="col-sm-10 col-md-6">
-                    <div class="form-group">
-                        <label for="contactFormName">Name<sup>*</sup>
-                        </label>
-                        <input class="form-control" id="contactFormName" name="Name" placeholder="Your Name" required type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactFormEmail">Email<sup>*</sup>
-                        </label>
-                        <input class="form-control" id="contactFormEmail" name="Email" placeholder="name@example.com" required type="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactFormPhone">Phone number (optional)</label>
-                        <input class="form-control" id="contactFormPhone" name="Phone" placeholder="+ 1 (888) 888-8888" type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactFormType">I am a...<sup>*</sup>
-                        </label>
-                        <select class="form-control" id="contactFormType" name="Category">
-                            <option disabled selected value="">Please choose one...</option>
-                            <option>Investor</option>
-                            <option>Entrepreneur</option>
-                            <option>Farmer</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="contactFormMessage">Message<sup>*</sup>
-                        </label>
-                        <textarea class="form-control" id="contactFormMessage" name="Message" rows="5"></textarea>
-                    </div>
-
-                    <!-- form spark pot -->
-                    <div aria-hidden="true" class="form-hide"><input name="website" tabindex="-1" type="text" value="">
-                    </div>
-                    <div class="g-recaptcha" data-sitekey="6LcFKrUZAAAAAMGnRi8pGOuBr1rlWmxqt5lCuyZF"></div>
-                    <button class="btn st-btn mt-3" type="submit">Send</button>
-                </div>
-            </div>
-        </form>
-        <div class="row justify-content-center mt-5 d-none" id="contactSuccess">
-            <div class="col-sm-6">
-                <h5>Thank you for your message. We will be in touch shortly.</h5>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div class="container text-center pt-2 pb-5">
-    <p>
-        {% for i in site.data.general.items.socialmedia %}
-            <a href="{{i.url}}" target="_blank" rel="noopener" class="mr-4"><img src="{{i.img}}" class="sm-icon" alt="Agro Fund One {{i.name}}"></a>
-        {% endfor %}
-    </p>
-</div>
-
-
-{% include modals.html %}

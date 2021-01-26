@@ -1,0 +1,60 @@
+---
+layout: base
+---
+
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items.news %}
+        {% for i in site.data.english.items.navigation.items %}
+            {% if i.id == "contact" %}
+                {% assign contact_link = i.url %}
+                {% assign contact_name = i.name %}
+            {% endif %}
+        {% endfor %}
+    {% when "es" %}
+        {% assign data = site.data.spanish.items.news %}
+        {% for i in site.data.spanish.items.navigation.items %}
+        {% if i.id == "contact" %}
+            {% assign contact_link = i.url %}
+            {% assign contact_name = i.name %}
+        {% endif %}
+    {% endfor %}
+    {% when "pt" %}
+        {% assign data = site.data.portuguese.items.news %}
+        {% for i in site.data.portuguese.items.navigation.items %}
+        {% if i.id == "contact" %}
+            {% assign contact_link = i.url %}
+            {% assign contact_name = i.name %}
+        {% endif %}
+    {% endfor %}
+{% endcase %}
+
+<div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <h1>{{data.heading}}</h1>
+            <p class="mt-4">{{data.text}}</p>
+            <p><a href="/{{page.lang}}{{contact_link}}" class="btn btn-primary btn-solid btn-sm">{{contact_name}}</a></p>
+            {% unless page.lang == "en" %}<p>{{data.message}}</p>{% endunless %}
+        </div>
+    </div>
+    <div class="row mt-5 mb-5 justify-content-center">
+        {% for i in site.news reversed %}
+        <div class="col-md-10 col-lg-8">
+            <div class="card card-a mb-5">
+                {% if i.img %}
+                <img class="card-img-top img-fluid" src="{{i.img}}" alt="{{i.title}}" style="max-height: 200px;object-fit: cover; object-position: top center; ">
+                {% endif %}
+                <div class="card-block">
+                    <div class="card-body">
+                        <h4 class="card-title mb-0">{{i.title}}</h4>
+                        <p class="card-text">{{i.content|truncatewords: 20}}</p>
+                        <a class="btn btn-primary btn-solid stretched-link" href="{{i.url|replace:'index.html'}}">{{data.full_article}}</a>
+                    </div>
+                    <p class="card-footer mb-0 mt-2"><small class="text-muted">{{i.date|date:'%B %e, %Y'}}</small></p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

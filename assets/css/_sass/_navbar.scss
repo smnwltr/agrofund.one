@@ -1,0 +1,74 @@
+/* Start navbar styles */
+
+.navbar {
+  transition: 1.2s background-color;
+  //   text-shadow: 2px 2px 4px black;
+
+  @media (max-width: 768px) {
+    background-color: white;
+    color: black;
+    text-shadow: none;
+  }
+  .btn-primary {
+    color: $secondary-color !important;
+    padding: 5px 20px !important;
+    &:hover {
+      color: white !important;
+    }
+  }
+}
+
+.navbar li a {
+  @media (max-width: 768px) {
+    color: black;
+  }
+  color: white;
+  font-weight: bold;
+  font-size: 125%;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  color: black;
+}
+
+.navbar .dropdown-item {
+  background-color: #fff;
+  color: black;
+  padding-right: 0px;
+}
+.my-navbar-img {
+  height: 80px;
+  width: auto;
+  @media (max-width: 768px) {
+    height: 50px;
+  }
+}
+
+.navbar-black {
+  li a {
+    color: black;
+  }
+  background-color: white;
+  .bi {
+    fill: black;
+  }
+}
+
+.navbar-scroll {
+  li a {
+    color: black;
+  }
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  .bi {
+    fill: black;
+  }
+}
+
+.my-navbar-img {
+  transition: 0.75s all;
+}

@@ -1,0 +1,48 @@
+---
+layout: base
+---
+
+{% case page.lang %}
+    {% when "en" %}
+        {% assign data = site.data.english.items %}
+        {% when "es" %}
+        {% assign data = site.data.spanish.items %}
+    {% when "pt" %}
+        {% assign data = site.data.portuguese.items %}
+{% endcase %}
+
+<div class="container py-5">
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <h1>{{data.about.heading}}</h1>
+            {% for i in data.about.intro%}
+            <p>{{i}}</p>
+            {% endfor %}
+            <ul class="dashed">
+                {% for i in data.about.intro_list %}
+                <li>{{i}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <p></p>
+    <h2 class="text-center mt-5">{{data.team.heading}}</h2>
+    <div class="row justify-content-center mt-5">
+        {% for i in data.team.items %}
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle img-team" alt="{{i.name}}" src="{{i.img}}">
+                </div>
+                <h4 class="mb-0 mt-4 font-weight-bold">{{i.name}}
+                    <a href="{{i.linkedin}}" target="_blank" rel="noopener"><img src="/assets/icon/linkedin.png" alt="{{i.name}}" height="24px" class="sm-icon"></a>
+                </h4>
+                <p class="font-weight-bold mb-0">{{i.title}}</p>
+                <p class="mb-1">
+                    <a href="mailto:{{i.mail}}">{{i.mail}}</a>
+                </p>
+                <p class="">{{i.text}}</p>
+            </div>
+        {% endfor %}
+    </div>
+    
+</div>

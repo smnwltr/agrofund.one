@@ -14,28 +14,20 @@ $('.light-img').click(function (e) {
 $(document).ready(function () {
     //caches a jQuery object containing the header element
     var header = $(".navbar");
-    var links = $(".nav-item");
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 250) {
             header.addClass("navbar-scroll");
+            $(".my-navbar-img").css({ "height": "40px" });
+
         } else {
-            header.removeClass("navbar-scroll")
+            header.removeClass("navbar-scroll");
+            $(".my-navbar-img").css({ "height": "80px" });
         }
     });
 });
 
-// smooth scrolling
-$(document).ready(function () {
-    $(".smooth-scroll").click(function (e) {
-        e.preventDefault();
-        var position = $($(this).attr("href")).offset().top;
-        $("html, body").animate({
-            scrollTop: position
-        }, 1000);
-    });
-});
 
 // Hamburger menu toggling
 window.onload = function () {
@@ -69,37 +61,3 @@ $(document).ready(
         }
     }
 )
-
-// flip card once element is scrolled into view
-var mq = window.matchMedia("(max-width: 768px)");
-
-
-var scrollEventHandler = function () {
-    if (isScrolledIntoView(document.getElementById('firstflip')) && mq.matches) {
-        $("#firstflip").addClass("hovered");
-        unbindScrollEventHandler();
-    }
-}
-
-function unbindScrollEventHandler() {
-    $(document).unbind('scroll', scrollEventHandler);
-}
-
-$(document).scroll(scrollEventHandler);
-
-function isScrolledIntoView(el) {
-    var elemTop = el.getBoundingClientRect().top;
-    var elemBottom = el.getBoundingClientRect().bottom;
-
-    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-    return isVisible;
-}
-
-// make flip cards clickable on mobile
-
-if (mq.matches) {
-    $(".fliplink").click(function () {
-        $(this).children().toggleClass("hovered");
-        $(".fliplink").children().removeClass("hovered");
-    });
-}

@@ -1,0 +1,42 @@
+/* button styles */
+
+.cta-btn {
+  padding: 15px;
+  border: none !important;
+  margin-top: 13px;
+}
+.cta-btn a {
+  background: $primary-color;
+  color: white !important;
+  border-radius: 3px;
+  padding: 2px 20px !important;
+  transition: 0.4s all;
+  font-weight: bolder;
+  text-shadow: none;
+  box-shadow: 0 2px 8px 0 darkgrey;
+}
+.cta-btn a:hover {
+  background: darken($primary-color, 15%);
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid $secondary-color;
+  transition: 0.2s all;
+  color: $secondary-color;
+  font-weight: bold;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    color: white !important;
+    background-color: $secondary-color !important;
+    border-color: $secondary-color !important;
+  }
+}
+
+.btn-solid {
+  background-color: $secondary-color;
+  color: white;
+}
