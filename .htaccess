@@ -1,3 +1,12 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} !=443
 RewriteRule ^(.*)$ https://www.agrofundone.com/$1 [R=301,L]
+
+RewriteCond %{HTTP:Accept-Language} ^en [NC]
+RewriteRule ^$ https://agrofundone.com/en/ [L,R=301]
+
+RewriteCond %{HTTP:Accept-Language} ^es [NC]
+RewriteRule ^$ https://agrofundone.com/es/ [L,R=301]
+
+RewriteCond %{HTTP:Accept-Language} ^pt [NC]
+RewriteRule ^$ https://agrofundone.com/pt/ [L,R=301]
