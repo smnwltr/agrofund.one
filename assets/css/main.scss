@@ -4,9 +4,9 @@
 $primary-color: #967274;
 $secondary-color: #6a9b7d;
 
-@import url("https://fonts.googleapis.com/css2?family=Latos:wght@700&family=Mukta:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mukta:wght@400;700&display=swap");
 $theme-font: "Mukta", Helvetica, sans-serif;
-$header-font: "Lato";
+$header-font: "Lato", Helvetica, sans-serif;
 
 * {
   font-family: $theme-font;
