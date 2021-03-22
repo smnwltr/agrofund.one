@@ -46,7 +46,7 @@ layout: base
             {% endfor %}
         </div>
     </div>
-    <div class="row mt-5 justify-content-center">
+    {% comment %} <div class="row mt-5 justify-content-center">
         <div class="col-md-12">
             <h2>{{data.investment.criteria.heading}}</h2>
             <p>{{data.investment.criteria.text}}</p>            
@@ -69,5 +69,6 @@ layout: base
             {% endfor %}
             <p><a class="btn btn-primary" href="/{{page.lang}}{{contact_link}}">{{data.investment.criteria.text2cta}}</a></p>
         </div>
-    </div>
+    </div> {% endcomment %}
+
 </div>
