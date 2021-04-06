@@ -29,9 +29,7 @@ items:
               id: contact
 
     home:
-        heading:
-            Agro Fund One fornece capital e experiência para empresas sustentáveis
-            ​​e inovadoras no setor agrícola.
+        heading: Adquirimos terras agrícolas, fazemos parceria com fazendeiros experientes e desenvolvemos parcerias na indústria para construir um portfólio de culturas especiais
         intro:
             - Agro Fund One, Limited é um fundo de investimento agrícola com foque na América
               do Sul, Central e do Norte. O foco principal do Fundo é gerar retornos competitivos
