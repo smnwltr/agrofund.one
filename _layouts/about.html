@@ -34,7 +34,7 @@ assign data = site.data.portuguese.items %} {% endcase %}
                 />
             </div>
             <h4 class="mb-0 mt-4 font-weight-bold">
-                {{i.name}}
+                {{i.name}} {% if i.linkedin %}
                 <a href="{{i.linkedin}}" target="_blank" rel="noopener">
                     <img
                         src="/assets/icon/linkedin.png"
@@ -43,11 +43,14 @@ assign data = site.data.portuguese.items %} {% endcase %}
                         class="sm-icon"
                     />
                 </a>
+                {% endif %}
             </h4>
             <p class="font-weight-bold mb-0">{{i.title}}</p>
+            {% if i.mail %}
             <p class="mb-1">
                 <a href="mailto:{{i.mail}}">{{i.mail}}</a>
             </p>
+            {% endif %}
             <p class="">{{i.text}}</p>
         </div>
         {% endfor %}

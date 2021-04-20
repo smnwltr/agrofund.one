@@ -1,47 +1,47 @@
 title: Agro Fund One
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://agrofundone.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+    - jekyll-feed
 
 sass:
-  sass_dir: assets/css/_sass
+    sass_dir: assets/css/_sass
 
 collections:
-  news:
-    output: true
-    permalink: /:path/index.html
+    news:
+        output: true
+        permalink: /:path/index.html
 
-  portfolio:
-    output: true
-    permalink: /:path/index.html
+    portfolio:
+        output: true
+        permalink: /:path/index.html
 
 defaults:
-  - scope:
-      type: "portfolio"
-    values:
-      layout: portfolio_sites
-  - scope:
-      type: "news"
-    values:
-      layout: news_sites
+    - scope:
+          type: "portfolio"
+      values:
+          layout: portfolio_sites
+    - scope:
+          type: "news"
+      values:
+          layout: news_sites
 exclude: [README.md]
 
 social_media:
-  twitter: https://twitter.com/agrofundone
-  linkedin: https://www.linkedin.com/company/agro-fund-one/
+    twitter: https://twitter.com/agrofundone
+    linkedin: https://www.linkedin.com/company/agro-fund-one/
 
 # data for privacy policy
 address:
-  name: Agro Fund One, Limited
-  street: "321 Park Ave"
-  city: Wilmette
-  state: Illinois
-  zip: 60091
-  country: United States
-  phone: +1 (303) 835-7901
-  domain: https://agrofundone.com
+    name: Agro Fund One, Limited
+    street: "321 Park Ave"
+    city: Wilmette
+    state: Illinois
+    zip: 60091
+    country: United States
+    phone: +1 (303) 835-7901
+    domain: https://agrofundone.com
